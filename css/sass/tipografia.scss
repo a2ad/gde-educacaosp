@@ -1,0 +1,45 @@
+/* ##TIPOGRAFIA */
+h2{
+	font-family: Georgia, "Times New Roman", serif; 
+	font-size: 30px; 
+	margin: 0 0 10px 0; 
+	letter-spacing: 0px; 
+	color: #333; 
+	font-weight: normal;
+}
+h3{
+	font-size: 24px; 
+	font-weight: bold; 
+	margin: 0 0 10px 0; 
+	letter-spacing: 0px; 
+	color: #333;
+	font-family: 'Arial', serif; 
+}
+h4{
+	font-size: 18px; 
+	font-weight: normal; 
+	margin: 0 0 10px 0; 
+	letter-spacing: 0px; 
+	color: #333;
+	font-family: 'Arial', serif; 
+}
+h5{
+	font-size: 12px; 
+	font-weight: normal; 
+	text-decoration: underline;  
+	margin: 0 0 15px 0;  
+	color: #0E6285;
+	font-family: 'Arial', serif; 
+}
+p {
+	color: #333333;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	font-family: 'Arial', serif; 
+}
+a{color: #333333; text-decoration:none;}
+a:hover{text-decoration:underline;}
+p{ margin: 0 0 20px 0; font-size: 14px; color: #180a0a; }
+
+iframe{ display: block; z-index: 0; position: relative; }
