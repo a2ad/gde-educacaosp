@@ -5,11 +5,10 @@ $(function(){
 
 		while (html !=(html = html.replace('<', '&lt;')));
 		while (html !=(html = html.replace('>', '&gt;')));
-		while (html !=(html = html.replace('                  ', '')));
+		while (html !=(html = html.replace('               ', '')));
 
 		$(this).after('<div class="styleguide-code"><pre class="prettyprint linenums"></pre></div>');
-		$(this).siblings('.styleguide-code').children().append(html);
-
+		$(this).siblings('.styleguide-code').children().append(html);		
 	});
 	
 	// PrettyPrint
@@ -21,7 +20,7 @@ $(function(){
 	var paginas = [
 		['Sobre', 'index'],
 		['Botões', 'botoes'],
-		['Formulários', 'forms'],
+		['Formulários', 'formularios'],
 		['Navegação', 'navegacao'],
 		['Ícones', 'icons'],
 		['Thumbnails', 'thumbnails']
@@ -39,7 +38,7 @@ $(function(){
 	}
 
 	// Verificação página ativa
-	var body = $('body').attr('class');
-	$('.menu li a[href^="'+body+'"]').addClass('selected');
+	var classeBody = $('body').attr('class');
+	$('.styleguide-menu li a[href^="'+classeBody+'"]').addClass('selected');
 
 });

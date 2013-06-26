@@ -17,157 +17,170 @@
 
     <script src="js/libs/modernizr-2.6.1.min.js"></script>
 </head>
-<body class="forms">
+<body class="formularios">
+    
     <div class="container">
-        <h1>Guia de Estilos</h1>
-        <div class="styleguide">
-            <!-- Menu  -->
-            <div class="menu-styleguide">
-                <ul class="menu">
-                    <li><a href="index.html">Sobre</a></li>
-                    <li><a href="botoes.html">Botões</a></li>
-                    <li><a href="forms.html">Forms</a></li>      
-                    <li><a href="navegacao.html">Navegação</a></li>
-                    <li><a href="icons.html">Icons</a></li>
-                    <li><a href="thumbnails.html">Thumbnails</a></li>
-                    <li><a href="comentarios.html">Comentários</a></li>                      
-                    <li><a href="cores.html">Cores</a></li>                      
-                </ul>
+        <h1><span>Guia de estilo</span><span>Educação SP</span></h1>
+
+        <!-- Menu  -->
+        <nav class="styleguide-side">
+            <ul id="menu" class="styleguide-menu"></ul>
+        </nav>
+
+        <!-- Conteudo -->
+        <div class="styleguide-content">
+            
+            <h2 class="title-module">Formulários</h2>
+
+            <div class="styleguide-example">
+                <h3 class="title-example">Padrão</h3>
+                <div class="styleguide-demo">
+                    <form class="form" id="regular-form" method="get" action="">
+                        <span class="block fields-required">Campos obrigatórios <strong class="required">*</strong></span>
+                        <fieldset>                                
+                            <div class="row">
+                                <div class="block sixcol">
+                                    <label>Nome <strong class="required">*</strong></label>  
+                                    <input type="text" class="input-text" name="nome" placeholder="Digite seu nome" required autofocus />
+                                </div>
+                                <div class="block sixcol last">
+                                    <label>Email <strong class="required">*</strong></label> 
+                                    <input type="email" class="input-text" name="email" placeholder="Digite seu e-mail" required>
+                                </div>
+                                <div class="block fourcol">
+                                    <label>Área <strong class="required">*</strong></label>
+                                    <input type="text" class="input-text" name="area" placeholder="Nome do Departamento ou Cargo" required>
+                                </div>
+                                <div class="block eightcol last">
+                                    <label>Nome da Empresa <strong class="required">*</strong></label>
+                                    <input type="text" class="input-text" name="nome-empresa" placeholder="Nome da Empresa">
+                                </div>
+                                <div class="block threecol">
+                                    <label>Cidade <strong class="required">*</strong></label>
+                                    <input type="text" class="input-text" name="cidade" placeholder="Nome da Cidade" required>
+                                </div>
+                                <div class="block threecol">
+                                    <label>Telefone <strong class="required">*</strong></label>
+                                    <input type="tel" class="input-text" name="telefone" placeholder="Digite seu telefone">
+                                </div>
+                                <div class="block sixcol last">
+                                    <label>Opção de Atendimento <strong class="required">*</strong></label>
+                                    <select class="select" name="atendimento" required>
+                                        <option value="">Escolha uma opção</option>
+                                        <option value="1">Comercial</option>
+                                        <option value="2">Institucional</option>
+                                        <option value="3">Licitações e Compras</option>
+                                        <option value="4">Concursos (Oportunidade de Carreira)</option>
+                                    </select>  
+                                </div>   
+
+                                <div class="block">
+                                    <label>Mensagem <strong class="required">*</strong></label>
+                                    <textarea class="textarea" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                                </div>
+                                <div class="no-margin">
+                                    <input type="submit" class="btn btn-blue-green" name="fale_sub" value="Enviar">
+                                </div>
+                            </div>                                 
+                        </fieldset> 
+                    </form>
+                </div>
             </div>
 
-            <div class="content-styleguide">
-                <div class="styleguide-example">
-                    <h3>Padrão com validação</h3>
-                    <div class="styleguide-demo">
-                        <form class="form" id="regular-form" method="get" action="">
-                            <span class="block fields-required">Campos obrigatórios <strong class="required">*</strong></span>
-                            <fieldset>                                
-                                <div class="row">
-                                    <div class="block sixcol">
-                                        <label>Nome <strong class="required">*</strong></label>  
-                                        <input type="text" class="input-text" name="nome" placeholder="Digite seu nome" required autofocus />
-                                    </div>
-                                    <div class="block sixcol last">
-                                        <label>Email <strong class="required">*</strong></label> 
-                                        <input type="email" class="input-text" name="email" placeholder="Digite seu e-mail" required>
-                                    </div>
-                                    <div class="block fourcol">
-                                        <label>Área <strong class="required">*</strong></label>
-                                        <input type="text" class="input-text" name="area" placeholder="Nome do Departamento ou Cargo" required>
-                                    </div>
-                                    <div class="block eightcol last">
-                                        <label>Nome da Empresa <strong class="required">*</strong></label>
-                                        <input type="text" class="input-text" name="nome-empresa" placeholder="Nome da Empresa">
-                                    </div>
-                                    <div class="block threecol">
-                                        <label>Cidade <strong class="required">*</strong></label>
-                                        <input type="text" class="input-text" name="cidade" placeholder="Nome da Cidade" required>
-                                    </div>
-                                    <div class="block threecol">
-                                        <label>Telefone <strong class="required">*</strong></label>
-                                        <input type="tel" class="input-text" name="telefone" placeholder="Digite seu telefone">
-                                    </div>
-                                    <div class="block sixcol last">
-                                        <label>Opção de Atendimento <strong class="required">*</strong></label>
-                                        <select class="select" name="atendimento" required>
-                                            <option value="">Escolha uma opção</option>
-                                            <option value="1">Comercial</option>
-                                            <option value="2">Institucional</option>
-                                            <option value="3">Licitações e Compras</option>
-                                            <option value="4">Concursos (Oportunidade de Carreira)</option>
-                                        </select>  
-                                    </div>   
+            <!-- -->
 
-                                    <div class="block">
-                                        <label>Mensagem <strong class="required">*</strong></label>
-                                        <textarea class="textarea" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
-                                    </div>
-                                    <div class="no-margin">
-                                        <input type="submit" class="btn btn-blue-green" name="fale_sub" value="Enviar">
-                                    </div>
-                                </div>                                 
-                            </fieldset> 
-                        </form>
-
-                    </div>                     
-                </div><!-- -->
-                <div class="styleguide-example">
-                    <h3>Forms</h3>
-                    <div class="styleguide-demo">                        
-                        <form action="" class="form">
-                            <fieldset>                               
-                                <div class="row">
-                                    <div class="fourcol">
-                                        <select required="" name="" class="select">
-                                            <option value="">Escolha uma opção</option>
-                                            <option value="1">Lorem ipsum dolor sit amet.</option>
-                                            <option value="2">Lorem ipsum dolor sit amet.</option>
-                                            <option value="3">Lorem ipsum dolor sit amet.</option>
-                                            <option value="4">Lorem ipsum dolor sit amet.</option>
-                                        </select>
-                                    </div>
-                                    <div class="threecol">
-                                        <select required="" name="" class="select">
-                                            <option value="">Escolha uma opção</option>
-                                            <option value="1">Lorem ipsum dolor sit amet.</option>
-                                            <option value="2">Lorem ipsum dolor sit amet.</option>
-                                            <option value="3">Lorem ipsum dolor sit amet.</option>
-                                            <option value="4">Lorem ipsum dolor sit amet.</option>
-                                        </select>
-                                    </div>
-                                    <div class="fivecol last">
-                                        <select required="" name="" class="select">
-                                            <option value="">Escolha uma opção</option>
-                                            <option value="1">Lorem ipsum dolor sit amet.</option>
-                                            <option value="2">Lorem ipsum dolor sit amet.</option>
-                                            <option value="3">Lorem ipsum dolor sit amet.</option>
-                                            <option value="4">Lorem ipsum dolor sit amet.</option>
-                                        </select>
-                                    </div> 
+            <div class="styleguide-example">
+                <h3 class="title-example">Formulário <i>inline</i></h3>
+                <div class="styleguide-demo">
+                    <form action="" class="form">
+                        <fieldset>                               
+                            <div class="row">
+                                <div class="fourcol">
+                                    <select required="" name="" class="select">
+                                        <option value="">Escolha uma opção</option>
+                                        <option value="1">Lorem ipsum dolor sit amet.</option>
+                                        <option value="2">Lorem ipsum dolor sit amet.</option>
+                                        <option value="3">Lorem ipsum dolor sit amet.</option>
+                                        <option value="4">Lorem ipsum dolor sit amet.</option>
+                                    </select>
                                 </div>
-                            </fieldset>
-                        </form>
-                    </div>                     
-                </div><!-- --> 
-                <div class="styleguide-example">
-                    <h3>Form Busca</h3>
-                    <div class="styleguide-demo">
-
-                        <div style="width: 289px;">
-                            <form class="form-search">
-                                <input type="text" class="input-text search-query">
-                                <button class="btn" type="submit">Search</button>
-                                <!-- <button type="submit" class="btn">Search</button> -->
-                            </form>
-                        </div>
-
-                    </div>                     
-                </div><!-- --> 
-                <div class="styleguide-example">
-                    <div class="styleguide-demo">
-                        <form class="form">
-                            <fieldset>
-                                <div class="row">
-                                    <div class="block fivecol offset-one">
-                                        <label>Usuário <strong class="required">*</strong></label>
-                                        <input type="text" class="input-text" name="inputUsuario" placeholder="Usuário" required>
-                                    </div>
-                                    <div class="block fivecol">
-                                        <label>Senha <strong class="required">*</strong></label>
-                                        <input type="password" class="input-text" id="inputPassword" placeholder="Senha" required>
-                                    </div>
-                                    <div class="block offset-one elevencol last">                            
-                                        <button type="submit" class="btn btn-azul">OK</button>
-                                        <span>Esqueceu a senha? <a href="#">Clique Aqui</a></span>
-                                    </div>
+                                <div class="threecol">
+                                    <select required="" name="" class="select">
+                                        <option value="">Escolha uma opção</option>
+                                        <option value="1">Lorem ipsum dolor sit amet.</option>
+                                        <option value="2">Lorem ipsum dolor sit amet.</option>
+                                        <option value="3">Lorem ipsum dolor sit amet.</option>
+                                        <option value="4">Lorem ipsum dolor sit amet.</option>
+                                    </select>
                                 </div>
-                            </fieldset>
-                        </form>
-                    </div> 
-                </div><!-- -->  
-
+                                <div class="fivecol last">
+                                    <select required="" name="" class="select">
+                                        <option value="">Escolha uma opção</option>
+                                        <option value="1">Lorem ipsum dolor sit amet.</option>
+                                        <option value="2">Lorem ipsum dolor sit amet.</option>
+                                        <option value="3">Lorem ipsum dolor sit amet.</option>
+                                        <option value="4">Lorem ipsum dolor sit amet.</option>
+                                    </select>
+                                </div> 
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
+
+            <!-- -->
+
+            <div class="styleguide-example">
+                <h3 class="title-example">Formulário de busca</h3>
+                <div class="styleguide-demo">
+                    <form class="form">
+                        <fieldset>
+                            <div class="row">
+                                <div class="block fivecol offset-one">
+                                    <label>Usuário <strong class="required">*</strong></label>
+                                    <input type="text" class="input-text" name="inputUsuario" placeholder="Usuário" required>
+                                </div>
+                                <div class="block fivecol">
+                                    <label>Senha <strong class="required">*</strong></label>
+                                    <input type="password" class="input-text" id="inputPassword" placeholder="Senha" required>
+                                </div>
+                                <div class="block offset-one elevencol last">                            
+                                    <button type="submit" class="btn btn-azul">OK</button>
+                                    <span>Esqueceu a senha? <a href="#">Clique Aqui</a></span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <!-- -->
+            <div class="styleguide-example">
+                <h3 class="title-example">Formulário de login</h3>
+                <div class="styleguide-demo">
+                    <form action="" class="form">                        
+                        <fieldset>
+                            <div class="row">
+                                <div class="block fivecol offset-one">
+                                    <label>Usuário <strong class="required">*</strong></label>
+                                    <input class="input-text" name="inputUsuario" placeholder="Usuário" required="" type="text">
+                                </div>
+                                <div class="block fivecol">
+                                    <label>Senha <strong class="required">*</strong></label>
+                                    <input class="input-text" id="inputPassword" placeholder="Senha" required="" type="password">
+                                </div>
+                                <div class="block offset-one elevencol last">                            
+                                    <button type="submit" class="btn btn-azul">OK</button>
+                                    <span>Esqueceu a senha? <a href="#">Clique Aqui</a></span>
+                                </div>
+                            </div>
+                        </fieldset>                        
+                    </form>
+                </div>
+            </div>
+
         </div>
+
     </div>
 
     <!-- jQuery -->
