@@ -14,7 +14,7 @@
       margin: 0 0 20px 0;
    }
    
-   a{ 
+   a { 
       color: #4183C4;
       text-decoration: none;
    }
@@ -26,6 +26,7 @@
    }
 
    .container > h1 {
+      font-family: 'AllerBold';
       margin: 0 0 40px 0;
       font-size: 32px;
       color: #666;
