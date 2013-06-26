@@ -1,85 +1,186 @@
-/*CSS Index*/
-body{font-family: Arial; background: none !important; padding: 0 !important; margin: 0 !important;}
-p{font-size: 14px; line-height: 18px; color: #333; margin: 0 0 20px 0;}
-strong, b {font-weight: bold;}
-a{color: #4183C4; text-decoration: none;}
+/* ==========================================================================
+   CSS index GDE
+   ========================================================================== */
+   body {
+      font-family: Arial;
+      padding: 0;
+      margin: 0;
+   }
 
-.container { margin: 0 auto; padding: 20px 0 0 0; width: 1140px; }
-.container > h1{ margin: 0 0 40px 0; font-size: 32px; color: #000; text-align: center;}
-.styleguide { overflow: auto; }
-.menu-styleguide {
-    background: #deefff;
-    border-radius: 2px 2px 2px 2px;
-    float: left;
-    padding: 3px;
-    width: 200px;
-}
-.menu-styleguide .menu {
-    background: #FAFAFB;
-    border: 1px solid #D8D8D8;
-    border-radius: 2px 2px 2px 2px;
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-}
-.menu-styleguide .menu li:first-child {border-top: none;}
-.menu-styleguide .menu li { border-bottom: 1px solid #EEEEEE; border-top: 1px solid #FFFFFF; }
-.menu-styleguide .menu a.selected {
-    background: #FFFFFF;
-    border-left: 2px solid #D26911;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1) inset;
-    color: #222222;
-    cursor: default;
-    font-weight: bold;
-}
-.menu-styleguide .menu a {
-    display: block;
-    padding: 8px 10px;
-    text-shadow: 0 1px 0 #FFFFFF;
-    font-size: 14px;
-    color: #4183C4;
-}
-.menu-styleguide .menu a.selected {
-    background: #FFFFFF;
-    border-left: 2px solid #4183C4;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1) inset;
-    color: #222222;
-    cursor: default;
-    font-weight: bold;
-}
-.menu-styleguide .menu a:hover { background:#fdfdfe; text-decoration: none; }
-.content-styleguide {
-    font-size: 14px;
-    margin-left: 230px;
-}
+   p { 
+      font-size: 14px;
+      line-height: 18px;
+      color: #333;
+      margin: 0 0 20px 0;
+   }
+   
+   a{ 
+      color: #4183C4;
+      text-decoration: none;
+   }
 
-.styleguide-example {
-    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
-    border: 1px solid #DDDDDD;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin: 0 auto 20px;
-}
-.styleguide-example > h3 {
-    background: #333;
-    border-top: 1px solid #000;
-    color: #FFFFFF;
-    font-size: 14px;
-    font-weight: bold;
-    margin: 0;
-    padding: 5px;
-    text-transform: uppercase;
-    font-family: Arial;
-}
-.styleguide-demo {
-    position: relative;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAAXNSR0IArs4c6QAAAAZQTFRF+vr6////+o8bnQAAABBJREFUCB1jYPjPgBXhEAYAfr8P8bm+jEoAAAAASUVORK5CYII=);
-    padding: 20px;
-    font-size: 100%;
-    overflow: hidden;
-}
-.styleguide-color{margin: 0 0 10px 0; padding: 20px; border-radius: 5px; color: #fff;}
+   .container { 
+      margin: 0 auto;
+      padding: 20px 0 0 0;
+      width: 98%;
+   }
 
-.sobre{ padding: 20px; }
-.sobre ul{ padding-left: 20px; margin-bottom: 20px; list-style: square; }
-.sobre ul li{ font-size: 12px; line-height: 14px; padding:5px 0;  }
-.sobre .styleguide-code{ margin-bottom: 20px; }
+   .container > h1 {
+      margin: 0 0 40px 0;
+      font-size: 32px;
+      color: #666;
+      text-align: center;
+   }
+
+   .styleguide { overflow: auto; }
+
+   .menu-styleguide {
+      background: #deefff;
+      border-radius: 2px 2px 2px 2px;
+      float: left;
+      padding: 3px;
+      width: 200px;
+   }
+
+   .menu-styleguide .menu {
+      background: #FAFAFB;
+      border: 1px solid #D8D8D8;
+      border-radius: 2px 2px 2px 2px;
+      list-style: none outside none;
+      margin: 0;
+      padding: 0;
+   }
+
+   .menu-styleguide .menu li:first-child {border-top: none;}
+
+   .menu-styleguide .menu li {
+      border-bottom: 1px solid #EEEEEE;
+      border-top: 1px solid #FFFFFF;
+   }
+
+   .menu-styleguide .menu a.selected {
+      background: #FFFFFF;
+      border-left: 2px solid #D26911;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      color: #222222;
+      cursor: default;
+      font-weight: bold;
+   }
+
+   .menu-styleguide .menu a {
+      display: block;
+      padding: 8px 10px;
+      text-shadow: 0 1px 0 #FFFFFF;
+      font-size: 14px;
+      color: #4183C4;
+   }
+
+   .menu-styleguide .menu a.selected {
+      background: #FFFFFF;
+      border-left: 2px solid #4183C4;
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.1) inset;
+      color: #222222;
+      cursor: default;
+      font-weight: bold;
+   }
+
+   .menu-styleguide .menu a:hover { 
+      background:#fdfdfe;
+      text-decoration: none;
+   }
+
+   .content-styleguide {
+      font-size: 14px;
+      margin-left: 230px;
+   }
+
+   .styleguide-example {
+      background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+      border: 1px solid #DDDDDD;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin: 0 auto 20px;
+   }
+
+   .styleguide-example > h3 {
+      background: #333;
+      border-top: 1px solid #000;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+      padding: 5px;
+      text-transform: uppercase;
+      font-family: Arial;
+   }
+
+   .styleguide-example > h3 i {
+      text-transform: none;
+      font-weight: normal;
+   }
+
+   .styleguide-demo {
+      position: relative;
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAAXNSR0IArs4c6QAAAAZQTFRF+vr6////+o8bnQAAABBJREFUCB1jYPjPgBXhEAYAfr8P8bm+jEoAAAAASUVORK5CYII=);
+      padding: 20px;
+      font-size: 100%;
+      overflow: hidden;
+   }
+
+   .styleguide-color{
+      margin: 0 0 10px 0;
+      padding: 20px;
+      border-radius: 5px;
+      color: #fff;
+   }
+
+   .sobre{ padding: 20px; }
+
+   .sobre ul{
+      padding-left: 20px;
+      margin-bottom: 20px;
+      list-style: square;
+   }
+
+   .sobre ul li{
+      font-size: 12px;
+      line-height: 14px;
+      padding: 5px 0;
+   }
+
+   .sobre .styleguide-code{ margin-bottom: 20px; }
+
+   /* ==========================================================================
+      Google Prettify
+      ========================================================================== */
+      .com { color: #93A1A1; }
+      .lit { color: #195F91; }
+      .pun,
+      .opn,
+      .clo { color: #93A1A1; }
+      .fun { color: #DC322F; }
+      .str,
+      .atv { color: #DD1144;}
+      .kwd,
+      .prettyprint .tag { color: #1E347B; }
+      .typ,
+      .atn,
+      .dec,
+      .var { color: teal; }
+      .pln { color: #48484C; }
+
+      .prettyprint {
+         background-color: #F7F7F9;
+         border-top: 1px solid #E1E1E8;
+         padding: 8px;
+      }
+
+      .prettyprint.linenums { box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset; }
+
+      ol.linenums { margin: 0 0 0 33px; }
+
+      ol.linenums li {
+         color: #BEBEC5;
+         line-height: 20px;
+         padding-left: 12px;
+         text-shadow: 0 1px 0 #FFFFFF;
+      }
