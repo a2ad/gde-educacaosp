@@ -24,6 +24,7 @@
          color: #333;
          letter-spacing: -1px;
          border-bottom: solid 1px #ccc;
+         font-family: 'AllerBold';
       }
 
       .container > h1 span {
@@ -171,76 +172,12 @@
 
    /* Box HTML
       ========================================================================== */
-      .simple-code { margin-bottom: 20px; }
-      .styleguide-code { font-size: 14px; }
-
-      .com { color: #93A1A1; }
-      .lit { color: #195F91; }
-      .pun,
-      .opn,
-      .clo { color: #93A1A1; }
-      .fun { color: #DC322F; }
-      .str, .atv { color: #DD1144; }
-      .kwd, .prettyprint .tag { color: #1E347B; }
-      .typ, .atn, .dec, .var { color: teal; }
-      .pln { color: #48484C; }
-
-      .prettyprint {
-         background-color: #F7F7F9;
-         border-top: 1px solid #E1E1E8;
-         padding: 8px;
-      }
-
-      .prettyprint.linenums {
-         box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
-      }
-
-      ol.linenums {
-         margin: 0 0 0 33px;
-      }
-
-      ol.linenums li {
-         color: #BEBEC5;
-         line-height: 20px;
-         padding-left: 12px;
-         text-shadow: 0 1px 0 #FFFFFF;
-      }
-
-
-      /*.styleguide-code pre { display: none; }*/
-
-      pre { margin: 0; }
-
-      .linenums { 
-         padding: 0;
-         list-style-type: decimal;
-      }
-
-      .styleguide-color {
-         margin-bottom: 5px;
-         padding: 20px;
-         color: #fff;
-         font-weight: bold;
-         border-radius: 3px;
-      }
-
-      .styleguide-info {
-         padding: 10px;
-         background-color: #F7F7F9;
-         border-top: solid 1px #E1E1E8;
-      }
-
-      .styleguide-info .styleguide-demo { display: none; }
-      .styleguide-info .styleguide-code { margin-bottom: 20px; }
-      .styleguide-info .styleguide-code:last-child { margin-bottom: 0; }
-
       code, pre {
-         border-radius: 3px 3px 3px 3px;
          color: #333333;
          font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
          font-size: 12px;
          padding: 0 3px 2px;
-         }
+      }
 
       code {
          background-color: #F7F7F9;
@@ -249,3 +186,51 @@
          padding: 2px 4px;
          white-space: nowrap;
       }
+
+      .simple-code { margin-bottom: 20px; }
+
+      .theme-styleguide .com { color: #93A1A1; }
+      .theme-styleguide .lit { color: #195F91; }
+      .theme-styleguide .pun,
+      .theme-styleguide .opn,
+      .theme-styleguide .clo { color: #93A1A1; }
+      .theme-styleguide .fun { color: #DC322F; }
+      .theme-styleguide .str,
+      .theme-styleguide .atv { color: #DD1144; }
+      .theme-styleguide .kwd,
+      .theme-styleguide .prettyprint .tag { color: #1E347B; }
+      .theme-styleguide .typ,
+      .theme-styleguide .atn,
+      .theme-styleguide .dec,
+      .theme-styleguide .var { color: teal; }
+      .theme-styleguide .pln { color: #48484C; }
+
+      pre.prettyprint.theme-styleguide {
+         background-color: #F7F7F9;
+         border: none;
+         border-top: 1px solid #E1E1E8;
+         padding: 8px 3% 8px 0;
+         width: 97%;
+         box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+      }
+
+      pre.simple-code.theme-styleguide {
+         border: solid 1px #E1E1E8;
+      }
+
+      .prettyprint.theme-styleguide ol.linenums {
+         margin: 0;
+         padding: 0 0 0 37px;
+      }
+
+      .prettyprint.theme-styleguide ol.linenums li {
+         line-height: 18px;
+         padding-left: 12px;
+         text-shadow: 0 1px 0 #FFFFFF;
+         border: none;
+      }
+
+      .prettyprint.theme-styleguide li > * { font-size: 12px; }
+
+
+      /*.styleguide-code pre { display: none; }*/

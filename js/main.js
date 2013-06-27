@@ -7,13 +7,13 @@ $(function(){
 		while (html !=(html = html.replace('>', '&gt;')));
 		while (html !=(html = html.replace('               ', '')));
 
-		$(this).after('<div class="styleguide-code"><pre class="prettyprint linenums"></pre></div>');
+		$(this).after('<div class="styleguide-code"><pre class="highlight"></pre></div>');
 		$(this).siblings('.styleguide-code').children().append(html);		
 	});
-	
-	// PrettyPrint
-	var $window = $(window);
-	window.prettyPrint && prettyPrint();
+
+	$.SyntaxHighlighter.init({
+        'theme': 'styleguide'
+    });
 
 
 	// Montagem do menu lateral
