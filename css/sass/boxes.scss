@@ -1,59 +1,94 @@
-/* ##Box*/
-.box{
-	padding: 10px; 
-	margin: 0 0 20px 0; 
-	overflow:hidden; 
-	border:1px solid #ddd;
-	background: #f7f7f7;
-	background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ffffff));
-	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%);
-	background: -o-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%);
-	background: -ms-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%);
-	background: linear-gradient(to bottom,  #f7f7f7 0%,#ffffff 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 );
-}
-.box .title{ font-family:Arial; font-size:18px; font-weight: bold; margin:0 0 10px 0; border:none; line-height:24px; word-wrap:break-word;}
-.box .title a{ color:#2f5e6d; padding:0; margin:0; }
-.box .subtitle{ font-size:14px; font-family:Arial; font-weight: normal; line-height:20px; margin:0 0 25px 0; }
-.box .subtitle a{ color:#180a0a; padding:0; margin:0; }
+/* ==========================================================================
+   Boxes
+   ========================================================================== */
+	.box {
+		padding: 10px; 
+		margin: 0 0 20px 0; 
+		overflow:hidden; 
+		border:1px solid #ddd;
+		background: #f7f7f7;
+		background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ffffff));
+		background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%);
+		background: -o-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%);
+		background: -ms-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%);
+		background: linear-gradient(to bottom,  #f7f7f7 0%,#ffffff 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 );
+	}
 
-.box.box-azul{
-	border:1px solid #a04c1d; 
-	background: #71a2b2;
-}
-.box.box-azul .title a{ color:#fff; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
-.box.box-azul .subtitle a{color:#fff; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
+	.box .title {
+		font-family: Arial;
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0 0 10px 0;
+		border: none;
+		line-height: 24px;
+		word-wrap: break-word;
+	}
+
+	.box .title a {
+		color:#2f5e6d;
+		padding:0;
+		margin:0;
+	}
+
+	.box .subtitle {
+		font-size:14px;
+		font-family: Arial;
+		font-weight: normal;
+		line-height: 20px;
+		margin:0 0 25px 0;
+	}
+
+	.box .subtitle a {
+		color: #180a0a;
+		padding: 0;
+		margin: 0;
+	}
+
+	.box.box-azul {
+		border: 1px solid #a04c1d; 
+		background: #71a2b2;
+	}
+
+	.box.box-azul .title a{ color:#fff; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
+	.box.box-azul .subtitle a{color:#fff; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.4); }
 
 
-/* ##Thumbnail */
-.thumbnail {margin: 0 0 20px 0;}
-.thumbnail img{margin: 0 0 5px 0;}
-.thumbnail .caption{
-	display: block;
-	padding: 2%;
-	width: 96%;	
-}
-.thumbnail .caption p { margin: 0; font-size: 12px; line-height: 16px; font-style: italic; }
-.thumbnail .caption.azul{
-	background: #9dcad9;
-}	
-.thumbnail .caption.laranja{
-	background: #FCDECE;
-}	
+	/* Thumbnail
+	   ========================================================================== */
+		.thumbnail { margin: 0 0 20px 0; }
+		.thumbnail img { margin: 0 0 5px 0; }
 
+		.thumbnail .caption {
+			display: block;
+			padding: 2%;
+			width: 96%;	
+		}
 
-.thumb a{
-	position: relative;
-	display: block;
-}
-.thumb img{	
-	display: block;
-	width: 100%;
-}
-.thumb i{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin: -30px 0 0 -30px;
-}
+		.thumbnail .caption p {
+			margin: 0;
+			font-size: 12px;
+			line-height: 16px;
+			font-style: italic;
+		}
+
+		.thumbnail .caption.azul{ background: #9dcad9; }	
+		.thumbnail .caption.laranja{ background: #FCDECE; }	
+
+		.thumb a {
+			position: relative;
+			display: block;
+		}
+
+		.thumb img {
+			display: block;
+			width: 100%;
+		}
+
+		.thumb i {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin: -30px 0 0 -30px;
+		}

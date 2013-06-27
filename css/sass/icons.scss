@@ -1,98 +1,100 @@
 
-/* ##Icons */
-[class^="icon-"], [class*=" icon-"] {
-	/*background: #000;*/
-	background-image: url("../img/sprite-icons.png");
-	background-position: 14px 14px;
-	background-repeat: no-repeat;
-	display: inline-block;
-	height: 20px;
-	line-height: 20px;
-	margin-top: 1px;
-	vertical-align: text-top;
-	width: 20px;
-}
-/*Cinza*/
-.icon-print		{ background-position: -10px -8px; }
-.icon-large 	{ background-position: -40px -8px; }
-.icon-smaller 	{ background-position: -68px -8px; }
-.icon-contrast 	{ background-position: -96px -8px; }
+/* ==========================================================================
+   Icons
+   ========================================================================== */
+	[class^="icon-"], [class*=" icon-"] {
+		background-image: url("../img/sprite-icons.png");
+		background-position: 14px 14px;
+		background-repeat: no-repeat;
+		display: inline-block;
+		height: 20px;
+		line-height: 20px;
+		margin-top: 1px;
+		vertical-align: text-top;
+		width: 20px;
+	}
+	
+	/*Cinza*/
+	.icon-print		{ background-position: -10px -8px; }
+	.icon-large 	{ background-position: -40px -8px; }
+	.icon-smaller 	{ background-position: -68px -8px; }
+	.icon-contrast 	{ background-position: -96px -8px; }
 
-.icon-print:hover		{ background-position: -10px -8px; }
-.icon-large:hover 		{ background-position: -40px -8px; }
-.icon-smaller:hover 	{ background-position: -68px -8px; }
-.icon-contrast:hover 	{ background-position: -96px -8px; }
+	.icon-print:hover		{ background-position: -10px -8px; }
+	.icon-large:hover 		{ background-position: -40px -8px; }
+	.icon-smaller:hover 	{ background-position: -68px -8px; }
+	.icon-contrast:hover 	{ background-position: -96px -8px; }
 
-/*Cinza Escuro*/
-.icon-print.icon-gray		{ background-position: -10px -30px; }
-.icon-large.icon-gray 		{ background-position: -40px -30px; }
-.icon-smaller.icon-gray 	{ background-position: -68px -30px; }
-.icon-contrast.icon-gray 	{ background-position: -96px -30px; }
+	/*Cinza Escuro*/
+	.icon-print.icon-gray		{ background-position: -10px -30px; }
+	.icon-large.icon-gray 		{ background-position: -40px -30px; }
+	.icon-smaller.icon-gray 	{ background-position: -68px -30px; }
+	.icon-contrast.icon-gray 	{ background-position: -96px -30px; }
 
-.icon-print.icon-gray:hover		{ background-position: -10px -30px; }
-.icon-large.icon-gray:hover 	{ background-position: -40px -30px; }
-.icon-smaller.icon-gray:hover 	{ background-position: -68px -30px; }
-.icon-contrast.icon-gray:hover 	{ background-position: -96px -30px; }
+	.icon-print.icon-gray:hover		{ background-position: -10px -30px; }
+	.icon-large.icon-gray:hover 	{ background-position: -40px -30px; }
+	.icon-smaller.icon-gray:hover 	{ background-position: -68px -30px; }
+	.icon-contrast.icon-gray:hover 	{ background-position: -96px -30px; }
 
-/*Branco*/
-.icon-print.icon-white		{ background-position: -10px -50px; }
-.icon-large.icon-white 		{ background-position: -40px -50px; }
-.icon-smaller.icon-white 	{ background-position: -68px -50px; }
-.icon-contrast.icon-white 	{ background-position: -96px -50px; }
+	/*Branco*/
+	.icon-print.icon-white		{ background-position: -10px -50px; }
+	.icon-large.icon-white 		{ background-position: -40px -50px; }
+	.icon-smaller.icon-white 	{ background-position: -68px -50px; }
+	.icon-contrast.icon-white 	{ background-position: -96px -50px; }
 
-.icon-print.icon-white:hover	{ background-position: -10px -29px; }
-.icon-large.icon-white:hover	{ background-position: -40px -29px; }
-.icon-smaller.icon-white:hover 	{ background-position: -68px -29px; }
-.icon-contrast.icon-white:hover	{ background-position: -96px -29px; }
+	.icon-print.icon-white:hover	{ background-position: -10px -29px; }
+	.icon-large.icon-white:hover	{ background-position: -40px -29px; }
+	.icon-smaller.icon-white:hover 	{ background-position: -68px -29px; }
+	.icon-contrast.icon-white:hover	{ background-position: -96px -29px; }
 
-/*Redes sociais*/
-.icon-facebook	{ background-position: -12px -77px; }
-.icon-flickr	{ background-position: -41px -77px; }
-.icon-youtube	{ background-position: -69px -77px; }
-.icon-twitter	{ background-position: -96px -77px; }
+	/*Redes sociais*/
+	.icon-facebook	{ background-position: -12px -77px; }
+	.icon-flickr	{ background-position: -41px -77px; }
+	.icon-youtube	{ background-position: -69px -77px; }
+	.icon-twitter	{ background-position: -96px -77px; }
 
-/*Custom Buttons*/
-.icon-projetos 		{ background-position: -9px -560px; width: 38px; height: 38px; }
-.icon-calendario 	{ background-position: -51px -560px; width: 38px; height: 38px; }
-.icon-cursos 		{ background-position: -94px -560px; width: 38px; height: 38px; }
-.icon-videos 		{ background-position: -139px -560px; width: 38px; height: 38px; }
-.icon-documentos	{ background-position: -176px -560px; width: 38px; height: 38px; }
-.icon-links 		{ background-position: -217px -560px; width: 38px; height: 38px; }
+	/*Custom Buttons*/
+	.icon-projetos 		{ background-position: -9px -560px; width: 38px; height: 38px; }
+	.icon-calendario 	{ background-position: -51px -560px; width: 38px; height: 38px; }
+	.icon-cursos 		{ background-position: -94px -560px; width: 38px; height: 38px; }
+	.icon-videos 		{ background-position: -139px -560px; width: 38px; height: 38px; }
+	.icon-documentos	{ background-position: -176px -560px; width: 38px; height: 38px; }
+	.icon-links 		{ background-position: -217px -560px; width: 38px; height: 38px; }
 
-/*Outros*/
-.icon-pdf 				{ background-position: -12px -164px; width: 24px; height: 30px; }
-.icon-xls, .icon-xlsx	{ background-position: -39px -164px; width: 27px; height: 32px; }
-.icon-doc, .icon-docx	{ background-position: -67px -164px; width: 27px; height: 32px; }
+	/*Outros*/
+	.icon-pdf 				{ background-position: -12px -164px; width: 24px; height: 30px; }
+	.icon-xls, .icon-xlsx	{ background-position: -39px -164px; width: 27px; height: 32px; }
+	.icon-doc, .icon-docx	{ background-position: -67px -164px; width: 27px; height: 32px; }
 
-.icon-pdf.azul-escuro							{ background-position: -95px -164px; width: 24px; height: 30px; }
-.icon-xls.azul-escuro, .icon-xlsx.azul-escuro	{ background-position: -121px -164px; width: 27px; height: 32px; }
-.icon-doc.azul-escuro, .icon-docx.azul-escuro	{ background-position: -149px -164px; width: 27px; height: 32px; }
+	.icon-pdf.azul-escuro							{ background-position: -95px -164px; width: 24px; height: 30px; }
+	.icon-xls.azul-escuro, .icon-xlsx.azul-escuro	{ background-position: -121px -164px; width: 27px; height: 32px; }
+	.icon-doc.azul-escuro, .icon-docx.azul-escuro	{ background-position: -149px -164px; width: 27px; height: 32px; }
 
-.icon-home 				{ background-position: -12px -199px; width: 30px; height: 26px; }
-.icon-email 			{ background-position: -12px -231px; width: 30px; height: 26px; }
-.icon-play 				{ background-position:  -8px -100px; width: 60px; height: 60px; }
-.icon-play:hover 		{ background-position:  -65px -100px; }
-.icon-gov		 		{ background-position:  -13px -263px; width: 124px; height: 26px;}
-.icon-lupa		 		{ background-position:  -13px -297px; width: 18px; height: 18px;}
-.icon-irParaTopo 		{ background-position:  -43px -299px; width: 16px; height: 16px;}
-.icon-fio				{ width: 100%; height: 1px; background: #9dcad9; }
-.icon-cda-azul			{ background-position: -12px -325px; width: 42px; height: 46px; }
-.icon-cda-laranja		{ background-position: -55px -325px; width: 42px; height: 46px; }
+	.icon-home 				{ background-position: -12px -199px; width: 30px; height: 26px; }
+	.icon-email 			{ background-position: -12px -231px; width: 30px; height: 26px; }
+	.icon-play 				{ background-position:  -8px -100px; width: 60px; height: 60px; }
+	.icon-play:hover 		{ background-position:  -65px -100px; }
+	.icon-gov		 		{ background-position:  -13px -263px; width: 124px; height: 26px;}
+	.icon-lupa		 		{ background-position:  -13px -297px; width: 18px; height: 18px;}
+	.icon-irParaTopo 		{ background-position:  -43px -299px; width: 16px; height: 16px;}
+	.icon-fio				{ width: 100%; height: 1px; background: #9dcad9; }
+	.icon-cda-azul			{ background-position: -12px -325px; width: 42px; height: 46px; }
+	.icon-cda-laranja		{ background-position: -55px -325px; width: 42px; height: 46px; }
 
-.icon-reply, 	.ic-reply 	{ background-position: -12px -608px; width: 22px; height: 20px; }
-.icon-retweet,	.ic-retweet { background-position: -39px -608px; width: 22px; height: 20px; }
-.icon-fav,		.ic-fav 	{ background-position: -66px -608px; width: 22px; height: 20px; }
+	.icon-reply, 	.ic-reply 	{ background-position: -12px -608px; width: 22px; height: 20px; }
+	.icon-retweet,	.ic-retweet { background-position: -39px -608px; width: 22px; height: 20px; }
+	.icon-fav,		.ic-fav 	{ background-position: -66px -608px; width: 22px; height: 20px; }
 
-.icon-reply:hover, .ic-reply:hover 		{ background-position: -12px -628px; }
-.icon-retweet:hover, .ic-retweet:hover 	{ background-position: -39px -628px; }
-.icon-fav:hover, .ic-fav:hover			{ background-position: -66px -628px; }
+	.icon-reply:hover, .ic-reply:hover 		{ background-position: -12px -628px; }
+	.icon-retweet:hover, .ic-retweet:hover 	{ background-position: -39px -628px; }
+	.icon-fav:hover, .ic-fav:hover			{ background-position: -66px -628px; }
 
-.icon-reply.icon-azul-escuro, 	.ic-reply.icon-azul-escuro 		{ background-position: -12px -628px; }
-.icon-retweet.icon-azul-escuro,	.ic-retweet.icon-azul-escuro 	{ background-position: -39px -628px; }
-.icon-fav.icon-azul-escuro,		.ic-fav.icon-azul-escuro 		{ background-position: -66px -628px; }
+	.icon-reply.icon-azul-escuro, 	.ic-reply.icon-azul-escuro 		{ background-position: -12px -628px; }
+	.icon-retweet.icon-azul-escuro,	.ic-retweet.icon-azul-escuro 	{ background-position: -39px -628px; }
+	.icon-fav.icon-azul-escuro,		.ic-fav.icon-azul-escuro 		{ background-position: -66px -628px; }
 
-/*Arrows*/
-.icon-arrow-left-gray 			{ background-position: -85px -412px; width: 12px; height: 18px; }
-.icon-arrow-right-gray 			{ background-position: -97px -412px; width: 12px; height: 18px; }
-.icon-arrow-left-gray-light		{ background-position: -85px -430px; width: 12px; height: 18px; }
-.icon-arrow-right-gray-light	{ background-position: -97px -430px; width: 12px; height: 18px; }
+	/*Arrows*/
+	.icon-arrow-left-gray 			{ background-position: -85px -412px; width: 12px; height: 18px; }
+	.icon-arrow-right-gray 			{ background-position: -97px -412px; width: 12px; height: 18px; }
+	.icon-arrow-left-gray-light		{ background-position: -85px -430px; width: 12px; height: 18px; }
+	.icon-arrow-right-gray-light	{ background-position: -97px -430px; width: 12px; height: 18px; }
