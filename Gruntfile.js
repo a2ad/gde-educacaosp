@@ -15,7 +15,10 @@ module.exports = function( grunt ) {
       // SASS
       sass : {
          dev : {
-            options : { style : 'compressed' },
+            options : { 
+               style : 'compressed',
+               noCache: true
+            },
             files : {
                'files/gde/css/main.css' : 'files/gde/css/sass/main.scss'
             }
