@@ -4,12 +4,12 @@
 <!--[if IE 9]>    <html class="no-js ie9" lang="pt-br">     <![endif]-->
 <head>
    <meta charset="utf-8">
-   <title>Guia de Estilos - Educação SP</title>
+   <title>Conteúdo | Guia de Estilos - Educação SP</title>
    <!-- Meta -->
    <?php include($_SERVER['DOCUMENT_ROOT'].'/files/demo/in/estilos.php');?>
 
    <!-- Estilos -->
-   <?php include($_SERVER['DOCUMENT_ROOT'].'/files/demo/in/estilos.php');?>  
+   <?php include($_SERVER['DOCUMENT_ROOT'].'files/demo/in/estilos.php');?>  
 
 </head>
 <body>
@@ -18,11 +18,11 @@
    <div class="container">      
       <p class="text-center">Bem vindo ao Guia de Estilos dos projetos do Portal de Educação de São Paulo.</p>
       <p class="text-center">Escolha entre uma das duas categorias abaixo para acessar o conteúdo:</p>
-      <a href="front-end/" class="link-category">
+      <a href="conteudo/" class="link-category">
          <i class="icon-coffee"></i>
          <span class="block">Front-end</span>
       </a>
-      <a href="conteudo/" class="link-category">
+      <a href="front-end" class="link-category">
          <i class="icon-book"></i>
          <span class="block">Conteúdo</span>
       </a>

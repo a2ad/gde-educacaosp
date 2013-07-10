@@ -1,7 +1,7 @@
 module.exports = function( grunt ) {
  
    grunt.initConfig({
-   // Tasks que o Grunt deve executar
+      pkg: grunt.file.readJSON('package.json'),
 
       // CSS min
       cssmin: {
@@ -27,29 +27,21 @@ module.exports = function( grunt ) {
 
       // Uglify
       uglify : {
-         options : {
-            mangle : false
-         },
-
-         dev : {
-            files : {
-               'files/demo/js/scripts.min.js' : [ 'files/demo/js/scripts.js' ]
-            }
+         dist : {
+            src: 'files/demo/js/scripts.js',
+            dest: 'files/demo/js/scripts.min.js'
          }
       },
 
       // Watch
-      watch : {
-         dev : {
-            files : [
-               'files/**/*',
-               'files/**/*'
+      watch: {
+         files: [
+            'files/demo/css/main.css',
+            'files/gde/css/sass/*.scss',
+            'files/demo/js/scripts.js'
             ],
-
-            tasks : [ 'cssmin', 'sass', 'uglify' ]
-         }
+         tasks: ['cssmin', 'sass', 'uglify']
       }
-
    });
 
    // Plugins do Grunt

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle>
+  
+    <file name="files/demo/js/scripts.js">
+      
+        <error
+          line="2"
+          column=""
+          severity="warning"
+          message="Missing 'use strict' statement."
+          source="com.jslint.foo" />
+      
+        <error
+          line="2"
+          column=""
+          severity="warning"
+          message="Expected ';' and instead saw '}'."
+          source="com.jslint.foo" />
+      
+    </file>
+  
+</checkstyle>
