@@ -1,0 +1,6 @@
+source:      .
+destination: ./_site
+plugins:     ./_plugins
+layouts:     ./_layouts
+exclude:     ['node_modules', 'Gruntfile.js', 'package.json']
+baseurl:     /gde-educacaosp
