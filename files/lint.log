@@ -1,5 +1,0 @@
-FAIL	files/demo/js/scripts.js (2)
-files/demo/js/scripts.js:2:4	Missing 'use strict' statement.
-files/demo/js/scripts.js:2:21	Expected ';' and instead saw '}'.
-
-# JSLint failed, 2 violations in 1 files.  1 files scanned.
