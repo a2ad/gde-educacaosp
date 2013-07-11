@@ -1,0 +1,239 @@
+/* ==========================================================================
+   Geral
+   ========================================================================== */
+   .container {
+      width: 96%;
+      margin: 10px auto;
+      padding: 0;
+   }
+
+   .ie7 .container { zoom: 1; }
+
+   .container:after,
+   .container:before {
+      content: "";
+      display: table;
+   }
+
+   .container:after { clear: both; }
+
+   .ie7 * {
+      behavior: url('/files/demo/css/boxsizing.htc'); 
+   }
+
+   /* Tipografia
+      ========================================================================== */
+      body { font-family: sans-serif; }
+
+      h1 {
+         margin: 0;
+         overflow: hidden;
+         color: #777;
+         font-size: 24px;
+      }
+
+      a { color: #0088cc; }
+      a:hover,
+      a:focus { color: #005580; }
+
+      .title-page {
+         color: #555;
+         margin-top: 0;
+         padding-bottom: 5px;
+         border-bottom: solid 1px #ddd;
+      }
+
+      .title-section {
+         margin-bottom: 10px;
+         color: #777;
+      }
+
+      .main p,
+      .styleguide-list {
+         color: #777;
+      }
+
+      .styleguide-list {
+         font-size: 14px;
+         line-height: 20px;
+         padding-left: 0;
+         list-style-position: inside;
+      }
+
+   /* Layout
+      ========================================================================== */
+
+      /* Header
+         ========================================================================== */
+         .header {
+            width: 100%;
+            padding: 10px 2%;
+            background-color: #f1f1f1;
+            border-bottom: solid 1px #ddd;
+         }
+
+         .header h1 a {
+            -webkit-transition: all .25s ease;
+               -moz-transition: all .25s ease;
+                 -o-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                    transition: all .25s ease;
+         }
+
+         .header h1 a:hover {
+            padding-left: 15px;
+            text-decoration: none;
+         }
+
+
+      /* Intro
+         ========================================================================== */
+         .link-category {
+            float: left;
+            width: 33.3%;
+            display: block;
+            padding: 15px;
+            text-align: center;
+            color: #ddd;
+            font-size: 42px;
+            font-weight: bold;
+
+            -webkit-transition: all .25s ease;
+               -moz-transition: all .25s ease;
+                 -o-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                    transition: all .25s ease;
+         }
+
+         .link-category > i { font-size: 240px; }
+
+         .link-category:hover {
+            color: #ccc;
+            text-decoration: none;
+         }
+
+      /* Menu lateral
+         ========================================================================== */
+         .styleguide-side {
+            float: left;
+            width: 14%;
+            margin-right: 1%;
+            position: fixed;
+         }
+
+         .styleguide-menu {
+            border: 1px solid #d8d8d8;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+         }
+
+         .styleguide-menu li:first-child a {
+            border-top: medium none;
+         }
+
+         .styleguide-menu a {
+            background-color: #f6f6f6;
+            border-left: 2px solid #ddd;
+            border-bottom: 1px solid #eee;
+            border-top: 1px solid #fff;
+            color: #777;
+            display: block;
+            font-size: 12px;
+            padding: 8px 10px;
+            text-decoration: none;
+
+            -webkit-transition: all .25s ease;
+               -moz-transition: all .25s ease;
+                 -o-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                    transition: all .25s ease;
+
+         }
+
+         .styleguide-menu a:hover {
+            background-color: #e5e5e5;
+         }
+
+         .styleguide-menu .active > a,
+         .styleguide-menu .active > a:hover {
+            font-weight: bold;
+            border-left: solid 2px #bbb;
+            color: #333;
+         }      
+
+         /* Submenu
+            ========================================================================== */
+            .styleguide-submenu {
+               margin: 0;
+               padding: 0;
+            }
+
+            .styleguide-submenu a {
+               padding-left: 28px;
+               background-color: #fefefe;
+            }
+
+            .styleguide-submenu i { margin-right: 3px; }
+
+      /* Miolo
+         ========================================================================== */
+         .main {
+            float: right;
+            width: 83%;
+            display: block;
+         }
+
+
+      /* Code HTML
+         ========================================================================== */
+         code, pre {
+            color: #333333;
+            font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+            font-size: 12px;
+            padding: 0 3px 2px;
+         }
+
+         code {
+            background-color: #F7F7F9;
+            border: 1px solid #E1E1E8;
+            color: #DD1144;
+            padding: 2px 4px;
+            white-space: nowrap;
+         }
+
+         .com { color: #93A1A1; }
+         .lit { color: #195F91; }
+         .pun,
+         .opn,
+         .clo { color: #93A1A1; }
+         .fun { color: #DC322F; }
+         .str,
+         .atv { color: #DD1144; }
+         .kwd,
+         .prettyprint .tag { color: #1E347B; }
+         .typ,
+         .atn,
+         .dec,
+         .var { color: teal; }
+         .pln { color: #48484C; }
+         
+         .prettyprint { 
+            background-color: #F7F7F9;
+            border-top: 1px solid #E1E1E8;
+            padding: 8px;
+         }
+
+         .prettyprint.linenums {
+             box-shadow: 40px 0 0 #FBFBFC inset, 41px 0 0 #ECECF0 inset;
+         }
+
+         ol.linenums { margin: 0; }
+
+         ol.linenums li {
+            color: #BEBEC5;
+            line-height: 20px;
+            text-shadow: 0 1px 0 #FFFFFF;
+         }
+
+

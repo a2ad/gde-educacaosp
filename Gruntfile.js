@@ -3,11 +3,21 @@ module.exports = function( grunt ) {
    grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
 
+      concat: {
+         css: {
+            src: [
+               'files/demo/css/assets/src/style.css',
+               'files/demo/css/assets/src/font-awesome.css'
+            ],
+            dest: 'files/demo/css/assets/main.css'
+         },
+      },
+
       // CSS min
       cssmin: {
          combine: {
             files: {
-               'files/demo/css/main.min.css': 'files/demo/css/main.css'
+               'files/demo/css/main.min.css': 'files/demo/css/assets/main.css'
             }
          }
       },
@@ -35,36 +45,36 @@ module.exports = function( grunt ) {
 
       // Watch
       watch: {
-         files: [
-            'files/demo/css/main.css',
-            'files/gde/css/sass/*.scss',
-            'files/demo/js/scripts.js'
+         css: {
+            files: [
+               'files/demo/css/assets/src/style.css',
+               'files/demo/css/assets/src/font-awesome.css'
             ],
-         tasks: ['cssmin', 'sass', 'uglify']
-      },
-
-      // Run Jekyll commands
-      jekyll: {
-         server: {
-            server : true,
-            // Add the --watch flag, i.e. rebuild on file changes
-            watch: true
+            tasks: ['concat', 'cssmin']
+         },
+         js: {
+            files: ['files/demo/js/scripts.js'],
+            tasks: ['uglify']
+         },
+         sass: {
+            files: ['files/gde/css/sass/*.scss'],
+            tasks: ['sass']
          }
       }
+
    });
 
    // Plugins do Grunts
+   grunt.loadNpmTasks('grunt-contrib-concat')
    grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
    grunt.loadNpmTasks( 'grunt-contrib-sass' );
    grunt.loadNpmTasks( 'grunt-contrib-uglify' );
    grunt.loadNpmTasks( 'grunt-contrib-watch' );
-   grunt.loadNpmTasks( 'grunt-jekyll' );
  
  
    // Tarefas que serão executadas
-   grunt.registerTask( 'default', [ 'cssmin', 'sass', 'uglify' ] );
+   grunt.registerTask( 'default', [ 'concat', 'cssmin', 'sass', 'uglify' ] );
 
    grunt.registerTask( 'w', [ 'watch' ] );
 
-   grunt.registerTask('server', 'jekyll:server');
 };
