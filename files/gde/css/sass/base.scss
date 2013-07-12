@@ -1,6 +1,11 @@
 /* ==========================================================================
    Mixins e variaveis
    ========================================================================== */
+   /* Variáveis para tema cinza */
+   $gray: #666;
+   $lightGray: #999;
+   $almostWhite: #f5f5f5;
+
    /* Transition */
    @mixin transition($parameters) {
       -webkit-transition: $parameters;
@@ -112,3 +117,5 @@
 
    .hide { display: none; }
    .block { display: block; }
+
+   .no-margin { margin: 0; }

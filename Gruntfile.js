@@ -40,6 +40,10 @@ module.exports = function( grunt ) {
          dist : {
             src: 'files/demo/js/scripts.js',
             dest: 'files/demo/js/scripts.min.js'
+         },
+         distGde : {
+            src: 'files/gde/js/scripts.js',
+            dest: 'files/gde/js/scripts.min.js'
          }
       },
 
@@ -53,7 +57,10 @@ module.exports = function( grunt ) {
             tasks: ['concat', 'cssmin']
          },
          js: {
-            files: ['files/demo/js/scripts.js'],
+            files: [
+               'files/demo/js/scripts.js',
+               'files/gde/js/scripts.js'
+            ],
             tasks: ['uglify']
          },
          sass: {

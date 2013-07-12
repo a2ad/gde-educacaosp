@@ -17,15 +17,37 @@
 
    .container:after { clear: both; }
 
-   .ie7 * {
-      behavior: url('/files/demo/css/boxsizing.htc'); 
-   }
+   .ie7 * { behavior: url('/files/demo/css/boxsizing.htc'); }
+
+   /* Font-face para exemplos do guia de estilo
+      ========================================================================== */   
+      @font-face {
+         font-family: 'AllerBold';
+         src: url('assets/src/font/aller_bd-webfont.eot');
+         src: url('assets/src/font/aller_bd-webfont.eot?#iefix') format('eot'),
+            url('assets/src/font/aller_bd-webfont.woff') format('woff'),
+            url('assets/src/font/aller_bd-webfont.ttf') format('truetype'),
+            url('assets/src/font/aller_bd-webfont.svg#webfonti8hol64m') format('svg');
+         font-weight: normal;
+         font-style: normal;
+      }
+
+      @font-face {
+         font-family: 'AllerRegular';
+         src: url('assets/src/font/aller_rg-webfont.eot');
+         src: url('assets/src/font/aller_rg-webfont.eot?#iefix') format('eot'),
+            url('assets/src/font/aller_rg-webfont.woff') format('woff'),
+            url('assets/src/font/aller_rg-webfont.ttf') format('truetype'),
+            url('assets/src/font/aller_rg-webfont.svg#webfontGBXJYuuM') format('svg');
+         font-weight: normal;
+         font-style: normal;
+      }
 
    /* Tipografia
       ========================================================================== */
       body { font-family: sans-serif; }
 
-      h1 {
+      .styleguide-header h1 {
          margin: 0;
          overflow: hidden;
          color: #777;
@@ -44,8 +66,10 @@
       }
 
       .title-section {
+         padding-left: 10px;
          margin-bottom: 10px;
          color: #777;
+         border-left: solid 5px #777;
       }
 
       .main p,
@@ -63,16 +87,18 @@
    /* Layout
       ========================================================================== */
 
-      /* Header
+      /* Header / Footer
          ========================================================================== */
-         .header {
+         .styleguide-header,
+         .styleguide-footer {
             width: 100%;
             padding: 10px 2%;
             background-color: #f1f1f1;
             border-bottom: solid 1px #ddd;
+            overflow: hidden;
          }
 
-         .header h1 a {
+         .styleguide-header h1 a {
             -webkit-transition: all .25s ease;
                -moz-transition: all .25s ease;
                  -o-transition: all .25s ease;
@@ -80,9 +106,15 @@
                     transition: all .25s ease;
          }
 
-         .header h1 a:hover {
+         .styleguide-header h1 a:hover {
             padding-left: 15px;
             text-decoration: none;
+         }
+
+         .styleguide-footer {
+            font-size: 12px;
+            border-bottom: none;
+            border-top: solid 1px #ddd;
          }
 
 
@@ -184,6 +216,11 @@
             display: block;
          }
 
+         .styleguide-demo {
+            padding: 10px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAAXNSR0IArs4c6QAAAAZQTFRF+vr6////+o8bnQAAABBJREFUCB1jYPjPgBXhEAYAfr8P8bm+jEoAAAAASUVORK5CYII=);
+         }
+
 
       /* Code HTML
          ========================================================================== */
@@ -222,6 +259,7 @@
             background-color: #F7F7F9;
             border-top: 1px solid #E1E1E8;
             padding: 8px;
+            margin-bottom: 25px;
          }
 
          .prettyprint.linenums {
@@ -236,4 +274,26 @@
             text-shadow: 0 1px 0 #FFFFFF;
          }
 
+      /* Alerta IE
+         ========================================================================== */
+         .styleguide-alert {
+            position: relative;
+            background-color: #FFF6BF;
+            border: 1px solid #FFD324;
+            color: #514721;
+            padding: 10px 20px;
+         }
 
+         .styleguide-alert p {
+            text-align: center;
+            color: #514721;
+            margin-bottom: 0;
+         }
+
+         .styleguide-alert .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #514721;
+            font-weight: bold;
+         }

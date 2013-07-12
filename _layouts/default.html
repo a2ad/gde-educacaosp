@@ -10,8 +10,9 @@
    <!-- CSS -->
    {% include estilos.html %}
 </head>
-<body>
-
+<body class="homepage">
+   
+   <!-- Header -->
    {% include header.html %}
 
    <div class="container">
@@ -19,6 +20,11 @@
       {{ content }}
 
    </div>
+
+   <p class="text-center"><small>Melhor visualizado nos navegadores Chrome, Firefox, IE <strong>+9</strong> e Safari.</small></p>
+
+   <!-- Footer -->
+   {% include footer.html %}
 
    <!-- Scripts -->
    {% include scripts.html %}

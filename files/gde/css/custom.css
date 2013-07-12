@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Folha de estilo editável
+   ========================================================================== */
+   @media only screen {
+
+   /* Header
+      ========================================================================== */
+      /*
+       * Cor de background da barra local do projeto
+       */
+      .local-bar { background-color: #666; }
+      
+      /*
+       * Cor do link para a Secretaria de Educação
+       */
+      .title-bar a { color: #fff; }
+      
+      /*
+       * Cor do link da Central de Atendimento
+       */
+      .contact a { color: #fff; }
+
+   /* Menu
+      ========================================================================== */
+      /* Navegação primaria (menu principal)
+         ========================================================================== */
+         /*
+          * Borda inferior no menu principal
+          */
+         .navbar { border-color: #666; }
+         
+         /*
+          * Cor dos links no menu principal
+          */
+         .nav-menu a { color: #666; }
+
+         /*
+          * Cor dos links sob o efeito 'hover'
+          */
+         .navbar a:hover { color: black; }
+         
+         /*
+          * Cor de background dos itens no menu
+          * ao passar o mouse
+          */
+         .nav-menu > li:hover > a,
+         .nav-menu > li > a:hover { background-color: #eee; }
+
+         /*
+          * Cor de background dos itens no submenu
+          * ao passar o mouse
+          */
+         .nav-submenu > li > a:hover { background-color: #f5f5f5; }
+         
+         /*
+          * Cor do botão que mostra/esconde o menu mobile
+          */
+         .call-menu {
+            background-color: #eee;
+            color: #666;
+         }
+
+      /* Navegação secundária / terciária (aside)
+         ========================================================================== */         
+         /*
+          * Cor das bordas superior e inferior no menu lateral
+          */
+         .nav-aside { border-color: #999; }
+
+         /*
+          * Cor dos dos links dos itens no menu lateral
+          */
+         .nav-aside a { color: #666; }
+
+         /*
+          * Cor dos dos links dos itens no submenu menu lateral
+          */
+         .nav-sub-aside a { color: #666; }
+
+         /*
+          * Cor de background dos itens no menu lateral
+          */
+         .nav-aside > li > a { background-color: #f5f5f5; }
+         
+         /*
+          * Cor de background dos itens do submenu no menu lateral
+          */
+         .nav-sub-aside a { background-color: #fff; }
+         
+         /*
+          * Cor de fundo e do texto dos itens no menu lateral sob o
+          * efeito 'hover' e quando o item está ativo
+          */
+         .nav-aside a:hover,
+         .nav-aside .active > a {
+            background-color: #ccc;
+            color: #333;
+         }
+         
+         /*
+          * Cor de fundo e do texto dos itens do submenu no menu lateral sob o
+          * efeito 'hover' e quando o item está ativo
+          */
+         .nav-sub-aside a:hover,
+         .nav-sub-aside .active > a {
+            background-color: #eee;
+            color: #333;
+         }
+
+      /* Breadcrumbs
+         ========================================================================== */
+         /*
+          * Cor dos links nos breadcrumbs
+          */
+         .breadcrumbs a { color: #0088cc; }
+
+         /*
+          * Cor da página ativa no breadcrumb
+          */
+         .breadcrumbs .active { color: #666; }
+
+      /* Barra local
+         ========================================================================== */
+
+
+
+   /* Tipografia
+      ========================================================================== */
+      /* Fontface Aller */
+
+   /**/
+   }
