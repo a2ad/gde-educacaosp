@@ -19,9 +19,9 @@
 
    .ie7 * { behavior: url('/files/demo/css/boxsizing.htc'); }
 
-   /* Font-face para exemplos do guia de estilo
+   /* Font-face para exemplos do guia de estilo (Aller e Font Awesome)
       ========================================================================== */   
-      /*@font-face {
+      @font-face {
          font-family: 'AllerBold';
          src: url('assets/src/font/aller_bd-webfont.eot');
          src: url('assets/src/font/aller_bd-webfont.eot?#iefix') format('eot'),
@@ -41,7 +41,15 @@
             url('assets/src/font/aller_rg-webfont.svg#webfontGBXJYuuM') format('svg');
          font-weight: normal;
          font-style: normal;
-      }*/
+      }
+
+      @font-face {
+         font-family: 'FontAwesome';
+         src: url('assets/src/font/fontawesome-webfont.eot?v=3.2.1');
+         src: url('assets/src/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('assets/src/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('assets/src/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('assets/src/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+         font-weight: normal;
+         font-style: normal;
+      }
 
    /* Tipografia
       ========================================================================== */
@@ -70,6 +78,11 @@
          margin-bottom: 10px;
          color: #777;
          border-left: solid 5px #777;
+      }
+
+      .title-section-sub {
+         color: #999;
+         margin-bottom: 10px;
       }
 
       .main p,
@@ -267,7 +280,7 @@
          }
 
          ol.linenums { margin: 0; }
-
+   
          ol.linenums li {
             color: #BEBEC5;
             line-height: 20px;
@@ -297,17 +310,6 @@
             color: #514721;
             font-weight: bold;
          }
-/* FONT PATH
- * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('assets/src/font/fontawesome-webfont.eot?v=3.2.1');
-  src: url('assets/src/font/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('assets/src/font/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('assets/src/font/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('assets/src/font/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* FONT AWESOME CORE
- * -------------------------- */
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;

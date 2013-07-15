@@ -1,13 +1,13 @@
 <nav class="styleguide-side" role="navigation">
    <ul id="styleguide-menu" class="styleguide-menu">
       <!-- Sobre -->
-      <li class="menu-sobre"><a href="/sobre/"><i class="icon-lightbulb"></i> Sobre</a>
+      <li class="menu-sobre"><a href="{{ site.baseurl }}/sobre/"><i class="icon-coffee"></i> Sobre</a>
          <ul class="styleguide-submenu">         
             {% for page in site.pages %}
                {% if page.body_class == 'sobre' %}
                      {% if page.page_type == 'child' %}
                         <li>
-                           <a href="{{ site.baseurl}}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }} </a>
+                           <a href="{{ site.baseurl }}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
                         </li>
                      {% endif %}
                   
@@ -16,13 +16,13 @@
           </ul>
       </li>
       <!-- Conteúdo -->
-      <li class="menu-conteudo"><a href="/conteudo/"><i class="icon-book"></i> Conteúdo</a>
+      <li class="menu-conteudo"><a href="{{ site.baseurl }}/conteudo/"><i class="icon-book"></i> Conteúdo</a>
          <ul class="styleguide-submenu">         
             {% for page in site.pages %}
                {% if page.body_class == 'conteudo' %}
                      {% if page.page_type == 'child' %}
                         <li>
-                           <a href="{{ site.baseurl}}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
+                           <a href="{{ site.baseurl }}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
                         </li>
                      {% endif %}
                   
@@ -31,13 +31,13 @@
           </ul>
       </li>
       <!-- Interface -->
-      <li class="menu-interface"><a href="/interface/"><i class="icon-coffee"></i> Interface</a>
+      <li class="menu-interface"><a href="{{ site.baseurl }}/interface/"><i class="icon-coffee"></i> Interface</a>
          <ul class="styleguide-submenu">         
             {% for page in site.pages %}
                {% if page.body_class == 'interface' %}
                      {% if page.page_type == 'child' %}
                         <li>
-                           <a href="{{ site.baseurl}}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
+                           <a href="{{ site.baseurl }}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
                         </li>
                      {% endif %}
                   
