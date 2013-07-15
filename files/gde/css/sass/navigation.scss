@@ -47,7 +47,7 @@
 
             .contact a span { 
                display: block;
-               line-height: 13px;
+               line-height: 1;
                text-transform: uppercase;
             }
 
@@ -55,6 +55,32 @@
                position: absolute;
                left: 0;
                top: 0;
+               font-size: 32px;
+            }
+
+         /* Logo
+            ========================================================================== */
+            .logo {
+               margin: 0 0 20px 0;
+               font-size: 32px;
+               font-family: 'AllerBold';
+            }
+
+            .logo small {
+               font-weight: normal;
+               display: block;
+               text-transform: uppercase;
+               font-size: 12px;
+            }
+
+            .logo a {
+               color: #f5f5f5;
+               @include transition(all .25s ease);
+            }
+
+            .logo a:hover {
+               color: #ddd;
+               text-decoration: none;
             }
 
       /* Footer
@@ -115,6 +141,9 @@
             .nav-submenu {
                margin: 0;
                padding: 0;
+               @include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+               border: solid 1px $almostWhite;
+               border-top: none;
             }
 
             .nav-submenu > li > a:hover { background-color: #f5f5f5; }

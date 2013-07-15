@@ -21,7 +21,7 @@
 
    /* Font-face para exemplos do guia de estilo
       ========================================================================== */   
-      @font-face {
+      /*@font-face {
          font-family: 'AllerBold';
          src: url('assets/src/font/aller_bd-webfont.eot');
          src: url('assets/src/font/aller_bd-webfont.eot?#iefix') format('eot'),
@@ -41,7 +41,7 @@
             url('assets/src/font/aller_rg-webfont.svg#webfontGBXJYuuM') format('svg');
          font-weight: normal;
          font-style: normal;
-      }
+      }*/
 
    /* Tipografia
       ========================================================================== */

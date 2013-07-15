@@ -45,6 +45,11 @@
           */
          .nav-menu > li:hover > a,
          .nav-menu > li > a:hover { background-color: #eee; }
+         
+         /*
+          * Cor da borda do submenu no menu principal
+          */
+         .nav-submenu { border-color: #eee; }
 
          /*
           * Cor de background dos itens no submenu

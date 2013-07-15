@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
    //Links externos
-   $("a[href*='http://']:not([href*='"+location.hostname+"']),[href*='https://']:not([href*='"+location.hostname+"'])").attr("target","_blank").addClass("external");
+   // $("a[href*='http://']:not([href*='"+location.hostname+"']),[href*='https://']:not([href*='"+location.hostname+"'])").attr("target","_blank").addClass("external");
 
    // 'Acendendo' item do menu ativo
    function menuAtivo() {
