@@ -83,6 +83,21 @@
                text-decoration: none;
             }
 
+         /* Barra acessibilidade
+            ========================================================================== */
+            .tools a {
+               display: inline-block;
+               padding: 3px;
+               color: $gray;
+               font-family: 'AllerBold';
+               @include transition(all .25s ease);
+            }
+
+            .tools a:hover {
+               color: $darkGray;
+               text-decoration: none;
+            }
+
       /* Footer
          ========================================================================== */
 

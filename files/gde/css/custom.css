@@ -5,20 +5,46 @@
 
    /* Header
       ========================================================================== */
-      /*
-       * Cor de background da barra local do projeto
-       */
-      .local-bar { background-color: #666; }
-      
-      /*
-       * Cor do link para a Secretaria de Educação
-       */
-      .title-bar a { color: #fff; }
-      
-      /*
-       * Cor do link da Central de Atendimento
-       */
-      .contact a { color: #fff; }
+      /* Barra local
+         ========================================================================== */
+         /*
+          * Cor de background da barra local do projeto
+          */
+         .local-bar { background-color: #666; }
+         
+         /*
+          * Cor do link para a Secretaria de Educação
+          */
+         .title-bar a { color: #fff; }
+         
+         /*
+          * Cor do link da Central de Atendimento
+          */
+         .contact a { color: #fff; }
+
+      /* Logo
+         ========================================================================== */
+         /*
+          * Cor do logo do projeto
+          */
+         .logo a { color: #ddd; }
+
+         /*
+          * Cor do logo sob o efeito 'hover' 
+          */
+         .logo a:hover { color: #ccc; }
+
+      /* Barra acessibilidade
+         ========================================================================== */
+         /*
+          * Cor dos ícones da barra
+          */
+         .tools a { color: #666; }
+
+         /*
+          * Cor dos ícons da barra sob o efeito 'hover'
+          */
+         .tools a:hover { color: #333; }
 
    /* Menu
       ========================================================================== */
