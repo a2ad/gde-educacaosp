@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Botões
+   ========================================================================== */
+   
+   @media only screen {
+
+      /* Default
+         ========================================================================== */
+         .btn {
+            display: inline-block;
+            min-height: 28px;
+            margin-bottom: 0;
+            padding: 4px 70px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background: $gray;
+            border: none;
+            @include border-radius(5px);
+            @include transition(all .25s ease);
+         }
+
+         .ie7 .btn {
+            zoom: 1;
+            display: inline;
+            margin-left: .3em;
+            line-height: 18px;
+         }
+
+         .btn:hover {
+            background-color: $darkGray;
+            color: #fff;
+            text-decoration: none;
+         }
+
+      /* Tamanhos
+         ========================================================================== */
+         .btn-small {
+            padding-left: 45px;
+            padding-right: 45px;
+         }
+
+         .btn-mini {
+            padding-left: 10px;
+            padding-right: 10px;
+         }
+
+         .btn-large {
+            padding-left: 150px;
+            padding-right: 150px;
+         }
+
+         .btn-block {
+            width: 100%;
+            margin-bottom: 10px;
+            display: block;
+            padding-right: 0;
+            padding-left: 0;
+         }
+
+
+      /* Cor padrão
+         ========================================================================== */
+         .btn-default {
+            background-color: $almostWhite;
+            border: solid 1px #ccc;
+            color: $darkGray;
+         }
+
+         .btn-default:hover {
+            color: $darkGray;
+            background-color: #eee;
+         }
+
+
+      
+   }

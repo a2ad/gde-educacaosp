@@ -51,6 +51,12 @@
          font-style: normal;
       }
 
+   /* Ajustes para GDE
+      ========================================================================== */
+      .styleguide-demo.styleguide-button .btn {
+         margin-bottom: 10px;
+      }
+
    /* Tipografia
       ========================================================================== */
       body { font-family: sans-serif; }

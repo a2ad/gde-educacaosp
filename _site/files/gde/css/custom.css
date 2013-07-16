@@ -158,14 +158,57 @@
       /*
        * Cor dos textos e links das listas
        */
-      /*.list li,
-      .list li > a { color: #666; }*/
-
+      .list li,
+      .list li > a { color: #666; }
+      
       /*
        * Cor dos links sob o efeito 'hover'
        */
-      /*.list li:hover,
-      .list a:hover { color: #333; }*/
+      .list li > a:hover { color: #333; }
+
+      /*
+       * Cor de fundo e do texto da 'etiqueta' que pode indicar tanto a categoria
+       * ou a data do post/item
+       */
+      .list .label {
+         background-color: #666;
+         color: #fff;         
+      }
+      
+      /*
+       * Cor de fundo e do texto da 'etiqueta' sob o efeito 'hover', caso o item
+       * anterior seja um  link
+       */
+      .list a.label:hover {
+         background-color: #333;
+         color: #fff;
+      }
+
+      /*
+       * Cor da borda do elemento que representa a data do post/item
+       * em uma lista
+       */
+      .post-date {         
+         border-color: #ccc;
+      }
+      
+      /*
+       * Cores do texto que identificam o dia e mês respectivamente do elemento
+       * que representa a data do post/item em uma lista
+       */
+      .post-date .day { color: #666; }
+      .post-date .month { color: #666; }
+      
+      /*
+       * Cor do texto e de fundo do elemento que representa o tipo de arquivo
+       * em uma lista de arquivos
+       */
+      .file-type {
+         color: #fff;
+         background-color: #666;
+      }
+
+      
 
    /**/
    }
