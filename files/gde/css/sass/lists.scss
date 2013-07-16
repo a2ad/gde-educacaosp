@@ -1,0 +1,168 @@
+/* ==========================================================================
+   Listas
+   ========================================================================== */
+   
+   @media only screen {
+
+      /* Lista default
+         ========================================================================== */
+         .list {
+            margin: 0 0 10px;
+            padding: 0;
+            font-size: 12px;
+            list-style: none;
+         }
+
+         .list-bullet { list-style: square inside; }
+
+         .ie7 .list-bullet {
+            list-style: square;
+            list-style-position: inside;
+         }
+
+         .list li { margin-bottom: 15px;}
+
+         .list li,
+         .list li > a { 
+            color: $gray;
+            @include transition(all .25s ease);
+         }
+
+         .list li > a:hover { 
+            color: $darkGray;
+            text-decoration: none;
+         }
+
+      /* Lista com detalhe (título e texto)
+         ========================================================================== */
+         .list-details .title-list {
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+         }
+
+         .list-details a {
+            display: inline-block;
+            vertical-align: top;
+         }
+
+         .ie7 .list-details a { cursor: pointer; }
+
+         .ie7 .list-details li {
+            min-height: 0;
+            vertical-align: super;
+         }
+
+      /* Lista com thumb
+         ========================================================================== */
+         .list-thumbs li { overflow: hidden; }
+
+         .list-thumbs figure {
+            float: left;
+            margin: 0 10px 10px 0;
+         }
+
+         .ie7 .list-thumbs a:hover img,
+         .ie8 .list-thumbs a:hover img {
+            filter: alpha(opacity=80);
+         }
+
+      /* Lista com categoria
+         ========================================================================== */         
+         .list .category-name { display: block; }
+
+         .list .label {
+            color: #fff;
+            background-color: $gray;
+            display: inline-block;
+            padding: 3px 6px;          
+            font-size: 12px;
+            @include border-radius(10px);
+            @include transition(all .25s ease);
+         }
+
+         .list-category .label { 
+            margin-bottom: 5px;
+            @include border-radius(8px);
+         }
+
+         .list-category .label + a {
+            display: block;
+         }
+
+         .list a.category-name:hover {
+            cursor: pointer;
+            background-color: $darkGray;
+            color: #fff;
+            text-decoration: none;
+         }
+
+      /* Lista com data
+         ========================================================================== */
+         .list-date li { overflow: hidden; }
+         .post-date {
+            float: left;
+            margin: 0 10px 10px 0;
+            border: solid 1px #ccc;
+            padding: 7px 15px;
+            color: $gray;
+         }
+
+         .post-date .month,
+         .post-date .day {
+            font-size: 12px;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+         }
+
+         .post-date .day {
+            font-weight: bold;
+            font-size: 20px;
+         }
+
+      /* Lista com arquivos
+         ========================================================================== */
+         .list-files li { overflow: hidden; }
+         .file-type {
+            display: block;
+            float: left;
+            margin: 0 10px 10px 0;
+            padding: 7px 10px;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            background-color: $gray;
+         }
+
+      /* Últimas notícias
+         ========================================================================== */
+         .last-news time {
+            position: relative;
+            z-index: 1;
+            display: block;
+         }
+
+         .ie7 .last-news time {
+            background: transparent url(../img/bg-line.png) center center repeat-x;
+         }
+
+         .last-news time:before {
+            position: absolute;
+            z-index: -1;
+            content: "";
+            width: 100%;            
+            top: 40%;
+            border-bottom: solid 1px $gray;
+         }
+
+   }
+
+   /*
+    * CSS adaptado para dispositivos com resoluções maiores que 767px
+    *    Tablets e desktops
+    */
+
+   @media only screen and (min-width: $breakpoint) {
+
+   }

@@ -3,7 +3,7 @@
 <!--[if IE 8]>    <html class="no-js ie8" lang="pt-br">     <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="pt-br">     <![endif]-->
 <head>
-   <title> Grid |  Guia de Estilos - Educação SP</title>
+   <title> Listas |  Guia de Estilos - Educação SP</title>
    <!-- Meta -->
    <meta charset="utf-8">
    <meta name="description" content="Nova versão do guia de estilos dos projetos das coordenadorias e secretarias do portal da Educação de SP">
@@ -177,15 +177,182 @@
 </nav>
       
       <article class="main" role="main">
-         <h2 class="title-page">Grid</h2>
+         <h2 class="title-page">Listas</h2>
 
-         <p>Ao contrário da versão anterior do grid, agora ele é responsivo e utiliza porcentagem nas medidas de largura.</p>
+         <h3 class="title-section">Lista padrão</h3>
 
-<p>Mesmo assim, ainda mantém a base de <i>940 pixels</i> de largura, dividido em <i>12</i> colunas de <i>60 pixels</i> de largura com <i>20 pixels</i> de espaçamento entre elas.</p>
-   
-<figure>
-   <img src="/files/demo/img/grid.png" alt="Imagem representando o grid">
-</figure>
+<div class="styleguide-demo">
+<ul class="list list-bullet">
+   <li><a href="#">Quisque at massa ipsum</a></li>
+   <li><a href="#">Maecenas a lorem augue, egestas</a></li>
+   <li><a href="#">Cras vitae felis at lacus eleifend</a></li>
+   <li><a href="#">Etiam auctor diam pellentesque</a></li>
+   <li><a href="#">Nulla ac massa at dolor</a></li>
+   <li><a href="#">Condimentum eleifend vitae vitae</a></li>
+</ul>
+</div>
+
+<h3 class="title-section">Lista com detalhe em texto</h3>
+
+<div class="styleguide-demo">
+<ul class="list list-bullet list-details">
+   <li>
+      <a href="#">
+         <span class="title-list">Lorem ipsum dolor sit</span>
+         <i>Loren ipsum sit dolor amec</i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         <span class="title-list">Lorem ipsum dolor sit</span>
+         <i>Loren ipsum sit dolor amec</i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         <span class="title-list">Lorem ipsum dolor sit</span>
+         <i>Loren ipsum sit dolor amec</i>
+      </a>
+   </li>
+   <li>
+      <a href="#">
+         <span class="title-list">Lorem ipsum dolor sit</span>
+         <i>Loren ipsum sit dolor amec</i>
+      </a>
+   </li>
+</ul>
+</div>
+
+<h3 class="title-section">Lista com <i>thumbs</i> de imagens</h3>
+
+<div class="styleguide-demo">
+<ul class="list list-thumbs">
+   <li>
+      <figure>
+         <a href="#" class="hover">
+            <img src="http://placehold.it/85x60" alt="Alt do thumb da imagem">
+         </a>
+      </figure>
+      <a href="#">Quisque in sapien a mauris varius dignissim. Interdum et malesuada fames ac ante ipsum</a>
+   </li>
+   <li>
+      <figure>
+         <a href="#" class="hover">
+            <img src="http://placehold.it/85x60" alt="Alt do thumb da imagem">
+         </a>
+      </figure>
+      <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, reiciendis.</a>
+   </li>
+   <li>
+      <figure>
+         <a href="#" class="hover">
+            <img src="http://placehold.it/85x60" alt="Alt do thumb da imagem">
+         </a>
+      </figure>
+      <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolore aut sequi.</a>
+   </li>
+</ul>
+</div>
+
+<h3 class="title-section">Lista com indicador de categoria</h3>
+
+<div class="styleguide-demo">
+<ul class="list list-category">
+   <li>
+      <a class="category-name label">Categoria</a>
+      <a href="#">Quisque in sapien a mauris varius dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</a>
+   </li>
+   <li>
+      <a class="category-name label">Categoria</a>
+      <a href="#">Quisque in sapien a mauris varius dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</a>
+   </li>
+   <li>
+      <a class="category-name label">Categoria</a>
+      <a href="#">Quisque in sapien a mauris varius dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</a>
+   </li>
+</ul>
+</div>
+
+<h3 class="title-section">Lista com indicador de data</h3>
+
+<div class="styleguide-demo">
+<ul class="list list-date">
+   <li>
+      <time class="post-date">
+         <span class="month">Jul</span>
+         <span class="day">28</span>
+      </time>
+      <a href="#">Nulla vel ipsum sed tellus suscipit lobortis eget sed justo</a>
+   </li>
+   <li>
+      <time class="post-date">
+         <span class="month">Jul</span>
+         <span class="day">28</span>
+      </time>
+      <a href="#">Nulla vel ipsum sed tellus suscipit lobortis eget sed justo</a>
+   </li>
+   <li>
+      <time class="post-date">
+         <span class="month">Jul</span>
+         <span class="day">28</span>
+      </time>
+      <a href="#">Nulla vel ipsum sed tellus suscipit lobortis eget sed justo</a>
+   </li>
+</ul>
+</div>
+
+<h3 class="title-section">Lista com indicador de arquivo</h3>
+
+<div class="styleguide-demo">
+<ul class="list list-details list-files">
+   <li>
+      <span class="file-type">XLS</span>
+      <a href="#">
+         <span class="title-list">Lorem ipsum dolor sit</span>
+         <i>Loren ipsum sit dolor amec</i>
+      </a>
+   </li>
+   <li>
+      <span class="file-type">XLS</span>
+      <a href="#">
+         <span class="title-list">Lorem ipsum dolor sit</span>
+         <i>Loren ipsum sit dolor amec</i>
+      </a>
+   </li>
+   <li>
+      <span class="file-type">XLS</span>
+      <a href="#">
+         <span class="title-list">Lorem ipsum dolor sit</span>
+         <i>Loren ipsum sit dolor amec</i>
+      </a>
+   </li>
+</ul>
+</div>
+
+<h3 class="title-section">Lista com últimas notícias e indicador de data</h3>
+
+<div class="styleguide-demo">
+<ul class="list last-news">
+   <li>
+      <time>
+         <span class="label">07/01</span>
+      </time>
+      <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, similique a culpa aliquam?</a>
+   </li>
+   <li>
+      <time>
+         <span class="label">07/01</span>
+      </time>
+      <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, similique a culpa aliquam?</a>
+   </li>
+   <li>
+      <time>
+         <span class="label">07/01</span>
+      </time>
+      <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, similique a culpa aliquam?</a>
+   </li>
+</ul>
+</div>
          
       </article>
 
