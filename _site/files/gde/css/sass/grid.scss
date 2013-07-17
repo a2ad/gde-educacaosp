@@ -5,6 +5,7 @@
    $columnWidth    : 60px;
    $gutterWidth    : 20px;
    $gridWidth      : 940px;
+   $gridFull       : 960px;
    $breakpoint     : 768px;
    
    /* Funções de cálculo do grid */
@@ -43,6 +44,7 @@
 
       /* Largura máxima do Grid */
       .row { max-width: $gridWidth; }
+      .row.full { max-width: $gridFull; }
       .column { @include column(); }
 
       /* Larguras grid
@@ -84,5 +86,7 @@
             margin-right: auto;
          }
 
-      .last { @include last(); }
+      .last,
+      label.last,
+      div.last { @include last(); }
    }

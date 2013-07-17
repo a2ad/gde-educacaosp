@@ -17,12 +17,7 @@
 
             .title-bar a {
                display: block;
-               color: #fff;
-               font-family: 'AllerBold';
-               font-weight: normal;
-               text-transform: uppercase;
-               font-size: 18px;
-               letter-spacing: -1px;
+               color: #fff;               
                margin-bottom: 10px;
             }
 
@@ -60,11 +55,7 @@
 
          /* Logo
             ========================================================================== */
-            .logo {
-               margin: 0 0 20px 0;
-               font-size: 32px;
-               font-family: 'AllerBold';
-            }
+            .logo { margin: 0 0 20px 0; }
 
             .logo small {
                font-weight: normal;
@@ -100,6 +91,23 @@
 
       /* Footer
          ========================================================================== */
+         .footer-bar {
+            padding: 15px 10px;
+            background-color: $gray;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: Arial,Helvetica,sans-serif;
+            text-align: center;           
+         }
+
+         .title-footer { color: #fff; }
+
+         .footer-bar address {
+            display: inline;
+            font-weight: normal;
+            font-style: normal;
+            color: #ccc;            
+         }
 
       /* Menus
          ========================================================================== */
@@ -256,9 +264,12 @@
          ========================================================================== */
          /* Barra local
             ========================================================================== */
-            .title-bar { float: left; }
+            .title-bar { 
+               float: left;
+               line-height: 1.7;
+            }
 
-            .title-bar a { margin: 5px 0 0; }
+            .title-bar a { margin: 0; }
 
             .contact { float: right; }
 

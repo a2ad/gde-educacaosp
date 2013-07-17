@@ -3,7 +3,7 @@
 <!--[if IE 8]>    <html class="no-js ie8" lang="pt-br">     <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="pt-br">     <![endif]-->
 <head>
-   <title> Sobre |  Guia de Estilos - Educação SP</title>
+   <title> Formul&aacute;rios |  Guia de Estilos - Educação SP</title>
    <!-- Meta -->
    <meta charset="utf-8">
    <meta name="description" content="Nova versão do guia de estilos dos projetos das coordenadorias e secretarias do portal da Educação de SP">
@@ -38,7 +38,7 @@
 <script src="/files/demo/js/libs/respond.min.js"></script>
 <![endif]-->
 </head>
-<body class="sobre opening">
+<body class="interface child">
 
    <!-- Header -->
    <header class="styleguide-header" role="banner">
@@ -229,25 +229,87 @@
 </nav>
       
       <article class="main" role="main">
-         <h2 class="styleguide-page">Sobre</h2>
+         <h2 class="styleguide-page">Formul&aacute;rios</h2>
 
-         <h3 class="title-section">O que é?</h3>
+         <h3 class="title-section">Formulário padrão</h3>
 
-<p>Nova versão do guia de estilos dos projetos das coordenadorias e secretarias do portal da Educação de SP</p>
+<p>Formulário de contato padrão.</p>
 
-<h3 class="title-section">Como funciona?</h3>
+<div class="styleguide-demo">
+<form class="form">
+   <fieldset>
+      <span class="fields-required"><span class="required">*</span>Campos obrigatórios</span>
+      <label class="label-form">
+         <span class="field"><span class="required">*</span>Nome</span>
+         <input name="nome" class="input" placeholder="Digite seu nome" autofocus="" type="text">
+      </label>
+      <label class="label-form">
+         <span class="field"><span class="required">*</span>Email</span>
+         <input name="email" class="input" placeholder="Digite seu email" type="email">
+      </label>
+      <label class="label-form label-half">
+         <span class="field"><span class="required">*</span>Telefone</span>
+         <input name="phone" class="input" placeholder="Digite seu telefone" type="tel">
+      </label>
+      <label class="label-form label-half last">
+         <span class="field"><span class="required">*</span>Celular</span>
+         <input name="cellphone" class="input" placeholder="Digite seu celular" type="tel">
+      </label>
+      <label class="label-form">
+         <span class="field"><span class="required">*</span>Estado</span>
+         <select class="select" name="state">
+            <option value="">Escolha uma opção</option>
+            <option value="Opção 1">Opção 1</option>
+            <option value="Opção 2">Opção 2</option>
+            <option value="Opção 3">Opção 3</option>
+         </select>
+      </label>
+      <div class="label-form label-check">
+         <span class="field"><span class="required">*</span>Input radio</span>
+         <label class="label-form">
+            <input name="input-radio" type="radio">Opção 1
+         </label>
+         <label class="label-form">
+            <input name="input-radio" type="radio">Opção 2
+         </label>
+         <label class="label-form">
+            <input name="input-radio" type="radio">Opção 3
+         </label>
+      </div>
+      <div class="label-form label-check">
+         <span class="field"><span class="required">*</span>Input checkbox</span>
+         <label class="label-form">
+            <input name="input-checkbox" type="checkbox">Opção 1
+         </label>
+         <label class="label-form">
+            <input name="input-checkbox" type="checkbox">Opção 2
+         </label>
+         <label class="label-form">
+            <input name="input-checkbox" type="checkbox">Opção 3
+         </label>
+      </div>
+      <label class="label-form">
+         <span class="required field">Mensagem</span>
+         <textarea class="textarea" name="message" placeholder="Digite sua mensagem"></textarea>
+      </label>
+      <input class="btn" value="Enviar" type="submit">
+   </fieldset>
+</form>
+</div>
 
-<p>São 3 categorias principais: <a href="/sobre">Sobre</a>, <a href="/conteudo">Conteúdo</a> e <a href="/interface">Interface</a>. Cada categoria contém assuntos específicos e, que podem ser acessados pelo menu lateral.</p>
+<h3 class="title-section">Formulário de Busca</h3>
 
-<ul class="styleguide-list">
-   <li><strong>Sobre - </strong>Relacionada às informações e documentação do projeto.</li>
-   <li><strong>Conteúdo - </strong>Diretrizes e guia para a publicação de conteúdo.</li>
-   <li><strong>Interface - </strong>Relacionada à interface visual e principais componentes dos projetos. Cada componente é tratado como um módulo, onde é possível visualizá-lo além de consultar seu código HTML.</li>
-</ul>
-
-<h3 class="title-section">Por que?</h3>
-
-<p>A idéia é a padronização. Seja de conteúdo, elementos de interface ou código. Você pode ler um pouco mais sobre o assunto no <a href="prefacio.html">prefácio</a>.</p>
+<div class="styleguide-demo">
+<form class="form form-search">
+   <fieldset>
+      <label class="label-form">
+         <input type="text" name="search" class="input">
+         <i class="icon-search"></i>
+      </label>
+      <input type="submit" class="btn" value="Enviar">
+   </fieldset>
+</form>
+</div>
          
       </article>
 

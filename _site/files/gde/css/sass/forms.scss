@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Formulários
+   ========================================================================== */
+   
+   @media only screen {
+
+      /* Padrão
+         ========================================================================== */
+         .form {
+            width: 100%;
+            font-size: 12px;
+            padding: 15px 0;
+            color: $gray;
+         }
+
+         .label-form { display: block; }      
+
+         .label-form,
+         .label-form-half { margin-bottom: 15px; }
+
+         .field {
+            display: block;
+            padding-bottom: 5px;
+            color: $gray;
+            font-size: 12px;
+            font-weight: bold;
+         }
+
+         /* Aviso de campos obrigatórios */
+         .required {
+            content: "*";
+            color: $darkGray;
+            font-weight: bold;
+            padding-right: 3px;
+         }
+
+         .fields-required {
+            margin-bottom: 5px;
+            display: block;
+            font-size: 11px;
+            color: $gray;
+         }
+
+         .fields-required:before { color: $gray; }
+
+         /* Busca
+            ========================================================================== */
+            .form-search .label-form { position: relative; }
+
+            .form-search .label-form > i {
+               position: absolute;
+               left: 7px;
+               top: 4px;
+               font-size: 20px;
+               color: #ccc;
+            }
+
+            .form-search .input { 
+               padding-left: 35px;
+               font-style: italic;
+            }
+
+            .form-search .btn {
+               display: block;
+               width: 100%;
+            }            
+
+      /* Inputs
+         ========================================================================== */
+         .input,
+         .select,
+         .textarea {
+            width: 100%;
+            padding: 8px 10px;
+            border: solid 1px #ccc;
+            color: $gray;
+            @include transition(border .25s ease);
+            outline: none;
+            @include border-radius(5px);
+            @include box-sizing();
+         }
+
+         .ie7 .input,
+         .ie7 .select,
+         .ie7 .textarea {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+            text-indent: 10px;
+         }
+
+         .input:focus,
+         .select:focus,
+         .textarea:focus {
+            border-color: #aaa;
+            outline: none;
+         }
+
+         .textarea { resize: vertical; }
+
+         input[type="radio"],
+         input[type="checkbox"] {
+            float: left;
+            margin: 2px 3px 0 0;
+         }
+
+         .label-check {
+            font-size: 14px;
+            color: $gray;
+         }
+
+         .label-check .label { margin-bottom: 5px; }
+
+   }
+
+   /*
+    * CSS adaptado para dispositivos com resoluções maiores que 767px
+    *    Tablets e desktops
+    */
+
+   @media only screen and (min-width: $breakpoint) {
+
+      /* Padrão
+         ========================================================================== */      
+         .label-half { 
+            @include width(6);
+            @include column();
+         }
+
+         .label-half.last + .label-form { clear: both; }
+
+         /* Busca
+            ========================================================================== */
+            .form-search .label-form {
+               float: left;
+               width: 70%;
+            }
+
+            .ie7 .form-search .input {
+               float: left;
+               padding-left: 35px;
+               text-indent: 0;
+            }
+
+            .form-search .btn {
+               float: right;
+               width: 25%;
+            }
+
+   }

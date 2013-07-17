@@ -46,6 +46,24 @@
           */
          .tools a:hover { color: #333; }
 
+   /* Footer
+      ========================================================================== */
+      /*
+       * Cor de background do rodapé do projeto com as informações sobre
+       * a Secretaria da Educação
+       */
+      .footer-bar { background-color: #666; }
+      
+      /*
+       * Cor do título da Sec. da Educação no rodapé
+       */
+      .title-footer { color: #fff; }
+      
+      /*
+       * Cor do endereço da Sec. da Educação no rodapé
+       */
+      .footer-bar address { color: #ccc; }
+
    /* Menu
       ========================================================================== */
       /* Navegação primaria (menu principal)
@@ -208,7 +226,44 @@
          background-color: #666;
       }
 
+   /* Tipografia
+      ========================================================================== */
+      /*
+       * Cor do título principal da página/notícia
+       */
+      .title-page { color: #666; }
+
+      /*
+       * Cor do subtítulo (linha fina) da página/notícia
+       */
+      .subtitle-page { color: green; }
+
+   /* Formulários
+      ========================================================================== */
+      /*
+       * Cor do aviso de campos obrigatórios em um formulário
+       */
+      .fields-required { color: #666; }
+
+      /*
+       * Cor do '*' nos campos obrigatórios
+       */
+      .required { color: #333; }
       
+      /*
+       * Cor da borda dos elementos 'input', 'select' e 'textarea' nos formulários
+       */
+      .input,
+      .select,
+      .textarea { border: solid 1px #ccc; }
+      
+      /*
+       * Cor do texto dos elementos 'input', 'select' e 'textarea' nos formulários
+       */
+      .input,
+      .select,
+      .textarea,
+      .label-check { color: #666; }
 
    /**/
    }

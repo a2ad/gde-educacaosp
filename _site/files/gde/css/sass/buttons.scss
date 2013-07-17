@@ -4,7 +4,7 @@
    
    @media only screen {
 
-      /* Default
+      /* Padrão
          ========================================================================== */
          .btn {
             display: inline-block;
@@ -22,13 +22,20 @@
             border: none;
             @include border-radius(5px);
             @include transition(all .25s ease);
+            @include box-sizing();
          }
 
-         .ie7 .btn {
+          .ie7 .btn {
             zoom: 1;
             display: inline;
             margin-left: .3em;
-            line-height: 18px;
+            line-height: 18px;            
+         }
+
+         .ie7 button.btn,
+         .ie7 input[type="submit"].btn {
+            padding-top: 3px;
+            padding-bottom: 3px;
          }
 
          .btn:hover {

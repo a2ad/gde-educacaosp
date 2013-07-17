@@ -14,9 +14,15 @@
          }
 
          .list-bullet { list-style: square inside; }
+         .list-bullet-circle { list-style: disc inside; }
 
          .ie7 .list-bullet {
             list-style: square;
+            list-style-position: inside;
+         }
+
+         .ie7 .list-bullet-circle {
+            list-style: disc;
             list-style-position: inside;
          }
 
@@ -33,6 +39,11 @@
             text-decoration: none;
          }
 
+         ol.list {
+            list-style: decimal;
+            list-style-position: inside;
+         }
+
       /* Lista com detalhe (título e texto)
          ========================================================================== */
          .list-details .title-list {
@@ -41,14 +52,14 @@
             font-size: 14px;
          }
 
-         .list-details a {
+         .list-bullet.list-details a {
             display: inline-block;
             vertical-align: top;
          }
 
          .ie7 .list-details a { cursor: pointer; }
 
-         .ie7 .list-details li {
+         .ie7 .list-bullet.list-details li {
             min-height: 0;
             vertical-align: super;
          }
@@ -124,16 +135,12 @@
       /* Lista com arquivos
          ========================================================================== */
          .list-files li { overflow: hidden; }
-         .file-type {
-            display: block;
+         .list-files .icon-file {
             float: left;
+            font-size: 28px;
             margin: 0 10px 10px 0;
-            padding: 7px 10px;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 12px;
-            background-color: $gray;
          }
+         
 
       /* Últimas notícias
          ========================================================================== */
