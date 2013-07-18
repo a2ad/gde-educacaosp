@@ -52,17 +52,21 @@
                left: 7px;
                top: 4px;
                font-size: 20px;
-               color: #ccc;
+               color: #ddd;
             }
 
             .form-search .input { 
                padding-left: 35px;
                font-style: italic;
+               padding-top: 5px;
+               border: solid 1px $lightGray;
             }
 
             .form-search .btn {
                display: block;
                width: 100%;
+               text-transform: uppercase;
+               font-size: 12px;
             }            
 
       /* Inputs
@@ -144,7 +148,7 @@
 
             .form-search .btn {
                float: right;
-               width: 25%;
+               width: 25%;               
             }
 
    }

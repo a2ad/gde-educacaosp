@@ -9,48 +9,63 @@
          /* Barra local
             ========================================================================== */
             .local-bar {
-               width: 100%;
-               padding: 15px;
+               width: 94%;
+               padding: 10px 3%;
                display: block;
                background-color: $gray;
+               text-align: center;
             }
 
+            .local-bar a { 
+               color: #fff;
+               @include transition(all .25s ease);
+            }
+
+            .local-bar a:hover { 
+               color: #eee;
+               text-decoration: none;
+            }
+            
+            /* Título da barra - Secretaria da Educação */
             .title-bar a {
                display: block;
-               color: #fff;               
                margin-bottom: 10px;
             }
 
-            .title-bar a:hover {
-               text-decoration: none;
-               color: #fff;
+            .title-bar a:hover { text-decoration: none; }
+
+            /* Bloco de contato - Barras sociais e telefone */
+            .social a {
+               font-size: 22px;
+               margin: 0 5px;
             }
 
-            .contact a {
-               position: relative;
-               padding-left: 35px;
+            .contact {
                display: block;
-               color: #fff;
+               width: 195px;
+               margin: 10px auto 0;
                font-family: 'AllerBold';
-               font-size: 14px;
+               font-size: 12px;
+               text-align: left;
             }
 
-            .contact a:hover {
-               color: #fff;
-               text-decoration: none;
+            .contact > i {
+               font-size: 26px;
+               float: left;
+               margin-right: 10px;
             }
 
-            .contact a span { 
+            .contact > span {
                display: block;
-               line-height: 1;
                text-transform: uppercase;
+               line-height: 1;
             }
 
-            .contact i {
-               position: absolute;
-               left: 0;
-               top: 0;
-               font-size: 32px;
+            .contact > span + span {
+               font-size: 11px;
+               text-transform: none;
+               text-indent: 1px;
+               line-height: 0.9;
             }
 
          /* Logo
@@ -92,21 +107,31 @@
       /* Footer
          ========================================================================== */
          .footer-bar {
-            padding: 15px 10px;
+            width: 98%;
+            padding: 15px 1%;
             background-color: $gray;
             font-weight: bold;
-            font-size: 14px;
+            font-size: 12px;
             font-family: Arial,Helvetica,sans-serif;
-            text-align: center;           
+            text-align: center;
+            overflow: hidden;              
          }
 
-         .title-footer { color: #fff; }
+         .vcard { font-style: normal; }
 
-         .footer-bar address {
-            display: inline;
-            font-weight: normal;
-            font-style: normal;
-            color: #ccc;            
+         .org.fn { 
+            color: #fff;
+            font-weight: bold;
+         }
+
+         .adr {
+            color: #ccc;
+            letter-spacing: -1px;
+         }
+
+         .logo-footer {
+            margin-top: 10px;
+            display: block;
          }
 
       /* Menus
@@ -271,21 +296,54 @@
 
             .title-bar a { margin: 0; }
 
-            .contact { float: right; }
+            .local-info {
+               width: 40%;
+               max-width: 295px;
+               float: right;
+            }
 
-            .contact a {
-               padding-left: 0;
-               padding-right: 35px;
-               text-align: right;
-            }            
+            .ie7 .local-info { max-width: 303px; }
 
-            .contact i { 
-               left: auto;
-               right: 0;
+            .social {
+               float: left;
+               padding: 2px 5px 2px 0;
+               margin-right: 5px;
+               border-right: solid 1px #fff;
+            }
+
+            .social a {
+               font-size: 16px;
+               margin: 0 3px;
+            }
+
+            .contact {
+               padding-top: 1px;
+               margin: 0;
+               float: right;
+            }
+
+            .contact > i { 
+               font-size: 20px;
+               margin: 1px 5px 0 0;
             }
 
       /* Footer
          ========================================================================== */
+         .vcard {
+            float: left;
+            margin-top: 8px;
+            width: 80%;
+            text-align: left;
+         }
+
+         .adr { margin-top: 5px; }
+
+         .logo-footer { 
+            margin: 0;
+            cursor: pointer;
+            float: right;
+            width: 132px;
+         }
 
       /* Menus
          ========================================================================== */

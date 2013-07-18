@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
          $(itemMenu).addClass('active');
       } else {
          // Armazenando texto do título da página
-         var titlePage = $('.styleguide-page').text(),
+         var titlePage = $('.styleguide-title-page').text(),
          // Armazenando itens do submenu do item relacionado à página
          itensMenu = $(itemMenu).find('.styleguide-submenu').children();
          // Percorrendo itens do submenu

@@ -80,21 +80,21 @@
       a:hover,
       a:focus { color: #005580; }
 
-      .styleguide-page {
+      .styleguide-title-page {
          color: #555;
          margin-top: 0;
          padding-bottom: 5px;
          border-bottom: solid 1px #ddd;
       }
 
-      .title-section {
+      .styleguide-title-section {
          padding-left: 10px;
          margin-bottom: 10px;
          color: #777;
          border-left: solid 5px #777;
       }
 
-      .title-section-sub {
+      .styleguide-subtitle-section {
          color: #999;
          margin-bottom: 10px;
       }
@@ -290,7 +290,7 @@
             background-color: #F7F7F9;
             border-top: 1px solid #E1E1E8;
             padding: 8px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
          }
 
          .prettyprint.linenums {

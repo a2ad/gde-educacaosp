@@ -88,6 +88,7 @@
             display: inline-block;
             padding: 3px 6px;          
             font-size: 12px;
+            font-weight: bold;
             @include border-radius(10px);
             @include transition(all .25s ease);
          }
@@ -148,6 +149,7 @@
             position: relative;
             z-index: 1;
             display: block;
+            margin-bottom: 6px;
          }
 
          .ie7 .last-news time {
@@ -162,5 +164,13 @@
             top: 40%;
             border-bottom: solid 1px $gray;
          }
+
+         .last-clean time:before {
+            display: none;
+         }
+
+         .last-news.last-news-educacao .label { background-color: $colorEducacao; }
+         .last-news.last-news-educacao time:before { border-color: $colorEducacao; }
+         .ie7 .last-news.last-news-educacao time { background-image: url(../img/bg-line-educacao.png); }
 
    }

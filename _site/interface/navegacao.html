@@ -229,9 +229,9 @@
 </nav>
       
       <article class="main" role="main">
-         <h2 class="styleguide-page">Navega&ccedil;&atilde;o</h2>
+         <h2 class="styleguide-title-page">Navega&ccedil;&atilde;o</h2>
 
-         <h3 class="title-section">Barra local do projeto</h3>
+         <h3 class="styleguide-title-section">Barra local do projeto</h3>
 
 <p>O cabeçalho local deve aparecer logo abaixo da barra do Portal do Governo. A cor do cabeçalho global pode acompanhar as cores do site local.</p>
 
@@ -239,20 +239,26 @@
 <div class="local-bar">
    <div class="row">
       <h2 class="title-bar no-margin">
-         <a class="hover" href="http://www.educacao.sp.gov.br">Secretaria da Educação do Estado de São Paulo</a>
+         <a href="http://www.educacao.sp.gov.br">Secretaria da Educação do Estado de São Paulo</a>
       </h2>
-      <div class="contact">
-         <a href="#" class="hover">
+      <div class="local-info">
+         <div class="social">
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-youtube"></i></a>
+            <a href="#"><i class="icon-flickr"></i></a>
+         </div>
+         <a href="#" class="hover contact">
             <i class="icon-phone"></i>
             <span>Central de Atendimento</span>
-            <small>Entre em contato com a SEE</small>
+            <span>Entre em contato com a SEE</span>
          </a>         
       </div>
    </div>
 </div>
 </div>
 
-<h3 class="title-section">Logo do projeto</h3>
+<h3 class="styleguide-title-section">Logo do projeto</h3>
 
 <div class="styleguide-demo">
 <h1 class="logo">
@@ -260,7 +266,7 @@
 </h1>
 </div>
 
-<h3 class="title-section">Ferramentas de Acessbilidade</h3>
+<h3 class="styleguide-title-section">Ferramentas de Acessbilidade</h3>
 
 <div class="styleguide-demo">
 <div class="tools">
@@ -271,7 +277,7 @@
 </div>
 </div>
 
-<h3 class="title-section">Navegação primária</h3>
+<h3 class="styleguide-title-section">Navegação primária</h3>
 
 <p>A navegação primária está localizada na barra de navegação horizontal, logo abaixo do cabeçalho. Em caso de subseções, ao passar o mouse sobre um item aparecerá um menu deslizante com a navegação secundária.</p>
 
@@ -309,7 +315,7 @@
 </nav>
 </div>
 
-<h3 class="title-section">Navegação secundária e terciária</h3>
+<h3 class="styleguide-title-section">Navegação secundária e terciária</h3>
 
 <p>A navegação secundária aparece na coluna da esquerda (<i>140 pixels</i>, mas pode variar, tendo sua largura sendo adaptável a qualquer tamanho), logo abaixo da barra de navegação primária. A subseção atual fica marcada em um tom mais escuro.</p>
 
@@ -349,7 +355,7 @@
 </aside>
 </div>
 
-<h3 class="title-section">Breadcrumbs</h3>
+<h3 class="styleguide-title-section">Breadcrumbs</h3>
 
 <p>Os <i>breadcrumbs</i> mostram a localização de uma página específica até a página inicial (<i>homepage</i>).</p>
 
@@ -374,17 +380,30 @@
    </div>
 </div>
 
-<h3 class="title-section">Rodapé</h3>
+<h3 class="styleguide-title-section">Rodapé</h3>
 
 <p>Rodapé padrão para os projetos contendo o título da Secretaria da Educação e endereço.</p>
 
 <div class="styleguide-demo">
-<div class="row footer-bar">
-   <span class="title-footer">Secretaria da Educação do Estado de São Paulo</span>
-   <address>
-      - Praça da República, nº 53 - Centro - São Paulo - SP - Fone: 0800-7700012
+<footer class="row full footer-bar">
+   <address class="vcard"> 
+      <span>
+         <span class="org fn">Secretaria da Educação do Estado de São Paulo</span>
+      </span>
+      <span class="adr">
+         - 
+         <span class="street-address">Praça da República, 53 - Centro</span> -
+            CEP <span class="postal-code">01045-903</span> - 
+            <span class="locality">São Paulo</span> -
+            <abbr title="São Paulo" class="region">SP</abbr> -
+            <span class="country-name">Brasil</span> - 
+            <span class="tel">PABX: (011) 3218-2000</span>
+      </span>        
    </address>
-</div>
+   <a href="http://www.saopaulo.sp.gov.br" class="hover logo-footer">
+      <img src="files/gde/img/logo_gov.png" alt="Logo do do Governo do Estado de São Paulo">
+   </a>
+</footer>
 </div>
          
       </article>

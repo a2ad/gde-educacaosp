@@ -77,8 +77,50 @@
       ========================================================================== */
       .subtitle-page {
          font-size: 18px;
-         line-height: 1;
+         line-height: 1.2;
          font-style: italic;
          font-family: Arial,Helvetica,sans-serif;
          color: $gray;
+      }
+
+   /* Título de seções (geralmente relacionado a listas de itens)
+      ========================================================================== */
+      .title-section {
+         margin: 0 0 15px 0;
+         padding-bottom: 5px;
+         text-transform: uppercase;
+         font-size: 16px;
+         line-height: 1;
+         font-family: 'AllerBold';
+         font-weight: normal;
+         color: $gray;
+         border-bottom: solid 1px $lightGray;
+      }
+
+      .title-section.title-educacao {
+         color: $colorEducacao;
+         border-color: $colorEducacao;
+      }
+
+      .title-clean {
+         border: none;
+         padding-bottom: 0;
+         text-transform: none;
+      }
+
+   /* Blockquotes
+      ========================================================================== */
+      blockquote {         
+         padding: 20px 5px;
+         border-top: solid 1px #ccc;
+         border-bottom: solid 1px #ccc;         
+      }
+
+      blockquote p,
+      blockquote {
+         color: $gray;
+         font-family: Georgia;
+         font-style: italic;
+         font-size: 18px;
+         margin: 0;
       }
