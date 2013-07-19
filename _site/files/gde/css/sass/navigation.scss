@@ -359,7 +359,8 @@
 
             .nav-menu { 
                @include clearfix();
-               height: 49px;            
+               height: 49px; 
+               border-bottom: none;           
             }
 
             .nav-menu > li {
@@ -371,7 +372,7 @@
             .nav-menu > li:hover .nav-submenu { display: block; }
 
             .nav-menu > li > a {
-               padding: 15px 45px;               
+               padding: 15px;               
 
                background: -moz-linear-gradient(top,  #ffffff 0%, #cccccc 50%, #fefefe 100%);
                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#cccccc), color-stop(100%,#fefefe));
