@@ -33,6 +33,8 @@
          margin: 0 auto;
       }
 
+      .row.large { width: auto; }
+
    }
 
    /*
@@ -45,6 +47,11 @@
       /* Largura máxima do Grid */
       .row { max-width: $gridWidth; }
       .row.full { max-width: $gridFull; }
+      .row.large {
+         max-width: $gridWidth;
+         padding-left: 15px;
+         padding-right: 15px;
+      }
       .column { @include column(); }
 
       /* Larguras grid
