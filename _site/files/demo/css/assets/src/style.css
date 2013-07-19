@@ -1,6 +1,18 @@
 /* ==========================================================================
    Geral
    ========================================================================== */
+   ::-moz-selection {
+      background: #666;
+      text-shadow: none;
+      color: #fff;
+   }
+
+   ::selection {
+      background: #666;
+      text-shadow: none;
+      color: #fff;
+   }
+   
    .container {
       width: 96%;
       margin: 10px auto;

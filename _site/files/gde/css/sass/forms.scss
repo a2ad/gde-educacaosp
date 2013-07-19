@@ -58,7 +58,7 @@
             .form-search .input { 
                padding-left: 35px;
                font-style: italic;
-               padding-top: 5px;
+               padding-top: 6px;
                border: solid 1px $lightGray;
             }
 
@@ -95,7 +95,8 @@
 
          .input:focus,
          .select:focus,
-         .textarea:focus {
+         .textarea:focus,
+         .form-search .input:focus {
             border-color: #aaa;
             outline: none;
          }
@@ -144,6 +145,10 @@
                float: left;
                padding-left: 35px;
                text-indent: 0;
+            }
+
+            .form-search .input:focus {
+               background-color: #f5f5f5;
             }
 
             .form-search .btn {

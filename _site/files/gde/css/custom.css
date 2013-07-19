@@ -274,7 +274,8 @@
        */
       .input,
       .select,
-      .textarea { border: solid 1px #ccc; }
+      .textarea,
+      .form-search .input { border: solid 1px #ccc; }
       
       /*
        * Cor do texto dos elementos 'input', 'select' e 'textarea' nos formulários
