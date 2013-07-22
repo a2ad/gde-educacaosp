@@ -235,6 +235,12 @@
    /* Tipografia
       ========================================================================== */
       /*
+       * Cor dos textos em parágrafos e listas ordenadas e não ordenadas
+       */
+      p,
+      ol,
+      ul { color: #666; }
+      /*
        * Cor do título principal da página/notícia
        */
       .title-page { color: #666; }

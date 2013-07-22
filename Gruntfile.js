@@ -32,7 +32,16 @@ module.exports = function( grunt ) {
             files : {
                'files/gde/css/main.css' : 'files/gde/css/sass/main.scss'
             }
-         }
+         },
+         devIE : {
+            options : { 
+               style : 'expanded',
+               noCache: true
+            },
+            files : {
+               'files/gde/css/main-ie8.css' : 'files/gde/css/sass/main.scss'
+            }
+         },
       },
 
       "comment-media-queries": {
@@ -40,7 +49,7 @@ module.exports = function( grunt ) {
             // Task-specific options go here.
          },
          your_target: {
-            src: 'files/gde/css/main.css',
+            src: 'files/gde/css/main-ie8.css',
             dest: 'files/gde/css/main-ie8.css'
          },
       },

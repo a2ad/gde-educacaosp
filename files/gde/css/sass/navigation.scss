@@ -192,11 +192,16 @@
                @include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
                border: solid 1px $almostWhite;
                border-top: none;
+               z-index: 10;
             }
 
             .nav-submenu > li > a:hover { background-color: #f5f5f5; }
 
-            .nav-submenu a { font-family: 'AllerRegular'; }
+            .nav-submenu a {
+               font-family: Arial,Helvetica,sans-serif;
+               font-size: 12px;
+               padding: 10px 5px;
+            }
 
             /* Botão para abrir menu mobile */
             .call-menu {
@@ -379,6 +384,7 @@
             .nav-menu > li:hover .nav-submenu { display: block; }
 
             .nav-menu > li > a {
+               position: relative;
                padding: 15px;               
 
                background: -moz-linear-gradient(top,  #ffffff 0%, #cccccc 50%, #fefefe 100%);
@@ -400,6 +406,12 @@
 
             .nav-menu > li:first-child a { background-image: none; }
 
+            .nav-menu i {
+               position: absolute;
+               right: 3px;
+               top: 18px;
+            }
+
             /* Fallback IE */
             .no-cssgradients .nav-menu a {
                background: transparent url(../../../img/menu-separator.png) center left no-repeat;
@@ -415,9 +427,6 @@
             }
 
             .js .nav-submenu { display: none; }
-
-         /* Navegação secundária / terciária (sidebar)
-            ========================================================================== */
 
 
 
