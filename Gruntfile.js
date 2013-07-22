@@ -35,6 +35,16 @@ module.exports = function( grunt ) {
          }
       },
 
+      "comment-media-queries": {
+         options: {
+            // Task-specific options go here.
+         },
+         your_target: {
+            src: 'files/gde/css/main.css',
+            dest: 'files/gde/css/main-ie8.css'
+         },
+      },
+
       // Uglify
       uglify : {
          dist : {
@@ -65,7 +75,7 @@ module.exports = function( grunt ) {
          },
          sass: {
             files: ['files/gde/css/sass/*.scss'],
-            tasks: ['sass']
+            tasks: ['sass', 'comment-media-queries']
          }
       }
 
@@ -74,13 +84,14 @@ module.exports = function( grunt ) {
    // Plugins do Grunts
    grunt.loadNpmTasks('grunt-contrib-concat')
    grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
+   grunt.loadNpmTasks( 'grunt-comment-media-queries' );
    grunt.loadNpmTasks( 'grunt-contrib-sass' );
    grunt.loadNpmTasks( 'grunt-contrib-uglify' );
    grunt.loadNpmTasks( 'grunt-contrib-watch' );
  
  
    // Tarefas que serão executadas
-   grunt.registerTask( 'default', [ 'concat', 'cssmin', 'sass', 'uglify' ] );
+   grunt.registerTask( 'default', [ 'concat', 'cssmin', 'sass', 'grunt-comment-media-queries', 'uglify' ] );
 
    grunt.registerTask( 'w', [ 'watch' ] );
 
