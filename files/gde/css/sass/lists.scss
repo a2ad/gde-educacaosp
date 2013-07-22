@@ -46,10 +46,15 @@
 
       /* Lista com detalhe (título e texto)
          ========================================================================== */
+         .list-details span {
+            font-style: italic;
+         }
+
          .list-details .title-list {
             display: block;
             font-weight: bold;
             font-size: 14px;
+            font-style: normal;
          }
 
          .list-bullet.list-details a {
@@ -80,7 +85,12 @@
 
       /* Lista com categoria
          ========================================================================== */         
-         .list .category-name { display: block; }
+         .list .category-name { 
+            display: block;
+            color: $gray;
+            text-transform: uppercase;
+            font-weight: bold;
+         }
 
          .list .label {
             color: #fff;
@@ -96,11 +106,12 @@
          .list-category .label { 
             margin-bottom: 5px;
             @include border-radius(8px);
+            text-transform: none;
          }
 
-         .list-category .label + a {
-            display: block;
-         }
+         .list-category a.category-name { cursor: pointer; }
+
+         .list-category .category-name + a { display: block; }
 
          .list a.label:hover {
             cursor: pointer;

@@ -185,6 +185,12 @@
       .list li > a:hover { color: #333; }
 
       /*
+       * Cor do texto do nome da categoria na lista de categorias
+       */
+      .list .category-name { color: #666; }
+
+
+      /*
        * Cor de fundo e do texto da 'etiqueta' que pode indicar tanto a categoria
        * ou a data do post/item
        */
@@ -245,6 +251,11 @@
          color: #666;
          border-color: #ccc;
       }
+
+      /*
+       * Cor de fundo do título que possui fundo colorido
+       */
+      .title-bg { background-color: #666; }
 
       /*
        * Cor do texto dentro da tag 'blockquotes'
