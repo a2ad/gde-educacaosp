@@ -93,13 +93,13 @@
          /*
           * Cor da borda do submenu no menu principal
           */
-         .nav-submenu { border-color: #eee; }
+         .nav-submenu { border-color: #ddd; }
 
          /*
           * Cor de background dos itens no submenu
           * ao passar o mouse
           */
-         .nav-submenu > li > a:hover { background-color: #f5f5f5; }
+         .nav-submenu > li > a:hover { background-color: #fff; }
          
          /*
           * Cor do botão que mostra/esconde o menu mobile

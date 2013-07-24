@@ -145,6 +145,15 @@
             font-size: 20px;
          }
 
+      /* Lista com data e categoria
+         ========================================================================== */
+         .list-date.list-category .category-name {
+            display: inline-block;
+            @include border-radius(5px);
+            padding: 1px 5px;
+            margin-right: 5px;
+         }
+
       /* Lista com arquivos
          ========================================================================== */
          .list-files li { overflow: hidden; }
