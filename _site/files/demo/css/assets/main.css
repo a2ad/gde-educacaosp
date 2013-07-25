@@ -1,6 +1,18 @@
 /* ==========================================================================
    Geral
    ========================================================================== */
+   ::-moz-selection {
+      background: #666;
+      text-shadow: none;
+      color: #fff;
+   }
+
+   ::selection {
+      background: #666;
+      text-shadow: none;
+      color: #fff;
+   }
+   
    .container {
       width: 96%;
       margin: 10px auto;
@@ -87,14 +99,20 @@
          border-bottom: solid 1px #ddd;
       }
 
-      .styleguide-title-section {
+      .styleguide-title-section,
+      /* Variação p/ títulos para páginas em MD */
+      .sobre .main h3,
+      .conteudo .main h3 {
          padding-left: 10px;
          margin-bottom: 10px;
          color: #777;
          border-left: solid 5px #777;
       }
 
-      .styleguide-subtitle-section {
+      .styleguide-subtitle-section,
+      /* Variação p/ títulos para páginas em MD */
+      .sobre .main h4,
+      .conteudo .main h4 {
          color: #999;
          margin-bottom: 10px;
       }
@@ -104,7 +122,12 @@
          color: #777;
       }
 
-      .styleguide-list {
+      .styleguide-list,
+      /* Variação p/ títulos para páginas em MD */
+      .sobre .main ul,
+      .sobre .main ol,
+      .conteudo .main ul,
+      .conteudo .main ol {
          font-size: 14px;
          line-height: 20px;
          padding-left: 0;

@@ -1222,10 +1222,6 @@ body:after {
     border-bottom: solid 1px #666666;
   }
 
-  .last-clean time:before {
-    display: none;
-  }
-
   .last-news.last-news-educacao .label {
     background-color: #fe7325;
   }
@@ -1236,6 +1232,15 @@ body:after {
 
   .ie7 .last-news.last-news-educacao time {
     background-image: url(../img/bg-line-educacao.png);
+  }
+
+  .last-clean time:before {
+    display: none;
+  }
+
+  .ie7 .last-clean time,
+  .ie7 .last-clean.last-news-educacao time {
+    background-image: none;
   }
 /* } */
 /* ==========================================================================
@@ -1277,6 +1282,10 @@ body:after {
     display: inline;
     margin-left: .3em;
     line-height: 18px;
+  }
+
+  .ie7 a.btn {
+    min-height: 14px;
   }
 
   .ie7 button.btn,
@@ -1327,6 +1336,45 @@ body:after {
   .btn-default:hover {
     color: #333333;
     background-color: #eee;
+  }
+
+  /* Cor educação
+     ========================================================================== */
+  .btn-educacao {
+    background-color: #fe7325;
+    color: #fff;
+  }
+
+  .btn-educacao:hover {
+    background-color: #d64d01;
+  }
+
+  /* Botão com linha (100% da largura)
+     ========================================================================== */
+  .line {
+    position: relative;
+    text-align: center;
+  }
+
+  .ie7 .line {
+    background: transparent url(../img/bg-line-light.png) center 30% repeat-x;
+  }
+
+  .line:after {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: block;
+    border-top: solid 1px #cccccc;
+  }
+
+  .btn-line {
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    z-index: 1;
   }
 /* } */
 /* ==========================================================================

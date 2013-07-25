@@ -29,8 +29,11 @@
             zoom: 1;
             display: inline;
             margin-left: .3em;
-            line-height: 18px;            
+            line-height: 18px;
          }
+
+         .ie7 a.btn { min-height: 14px; }
+
 
          .ie7 button.btn,
          .ie7 input[type="submit"].btn {
@@ -81,6 +84,43 @@
          .btn-default:hover {
             color: $darkGray;
             background-color: #eee;
+         }
+
+      /* Cor educação
+         ========================================================================== */
+         .btn-educacao {
+            background-color: $colorEducacao;
+            color: #fff;
+         }
+
+         .btn-educacao:hover { background-color: darken($colorEducacao, 15%); }
+
+      /* Botão com linha (100% da largura)
+         ========================================================================== */
+         .line { 
+            position: relative;
+            text-align: center;
+         }
+
+         .ie7 .line {
+            background: transparent url(../img/bg-line-light.png) center 30% repeat-x;
+         }
+
+         .line:after {
+            z-index: 0;
+            content: '';
+            position: absolute;
+            top: 35%;
+            width: 100%;
+            display: block;
+            border-top: solid 1px #ccc;
+         }
+
+         .btn-line {
+            position: relative;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            z-index: 1;
          }
 
 

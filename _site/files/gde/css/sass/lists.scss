@@ -184,14 +184,14 @@
             width: 100%;            
             top: 40%;
             border-bottom: solid 1px $gray;
-         }
-
-         .last-clean time:before {
-            display: none;
-         }
+         }         
 
          .last-news.last-news-educacao .label { background-color: $colorEducacao; }
          .last-news.last-news-educacao time:before { border-color: $colorEducacao; }
          .ie7 .last-news.last-news-educacao time { background-image: url(../img/bg-line-educacao.png); }
+
+         .last-clean time:before { display: none; }
+         .ie7 .last-clean time,
+         .ie7 .last-clean.last-news-educacao time { background-image: none; }
 
    }
