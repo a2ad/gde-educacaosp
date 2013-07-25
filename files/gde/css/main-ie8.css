@@ -1377,6 +1377,7 @@ body:after {
     text-transform: uppercase;
     margin-bottom: 15px;
     z-index: 1;
+    border: solid 1px #cccccc;
   }
 /* } */
 /* ==========================================================================
