@@ -1294,7 +1294,8 @@ body:after {
     padding-bottom: 3px;
   }
 
-  .btn:hover {
+  .btn:hover,
+  .btn:focus {
     background-color: #333333;
     color: #fff;
     text-decoration: none;
@@ -1323,6 +1324,11 @@ body:after {
     display: block;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .btn-tall {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   /* Cor padrão
@@ -1371,13 +1377,16 @@ body:after {
   }
 
   .btn-line {
-    padding-top: 10px;
-    padding-bottom: 10px;
     position: relative;
-    text-transform: uppercase;
     margin-bottom: 15px;
     z-index: 1;
     border: solid 1px #cccccc;
+  }
+
+  /* Botoão caixa alta
+     ========================================================================== */
+  .btn-up {
+    text-transform: uppercase;
   }
 /* } */
 /* ==========================================================================

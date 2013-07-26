@@ -41,7 +41,8 @@
             padding-bottom: 3px;
          }
 
-         .btn:hover {
+         .btn:hover,
+         .btn:focus {
             background-color: $darkGray;
             color: #fff;
             text-decoration: none;
@@ -70,6 +71,11 @@
             display: block;
             padding-right: 0;
             padding-left: 0;
+         }
+
+         .btn-tall {
+            padding-top: 10px;
+            padding-bottom: 10px;
          }
 
 
@@ -117,15 +123,14 @@
          }
 
          .btn-line {
-            padding-top: 10px;
-            padding-bottom: 10px;
             position: relative;
-            text-transform: uppercase;
             margin-bottom: 15px;
             z-index: 1;
             border: solid 1px #ccc;
          }
 
-
+      /* Botoão caixa alta
+         ========================================================================== */
+         .btn-up { text-transform: uppercase; }
       
    }

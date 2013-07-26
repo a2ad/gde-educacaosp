@@ -3,6 +3,59 @@
    ========================================================================== */
    @media only screen {
 
+   /* Tipografia
+      ========================================================================== */
+      /*
+       * Cor do texto dos links
+       */
+      a { color: #0088CC; }
+
+      /*
+       * Cor do texto dos links sob o efeito 'hover'
+       */
+      a:hover,
+      a:focus { color: #005580; }
+
+      /*
+       * Cor dos textos em parágrafos e listas ordenadas e não ordenadas
+       */
+      p,
+      ol,
+      ul { color: #666; }
+      /*
+       * Cor do título principal da página/notícia
+       */
+      .title-page { color: #666; }
+
+      /*
+       * Cor do subtítulo (linha fina) da página/notícia
+       */
+      .subtitle-page { color: #444 }
+
+      /*
+       * Cor do texto e da borda dos título de seçôes
+       */
+      .title-section {
+         color: #666;
+         border-color: #ccc;
+      }
+
+      /*
+       * Cor de fundo do título que possui fundo colorido
+       */
+      .title-bg { background-color: #666; }
+
+      /*
+       * Cor do texto dentro da tag 'blockquotes'
+       */
+      blockquote p,
+      blockquote { color: #666; }
+
+      /*
+       * Cor da borda do elemento 'blockquote'
+       */
+      blockquote { border-color: #ccc; }
+
    /* Header
       ========================================================================== */
       /* Barra local
@@ -230,49 +283,7 @@
       .file-type {
          color: #fff;
          background-color: #666;
-      }
-
-   /* Tipografia
-      ========================================================================== */
-      /*
-       * Cor dos textos em parágrafos e listas ordenadas e não ordenadas
-       */
-      p,
-      ol,
-      ul { color: #666; }
-      /*
-       * Cor do título principal da página/notícia
-       */
-      .title-page { color: #666; }
-
-      /*
-       * Cor do subtítulo (linha fina) da página/notícia
-       */
-      .subtitle-page { color: #444 }
-
-      /*
-       * Cor do texto e da borda dos título de seçôes
-       */
-      .title-section {
-         color: #666;
-         border-color: #ccc;
-      }
-
-      /*
-       * Cor de fundo do título que possui fundo colorido
-       */
-      .title-bg { background-color: #666; }
-
-      /*
-       * Cor do texto dentro da tag 'blockquotes'
-       */
-      blockquote p,
-      blockquote { color: #666; }
-
-      /*
-       * Cor da borda do elemento 'blockquote'
-       */
-      blockquote { border-color: #ccc; }
+      }   
 
    /* Formulários
       ========================================================================== */
