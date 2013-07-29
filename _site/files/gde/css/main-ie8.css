@@ -725,13 +725,24 @@ a:hover {
 .title-section {
   margin: 0 0 15px 0;
   padding-bottom: 5px;
-  text-transform: uppercase;
   font-size: 16px;
   line-height: 1;
   font-family: 'AllerBold';
   font-weight: normal;
   color: #666666;
   border-bottom: solid 1px #999999;
+}
+
+.title-up {
+  text-transform: uppercase;
+}
+
+.title-light {
+  font-family: 'AllerRegular';
+}
+
+.title-section.title-big {
+  font-size: 22px;
 }
 
 .title-section.title-educacao {
@@ -742,11 +753,6 @@ a:hover {
 .title-clean {
   border: none;
   padding-bottom: 0;
-  text-transform: none;
-}
-
-.title-section.title-big {
-  font-size: 18px;
 }
 
 .title-bg {
