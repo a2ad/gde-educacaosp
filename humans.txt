@@ -1,44 +1,29 @@
+/* PROJECT INFO */
+ 
+Agency: A2 Comunicação 
+Site: http://www.a2comunicacao.com.br
+Twitter: @a2comunicacao
+Location: São Paulo, Brazil
+
 /* TEAM */
 
+Adriano Ribeiro
+
+Airton Vancin
+
+Raphael Fabeni
+   http://www.raphaelfabeni.com.br
+   @raphaelfabeni
+
+Rodrigo Teixeira
+
+Sandra Segatto
+
+Vivian Oliveira
+				
                             
-Your title: Your name.
+/* SITE */                            
 
-                            
-Site: email, link to a contact form, etc.
-
-                            
-Twitter: your Twitter username.
-
-                            
-Location: City, Country.
-
-                         
-                 
-                        [...]
-						
-
-							
-/* THANKS */
-
-							
-Name: name or url
-
-						
-                 
-                        [...]
-                        
-
-                            
-/* SITE */
-
-                            
-Last update: YYYY/MM/DD 
-
-                            
-Standards: HTML5, CSS3,..
-
-                            
-Components: Modernizr, jQuery, etc.
-
-                            
-Software: Software used for the development
+Last update: It's hard to say because it's a project constantly updated. For specific date of last update, please check the GitHub (https://github.com/a2comunicacao/gde-educacaosp/tree/gh-pages)
+Standards: HTML5, CSS3, JavaScript
+Components: Modernizr, jQuery, Jekyll, Grunt

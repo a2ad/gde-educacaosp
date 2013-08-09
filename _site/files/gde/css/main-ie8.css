@@ -1928,6 +1928,7 @@ body:after {
 
   .social {
     float: left;
+    width: 100px;
     padding: 2px 5px 2px 0;
     margin-right: 5px;
     border-right: solid 1px white;
@@ -1942,6 +1943,7 @@ body:after {
     padding-top: 1px;
     margin: 0;
     float: right;
+    width: 180px;
   }
 
   .contact > i {
@@ -2063,6 +2065,22 @@ body:after {
 
   .nav-menu li:hover ul {
     display: block;
+  }
+/* } */
+/*
+ * CSS com ajustes em breakpoints específicos
+ */
+/* @media only screen and (min-width: 768px) and (max-width: 830px) { */
+  /* Barra local
+     ========================================================================== */
+  .local-bar {
+    width: 97%;
+    padding-left: 2%;
+    padding-right: 1%;
+  }
+
+  .local-info {
+    width: 41%;
   }
 /* } */
 /* ==========================================================================
