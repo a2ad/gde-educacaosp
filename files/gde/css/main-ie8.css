@@ -1166,12 +1166,12 @@ body:after {
     float: left;
     margin: 0 10px 10px 0;
     border: solid 1px #cccccc;
-    padding: 7px 15px;
+    padding: 8px 14px;
   }
 
   .post-date .month,
   .post-date .day {
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     display: block;
     text-align: center;
@@ -1180,7 +1180,7 @@ body:after {
 
   .post-date .day {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   /* Lista com data e categoria
