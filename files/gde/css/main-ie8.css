@@ -1812,16 +1812,16 @@ body:after {
   }
 
   .nav-aside {
-    border-top: solid 4px #999999;
-    border-bottom: solid 4px #999999;
+    border-top: solid 1px #999999;
+    border-bottom: solid 1px #999999;
   }
 
-  .nav-aside li {
+  .nav-aside > li {
+    border-bottom: solid 1px #cccccc;
+  }
+
+  .nav-sub-aside > li {
     border-top: solid 1px #cccccc;
-  }
-
-  .nav-aside li:first-child {
-    border: none;
   }
 
   .nav-aside a {

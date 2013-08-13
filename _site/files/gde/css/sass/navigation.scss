@@ -218,12 +218,13 @@
             }
 
             .nav-aside {               
-               border-top: solid 4px $lightGray;
-               border-bottom: solid 4px $lightGray;
+               border-top: solid 1px $lightGray;
+               border-bottom: solid 1px $lightGray;
             }
 
-            .nav-aside li { border-top: solid 1px #ccc; }
-            .nav-aside li:first-child { border: none; }
+            .nav-aside > li { border-bottom: solid 1px #ccc; }
+
+            .nav-sub-aside > li { border-top: solid 1px #ccc; }
 
             .nav-aside a {
                display: block;

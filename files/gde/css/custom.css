@@ -63,7 +63,7 @@
          /*
           * Cor de background da barra local do projeto
           */
-         
+         .local-bar { background-color: #666; }
          
          /*
           * Cor dos links na barra local
@@ -170,12 +170,12 @@
          .nav-aside { border-color: #999; }
 
          /*
-          * Cor dos dos links dos itens no menu lateral
+          * Cor dos textos dos links dos itens no menu lateral
           */
          .nav-aside a { color: #666; }
 
          /*
-          * Cor dos dos links dos itens no submenu menu lateral
+          * Cor dos textos dos links dos itens no submenu menu lateral
           */
          .nav-sub-aside a { color: #666; }
 
@@ -183,6 +183,12 @@
           * Cor de background dos itens no menu lateral
           */
          .nav-aside > li > a { background-color: #f5f5f5; }
+         
+         /*
+          * Cor da borda dos itens do menu lateral
+          */
+         .nav-aside > li,
+         .nav-sub-aside > li { border-color: #bbb; }
          
          /*
           * Cor de background dos itens do submenu no menu lateral
@@ -194,21 +200,15 @@
           * efeito 'hover' e quando o item está ativo
           */
          .nav-aside a:hover,
-         .nav-aside .active > a {
+         .nav-aside .active > a,
+         .nav-aside > .current-menu-item > a,
+         .nav-aside > .current-page-item > a,
+         .nav-aside > .current-menu-ancestor > a,
+         .nav-aside > .current-menu-parent  > a{
             background-color: #ccc;
             color: #333;
          }
          
-         /*
-          * Cor de fundo e do texto dos itens do submenu no menu lateral sob o
-          * efeito 'hover' e quando o item está ativo
-          */
-         .nav-sub-aside a:hover,
-         .nav-sub-aside .active > a {
-            background-color: #eee;
-            color: #333;
-         }
-
       /* Breadcrumbs
          ========================================================================== */
          /*
