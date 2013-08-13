@@ -1549,7 +1549,7 @@ body:after {
      ========================================================================== */
   .form-search .label-form {
     float: left;
-    width: 70%;
+    width: 65%;
   }
 
   .form-search .input:focus {
@@ -1563,7 +1563,9 @@ body:after {
 
   .form-search .btn {
     float: right;
-    width: 25%;
+    margin-top: 2px;
+    font-size: 11px;
+    width: 30%;
     padding-left: 12px;
     padding-right: 12px;
   }
