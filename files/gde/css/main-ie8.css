@@ -1772,7 +1772,9 @@ body:after {
   }
 
   .nav-menu > li:hover > a,
-  .nav-menu > li > a:hover {
+  .nav-menu > li > a:hover,
+  .nav-menu > li > a:focus,
+  .nav-menu > li.menu-open > a {
     background-color: #eee;
   }
 
@@ -1787,7 +1789,8 @@ body:after {
     border-bottom: solid 1px whitesmoke;
   }
 
-  .nav-submenu > li > a:hover {
+  .nav-submenu > li > a:hover,
+  .nav-submenu > li > a:focus {
     background-color: #fff;
   }
 
@@ -2053,7 +2056,7 @@ body:after {
   .nav-submenu {
     position: absolute;
     text-align: center;
-    left: -1px;
+    left: -9999px;
     top: 47px;
     width: 101%;
     z-index: 100000;
@@ -2065,11 +2068,13 @@ body:after {
   }
 
   .nav-submenu {
-    display: none;
+    display: block;
   }
 
-  .nav-menu li:hover ul {
+  .nav-menu li:hover ul,
+  .nav-menu li.menu-open ul {
     display: block;
+    left: -1px;
   }
 /* } */
 /*

@@ -138,10 +138,12 @@
          
          /*
           * Cor de background dos itens no menu
-          * ao passar o mouse
+          * ao passar o mouse e ao ganhar foco do teclado
           */
          .nav-menu > li:hover > a,
-         .nav-menu > li > a:hover { background-color: #eee; }
+         .nav-menu > li > a:hover,
+         .nav-menu > li > a:focus,
+         .nav-menu > li.menu-open > a { background-color: #eee; }
          
          /*
           * Cor da borda do submenu no menu principal
@@ -150,9 +152,10 @@
 
          /*
           * Cor de background dos itens no submenu
-          * ao passar o mouse
+          * ao passar o mouse e ao ganhar o foco do teclado
           */
-         .nav-submenu > li > a:hover { background-color: #fff; }
+         .nav-submenu > li > a:hover,
+         .nav-submenu > li > a:focus { background-color: #fff; }
          
          /*
           * Cor do botão que mostra/esconde o menu mobile

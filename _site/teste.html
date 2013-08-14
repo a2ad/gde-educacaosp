@@ -44,43 +44,59 @@
 
       <nav class="navbar" role="navigation" aria-label="main navigation">
    <a id="call-menu" class="call-menu"><i class="icon-align-justify"></i> Menu</a>
-   <ul id="main-menu" class="nav-menu">
-      <li>
+   <ul id="main-menu" class="nav-menu" role="menubar" >
+      <li role="menuitem" aria-haspopup="true">
          <a href="#">Item 01 <i class="icon-caret-down"></i></a>
-         <ul class="nav-submenu">
-            <li>
+         <ul class="nav-submenu" role="menu" aria-hidden="true">
+            <li role="menuitem">
                <a href="#">Sub Item 01</a>               
             </li>
-            <li>
+            <li role="menuitem">
                <a href="#">Sub Item 02</a>
             </li>
-            <li>
+            <li role="menuitem">
                <a href="#">Sub Item 03</a>
             </li>
          </ul>
       </li>
-      <li>
+      <li role="menuitem" aria-haspopup="true">
          <a href="#">Item 02 <i class="icon-caret-down"></i></a>
-         <ul class="nav-submenu">
-            <li>
+         <ul class="nav-submenu" role="menu" aria-hidden="true">
+            <li role="menuitem">
                <a href="#">Sub Item 01</a>               
             </li>
-            <li>
+            <li role="menuitem">
                <a href="#">Sub Item 02</a>
             </li>
-            <li>
+            <li role="menuitem">
                <a href="#">Sub Item 03</a>
             </li>
          </ul>
       </li>
-      <li>
+      <li role="menuitem">
          <a href="#">Item 03</a>
       </li>
-      <li>
+      <li role="menuitem">
          <a href="#">Item 04</a>
       </li>
    </ul>
 </nav>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+      // MENU ACESSÍVEL
+   $.fn.accessibleDropDown = function () {
+      var el = $(this);
+
+      $('a', el).focus(function() {
+         $(this).parents('li').addClass('menu-open');
+      }).blur(function() {
+         $(this).parents('li').removeClass('menu-open');
+      });
+   }
+
+   $(".nav-menu").accessibleDropDown();
+</script>
 
    </div>
 
