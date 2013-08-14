@@ -154,7 +154,7 @@
                border-bottom: none;
             }
 
-            //.js .nav-menu { display: none; }
+            .js .nav-menu { display: none; }
 
             .nav-menu > li { border-bottom: dotted 1px #ddd; }
 
@@ -364,7 +364,7 @@
 
          /* Navegação primária (menu principal)
             ========================================================================== */
-            .js .call-menu { display: none; }
+            .call-menu { display: none; }
             .js .nav-menu { display: block; }
 
             .navbar {
@@ -438,7 +438,7 @@
                border-top: none;
             }
 
-            .js .nav-submenu { display: none; }
+            .nav-submenu { display: none; }
 
             .nav-menu li:hover ul { display: block; }
 

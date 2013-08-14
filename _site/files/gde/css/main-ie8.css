@@ -1741,6 +1741,10 @@ body:after {
     border-bottom: none;
   }
 
+  .js .nav-menu {
+    display: none;
+  }
+
   .nav-menu > li {
     border-bottom: dotted 1px #dddddd;
   }
@@ -1982,7 +1986,7 @@ body:after {
      ========================================================================== */
   /* Navegação primária (menu principal)
      ========================================================================== */
-  .js .call-menu {
+  .call-menu {
     display: none;
   }
 
@@ -2060,7 +2064,7 @@ body:after {
     border-top: none;
   }
 
-  .js .nav-submenu {
+  .nav-submenu {
     display: none;
   }
 

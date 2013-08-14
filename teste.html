@@ -4,27 +4,36 @@ body_class: index
 title :  Teste
 ---
 
-<aside class="sidebar" role-"complementary" aria-label="side navigation">   
-   <ul class="nav-aside">
-      <li class="active">
-         <a href="#">Item 01</a>
-         <ul class="nav-sub-aside">
+<nav class="navbar" role="navigation" aria-label="main navigation">
+   <a id="call-menu" class="call-menu"><i class="icon-align-justify"></i> Menu</a>
+   <ul id="main-menu" class="nav-menu">
+      <li>
+         <a href="#">Item 01 <i class="icon-caret-down"></i></a>
+         <ul class="nav-submenu">
             <li>
-               <a href="#">Sub item 01</a>
-            </li>
-            <li class="active">
-               <a href="#">Sub item 02</a>
+               <a href="#">Sub Item 01</a>               
             </li>
             <li>
-               <a href="#">Sub item 03</a>
+               <a href="#">Sub Item 02</a>
             </li>
             <li>
-               <a href="#">Sub item 04</a>
+               <a href="#">Sub Item 03</a>
             </li>
          </ul>
       </li>
       <li>
-         <a href="#">Item 02</a>
+         <a href="#">Item 02 <i class="icon-caret-down"></i></a>
+         <ul class="nav-submenu">
+            <li>
+               <a href="#">Sub Item 01</a>               
+            </li>
+            <li>
+               <a href="#">Sub Item 02</a>
+            </li>
+            <li>
+               <a href="#">Sub Item 03</a>
+            </li>
+         </ul>
       </li>
       <li>
          <a href="#">Item 03</a>
@@ -33,4 +42,4 @@ title :  Teste
          <a href="#">Item 04</a>
       </li>
    </ul>
-</aside>
+</nav>
