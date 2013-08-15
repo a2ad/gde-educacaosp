@@ -1561,9 +1561,12 @@ body:after {
     text-indent: 35px;
   }
 
+  .ie8 .form-search .btn {
+    padding-top: 5px;
+  }
+
   .form-search .btn {
     float: right;
-    margin-top: 2px;
     font-size: 11px;
     width: 30%;
     padding-left: 12px;
@@ -1774,7 +1777,8 @@ body:after {
   .nav-menu > li:hover > a,
   .nav-menu > li > a:hover,
   .nav-menu > li > a:focus,
-  .nav-menu > li.menu-open > a {
+  .nav-menu > li.menu-open > a,
+  .nav-menu > li.current > a {
     background-color: #eee;
   }
 

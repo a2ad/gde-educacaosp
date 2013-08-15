@@ -178,7 +178,8 @@
             .nav-menu > li:hover > a,
             .nav-menu > li > a:hover,
             .nav-menu > li > a:focus,
-            .nav-menu > li.menu-open > a { background-color: #eee; }         
+            .nav-menu > li.menu-open > a,
+            .nav-menu > li.current > a { background-color: #eee; }         
 
             /* Submenu */
             .nav-submenu {

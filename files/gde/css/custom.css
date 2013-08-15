@@ -143,7 +143,13 @@
          .nav-menu > li:hover > a,
          .nav-menu > li > a:hover,
          .nav-menu > li > a:focus,
+         /* Classe adicionada pela navegação via teclado */
          .nav-menu > li.menu-open > a { background-color: #eee; }
+         
+         /*
+          * Item ativo do menu
+          */
+         .nav-menu > li.current > a { background-color: #eee; color: #333; }
          
          /*
           * Cor da borda do submenu no menu principal
