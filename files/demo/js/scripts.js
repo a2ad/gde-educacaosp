@@ -48,8 +48,12 @@ jQuery(document).ready(function($) {
       while (html !=(html = html.replace('>', '&gt;')));
       //while (html !=(html = html.replace('   ', '')));
 
-
-      $(this).after('<pre class="prettyprint linenums">&lt;!-- HTML --&gt;</pre>');
+      if( $(this).hasClass('dependencies') ) {
+         $(this).after('<pre class="prettyprint linenums">&lt;!-- Dependências --&gt;</pre>');   
+      } else {
+         $(this).after('<pre class="prettyprint linenums">&lt;!-- HTML --&gt;</pre>');
+      }
+      
       $(this).next('pre').append(html);
    });
 

@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/files/gde/css/main.css">
 
 <!-- CSS demo-->
-<link rel="stylesheet" href="/files/demo/css/main.min.css">
+<link rel="stylesheet" href="/files/demo/css/main-demo.css">
 
 <!-- Font Awesome IE7 -->
 <!--[if IE 7]>
@@ -75,8 +75,6 @@
                
           
                
-          
-               
                      
                   
                
@@ -110,8 +108,6 @@
                
                      
                   
-               
-          
                
           
                
@@ -212,15 +208,6 @@
                
                      
                         <li>
-                           <a href="/interface/novo.html"><i class="icon-double-angle-right"></i>Novo</a>
-                        </li>
-                     
-                  
-               
-          
-               
-                     
-                        <li>
                            <a href="/interface/tipografia.html"><i class="icon-double-angle-right"></i>Tipografia</a>
                         </li>
                      
@@ -251,15 +238,27 @@
 <div class="styleguide-demo">
 <div class="local-bar">
    <div class="row">
-      <h2 class="title-bar no-margin">
+      <span class="title-bar no-margin">
          <a href="http://www.educacao.sp.gov.br">Secretaria da Educação do Estado de São Paulo</a>
-      </h2>
+      </span>
       <div class="local-info">
          <div class="social">
-            <a title="Facebook da Secretaria da Educação do Estado de SP" href="http://www.facebook.com/EducaSP"><i class="icon-facebook"></i></a>
-            <a title="Twitter da Secretaria da Educação do Estado de SP" href="http://twitter.com/#!/educacaosp"><i class="icon-twitter"></i></a>
-            <a title="Youtube da Secretaria da Educação do Estado de SP" href="http://www.youtube.com/educacaosp"><i class="icon-youtube"></i></a>  
-            <a title="Flickr da Secretaria da Educação do Estado de SP" href="http://www.flickr.com/photos/educacaosp/"><i class="icon-flickr"></i></a> 
+            <a title="Facebook da Secretaria da Educação do Estado de SP" href="http://www.facebook.com/EducaSP">
+               <i class="icon-facebook"></i>
+               <span class="sr-only">Perfil no Facebook da Secretaria da Educação do Estado de São Paulo</span>
+            </a>
+            <a title="Twitter da Secretaria da Educação do Estado de SP" href="http://twitter.com/#!/educacaosp">
+               <i class="icon-twitter"></i>
+               <span class="sr-only">Perfil no Twitter da Secretaria da Educação do Estado de São Paulo</span>
+            </a>
+            <a title="Youtube da Secretaria da Educação do Estado de SP" href="http://www.youtube.com/educacaosp">
+               <i class="icon-youtube"></i>
+               <span class="sr-only">Conta no Youtube da Secretaria da Educação do Estado de São Paulo</span>
+            </a>
+            <a title="Flickr da Secretaria da Educação do Estado de SP" href="http://www.flickr.com/photos/educacaosp/">
+               <i class="icon-flickr"></i>
+               <span class="sr-only">Conta no Flickr da Secretaria da Educação do Estado de São Paulo</span>
+            </a>
          </div>
          <a href="http://www.educacao.sp.gov.br/central-de-atendimento/" class="hover contact">
             <i class="icon-phone"></i>
@@ -282,11 +281,11 @@
 <h3 class="styleguide-title-section">Ferramentas de Acessbilidade</h3>
 
 <div class="styleguide-demo">
-<div class="tools">
-   <a href="#" title="Aumentar tamanho da fonte">A+</a>
-   <a href="#" title="Diminuir tamanho da fonte">A-</a>
-   <a href="#" title="Alterar contraste da página">C</a>
-   <a href="#" title="Imprimir página"><i class="icon-print"></i></a>   
+<div class="tools accessibility">
+   <a title="Aumentar tamanho da fonte" data-size="0" class="increase" href="#">A+ <span class="sr-only">Aumentar tamanho da fonte</span></a>
+   <a title="Diminuir tamanho da fonte" data-size="0" class="decrease" href="#">A- <span class="sr-only">Diminuir tamanho da fonte</span></a>
+   <a title="Alterar contraste da página" href="#" class="contrast">C <span class="sr-only">Alterar contraste da página</span></a>
+   <a title="Imprimir página" href="#" class="print"><i class="icon-print"></i> <span class="sr-only">Imprimir página</span></a>
 </div>
 </div>
 
@@ -298,7 +297,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
    <a id="call-menu" class="call-menu"><i class="icon-align-justify"></i> Menu</a>
    <ul id="main-menu" class="nav-menu" role="menubar" >
-      <li role="menuitem" aria-haspopup="true">
+      <li role="menuitem" aria-haspopup="true" class="current">
          <a href="#">Item 01 <i class="icon-caret-down"></i></a>
          <ul class="nav-submenu" role="menu" aria-hidden="true">
             <li role="menuitem">
@@ -334,6 +333,24 @@
       </li>
    </ul>
 </nav>
+</div>
+
+<div class="styleguide-demo dependencies">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+      // MENU ACESSÍVEL
+   $.fn.accessibleDropDown = function () {
+      var el = $(this);
+
+      $('a', el).focus(function() {
+         $(this).parents('li').addClass('menu-open');
+      }).blur(function() {
+         $(this).parents('li').removeClass('menu-open');
+      });
+   }
+
+   $(".nav-menu").accessibleDropDown();
+</script>
 </div>
 
 <h3 class="styleguide-title-section">Navegação secundária e terciária</h3>

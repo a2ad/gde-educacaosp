@@ -6,10 +6,10 @@ module.exports = function( grunt ) {
       concat: {
          css: {
             src: [
-               'files/demo/css/assets/src/style.css',
-               'files/demo/css/assets/src/font-awesome.css'
+               'files/demo/css/assets/style.css',
+               'files/demo/css/assets/font-awesome.css'
             ],
-            dest: 'files/demo/css/assets/main.css'
+            dest: 'files/demo/css/assets/concat-demo.css'
          },
       },
 
@@ -17,7 +17,7 @@ module.exports = function( grunt ) {
       cssmin: {
          combine: {
             files: {
-               'files/demo/css/main.min.css': 'files/demo/css/assets/main.css'
+               'files/demo/css/main-demo.css': 'files/demo/css/assets/concat-demo.css'
             }
          }
       },
@@ -70,8 +70,8 @@ module.exports = function( grunt ) {
       watch: {
          css: {
             files: [
-               'files/demo/css/assets/src/style.css',
-               'files/demo/css/assets/src/font-awesome.css'
+               'files/demo/css/assets/style.css',
+               'files/demo/css/assets/font-awesome.css'
             ],
             tasks: ['concat', 'cssmin']
          },
