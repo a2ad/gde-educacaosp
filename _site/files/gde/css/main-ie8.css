@@ -1836,8 +1836,8 @@ body:after {
   }
 
   .nav-aside {
-    border-top: solid 1px #999999;
-    border-bottom: solid 1px #999999;
+    border-top: solid 3px #999999;
+    border-bottom: solid 3px #999999;
   }
 
   .nav-aside > li {
@@ -1850,7 +1850,7 @@ body:after {
 
   .nav-aside a {
     display: block;
-    padding: 15px 10px;
+    padding: 12px 10px;
     text-align: right;
     font-size: 12px;
     -webkit-transition: all 0.25s ease;
@@ -1877,13 +1877,13 @@ body:after {
   }
 
   .nav-aside a:hover,
-  .nav-aside .active > a {
+  .nav-aside .current > a {
     background-color: #ccc;
     text-decoration: none;
   }
 
   .nav-sub-aside a:hover,
-  .nav-sub-aside .active > a {
+  .nav-sub-aside .current > a {
     background-color: #eee;
   }
 
@@ -1891,7 +1891,7 @@ body:after {
     display: none;
   }
 
-  .nav-aside .active .nav-sub-aside {
+  .nav-aside .current .nav-sub-aside {
     display: block;
   }
 

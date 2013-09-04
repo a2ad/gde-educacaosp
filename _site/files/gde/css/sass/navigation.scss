@@ -219,8 +219,8 @@
             }
 
             .nav-aside {               
-               border-top: solid 1px $lightGray;
-               border-bottom: solid 1px $lightGray;
+               border-top: solid 3px $lightGray;
+               border-bottom: solid 3px $lightGray;
             }
 
             .nav-aside > li { border-bottom: solid 1px #ccc; }
@@ -229,7 +229,7 @@
 
             .nav-aside a {
                display: block;
-               padding: 15px 10px;
+               padding: 12px 10px;
                text-align: right;
                font-size: 12px;
                @include transition(all .25s ease);
@@ -250,19 +250,19 @@
             .nav-aside a:hover { color: $gray; }
 
             .nav-aside a:hover,
-            .nav-aside .active > a { 
+            .nav-aside .current > a { 
                background-color: #ccc;
                text-decoration: none;
             }
 
             .nav-sub-aside a:hover,
-            .nav-sub-aside .active > a {
+            .nav-sub-aside .current > a {
                background-color: #eee;
             }
 
             .js .nav-sub-aside { display: none; }
 
-            .nav-aside .active .nav-sub-aside { display: block; }
+            .nav-aside .current .nav-sub-aside { display: block; }
 
          /* Breadcrumbs
             ========================================================================== */

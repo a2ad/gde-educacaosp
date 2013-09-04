@@ -3,25 +3,6 @@ module.exports = function( grunt ) {
    grunt.initConfig({
       pkg: grunt.file.readJSON('package.json'),
 
-      concat: {
-         css: {
-            src: [
-               'files/demo/css/assets/style.css',
-               'files/demo/css/assets/font-awesome.css'
-            ],
-            dest: 'files/demo/css/assets/concat-demo.css'
-         },
-      },
-
-      // CSS min
-      cssmin: {
-         combine: {
-            files: {
-               'files/demo/css/main-demo.css': 'files/demo/css/assets/concat-demo.css'
-            }
-         }
-      },
-
       // SASS
       sass : {
          dev : {
@@ -30,7 +11,7 @@ module.exports = function( grunt ) {
                noCache: true
             },
             files : {
-               'files/gde/css/main.css' : 'files/gde/css/sass/main.scss'
+               'files/gde/css/main.css' : 'files/gde/css/sass/main.scss'               
             }
          },
          devIE : {
@@ -42,9 +23,18 @@ module.exports = function( grunt ) {
                'files/gde/css/main-ie8.css' : 'files/gde/css/sass/main.scss'
             }
          },
+         demo : {
+            options : { 
+               style : 'compressed',
+               noCache: true
+            },
+            files : {
+               'files/demo/css/main-demo.css' : 'files/demo/css/sass/main-demo.scss'
+            }
+         },
       },
 
-      "comment-media-queries": {
+      'comment-media-queries': {
          options: {
             // Task-specific options go here.
          },
@@ -56,9 +46,16 @@ module.exports = function( grunt ) {
 
       // Uglify
       uglify : {
-         dist : {
-            src: 'files/demo/js/scripts.js',
-            dest: 'files/demo/js/scripts.min.js'
+         demoHomepage: {
+            src: 'files/demo/js/assets/homepage.js',
+            dest: 'files/demo/js/homepage.min.js'
+         },
+         demoInterna: {
+            src: [
+               'files/demo/js/assets/interna.js',
+               'files/demo/js/google-code-prettify/prettify.js'
+            ],
+            dest: 'files/demo/js/interna.min.js'
          },
          distGde : {
             src: 'files/gde/js/scripts.js',
@@ -68,23 +65,24 @@ module.exports = function( grunt ) {
 
       // Watch
       watch: {
-         css: {
-            files: [
-               'files/demo/css/assets/style.css',
-               'files/demo/css/assets/font-awesome.css'
-            ],
-            tasks: ['concat', 'cssmin']
+         'uglify:demoHomepage': {
+            files: [ 'files/demo/js/assets/homepage.js' ],
+            tasks: ['uglify:demoHomepage']
          },
-         js: {
+         'uglify:demoInterna': {
             files: [
-               'files/demo/js/scripts.js',
-               'files/gde/js/scripts.js'
+               'files/demo/js/assets/interna.js',
+               'files/demo/js/google-code-prettify/prettify.js'
             ],
-            tasks: ['uglify']
+            tasks: ['uglify:demoInterna']
          },
          sass: {
             files: ['files/gde/css/sass/*.scss'],
-            tasks: ['sass', 'comment-media-queries']
+            tasks: ['sass:dev', 'sass:devIE', 'comment-media-queries']
+         },
+         'sass:demo': {
+            files: ['files/demo/css/sass/*.scss'],
+            tasks: ['sass:demo']
          }
       }
 

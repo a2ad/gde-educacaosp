@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Geral
+   ========================================================================== */
+   ::-moz-selection {
+      background: #666;
+      text-shadow: none;
+      color: #fff;
+   }
+
+   ::selection {
+      background: #666;
+      text-shadow: none;
+      color: #fff;
+   }
+
+   a { color: #528dc2; }
+   a:hover,
+   a:focus { color: #005580; }
+
+/* ==========================================================================
+   Mixins e variaveis
+   ========================================================================== */
+   $primary: #ca5324;
+   $secondary: #488d9f;
+   
+   /* Transition */
+   @mixin transition($parameters) {
+      -webkit-transition: $parameters;
+         -moz-transition: $parameters;
+           -o-transition: $parameters;
+          -ms-transition: $parameters;
+              transition: $parameters;
+   }
+
+   /* Opacity w/ IE value */
+   @mixin opacity($value, $IEvalue) {
+      opacity: $value;
+      filter: alpha(opacity=$IEvalue);
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity="$IEvalue")";
+   }
+
+   /* Border radius */
+   @mixin border-radius($radius) {
+      -webkit-border-radius: $radius;
+         -moz-border-radius: $radius;
+              border-radius: $radius;
+   }
+   
+   /* Box shadow */
+   @mixin box-shadow($parameters) { 
+      -webkit-box-shadow: $parameters;
+              box-shadow: $parameters;
+   }
+
+   /* Animation */
+   @mixin animation($parameters) {
+      -webkit-animation: $parameters;
+         -moz-animation: $parameters;
+          -ms-animation: $parameters;
+           -o-animation: $parameters;
+              animation: $parameters;
+   }   

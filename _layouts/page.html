@@ -10,21 +10,22 @@
    <!-- CSS -->
    {% include estilos.html %}
 </head>
-<body class="{{ page.body_class }} {{ page.page_type }}">
+<body class="{{ page.group }} {{ page.page_type }} interna">
 
    <!-- Header -->
    {% include header.html %}
 
    <div class="container">
-      {% include menu.html %}
+      <div class="gde-page row large">
+         <div class="row">
+            {% include menu.html %}
       
-      <article class="main" role="main">
-         <h2 class="styleguide-title-page">{{ page.title }}</h2>
-
-         {{ content }}
-         
-      </article>
-
+            <article class="gde-main" role="main">
+               <h2 class="gde-title-page">{{ page.title }}</h2>
+               {{ content }}            
+            </article>
+         </div>
+      </div>      
    </div>
    
    <!-- Footer -->

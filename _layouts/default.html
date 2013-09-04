@@ -3,7 +3,7 @@
 <!--[if IE 8]>    <html class="no-js ie8" lang="pt-br">     <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="pt-br">     <![endif]-->
 <head>
-   <title> {% if page.title %} {{ page.title }} | {% endif %} Guia de Estilos - Educação SP</title>
+   <title> {% if page.title %} {{ page.title }} | {% endif %} GDE - Guia de Estilos da Secretaria da Educação do Estado de São Paulo</title>
    <!-- Meta -->
    <meta charset="utf-8">
    {% include meta.html %}
@@ -11,17 +11,87 @@
    {% include estilos.html %}
 </head>
 <body class="homepage">
-   
+
    <!-- Header -->
    {% include header.html %}
 
    <div class="container">
+      <div class="gde-page row large">
+         <!-- Sobre -->
+         <section class="row gde-about">
+            <h2 class="gde-title">Padronização e integração em favor da informação.</h2>
+            <p>O GDE é o gua de estilo oficial da <a href="http://www.educacao.sp.gov.br">Secretaria da Educação</a> e tem como objetivo principal a definição dos princípios que tornem uniforme a edição e comunicação dos canais institucionais da secretaria na Web e nas Redes Sociais. </p>
+            <a href="{{ site.baseurl }}/sobre" class="btn btn-up btn-tall btn-small">Sobre o GDE</a>
+            <figure class="gde-border">
+               <img src="{{ site.baseurl }}/files/demo/img/ilustracao-gde.png" alt="Arte sobre o Guia de Estilos">
+            </figure>
+         </section>
 
-      {{ content }}
+         <!-- Redes sociais -->
+         <section class="row gde-social gde-border">
+            {% include social.html %}
+         </section>
 
+         <!-- Informação -->
+         <section class="row gde-infos">
+            <div class="gde-info">
+               <h3 class="gde-subtitle">Para quem se destina?</h3>
+               <p>O GDE visa atender as necessidades de comunicação dos servidores responsáveis pela criação e edição de conteúdos relacionados aos programas, projetos e coordenadorias.</p>
+            </div>
+            <div class="gde-info">
+               <h3 class="gde-subtitle">Padronização</h3>
+               <p>As necessidades de informação dos públicos do Portal da Educação requerem um esforço constante e o GDE tem o foco na adequação, relevância e novidade para cada perfil de público</p>
+            </div>
+         </section>
+
+         <!-- Números -->
+         <section class="full gde-numbers animate preload" data-animation="numbers">
+            <div class="row">
+               <h3 class="gde-subtitle">Websites integrados ao GDE</h3>
+               <div class="gde-box gde-box01">
+                  <span class="gde-count">1</span>
+                  <span class="gde-project-category">Portal</span>
+                  <span class="gde-project-name">Portal da Educação</span>
+               </div>
+               <div class="gde-box gde-box02">
+                  <span class="gde-count">29</span>
+                  <span class="gde-project-category">Programas/Projetos</span>
+                  <span class="gde-project-name">4 websites integrados ao GDE</span>
+               </div>
+               <div class="gde-box last gde-box03">
+                  <span class="gde-count">6</span>
+                  <span class="gde-project-category">Coordenadorias</span>
+                  <span class="gde-project-name">1 website migrado</span>
+               </div>
+            </div>
+         </section>
+
+         <!-- Print -->
+         <section class="full gde-features animate preload" data-animation="features">
+            <div class="row">
+               <h3 class="gde-subtitle big">No guia de estilo da SEE você encontra:</h3>
+               <div class="gde-feature gde-feature01">
+                  <h4 class="gde-subtitle aller">Padrões para Websites</h4>
+                  <p>Cada componente do layout é tratado como um módulo, onde é possível visualizá-lo além de consultar seu código HTML.</p>
+               </div>
+               <div class="gde-feature gde-feature02">
+                  <h4 class="gde-subtitle aller">Práticas Editoriais</h4>
+                  <p>Regras e boas práticas para criação e edicão de textos informativos com foco nas necessidades dos públicos </p>
+               </div>
+               <div class="gde-feature gde-feature03">
+                  <h4 class="gde-subtitle aller">Abordagem nas Redes Sociais</h4>
+                  <p>Conheça os principais canais de comunicação nas redes sociais e boas práticas de padronização de peças e informes</p>
+               </div>
+               <figure class="text-center gde-print">
+                  <img src="{{ site.baseurl }}/files/demo/img/print-educacao-home.jpg" alt="Print da homepage do Portal da Secretaria da Educação de Sâo Paulo">
+                  <i class="ico-mark01"></i>
+                  <i class="ico-mark02"></i>
+                  <i class="ico-mark03"></i>
+               </figure>         
+            </div>
+         </section>
+      </div>         
    </div>
-
-   <p class="text-center"><small>Melhor visualizado nos navegadores Chrome, Firefox, IE <strong>+9</strong> e Safari.</small></p>
 
    <!-- Footer -->
    {% include footer.html %}

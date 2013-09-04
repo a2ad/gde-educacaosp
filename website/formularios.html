@@ -1,0 +1,89 @@
+---
+layout: page
+group: website
+page_type: child
+title: Formul&aacute;rios
+---
+
+<h3 class="gde-subtitle">Formulário padrão</h3>
+
+<p>Formulário de contato padrão.</p>
+
+<div class="gde-demo">
+<form class="form">
+   <fieldset>
+      <legend class="sr-only">Formulário de Contato</legend>
+      <span class="fields-required"><span class="required">*</span>Campos obrigatórios</span>
+      <label class="label-form" for="name">
+         <span class="field"><span class="required">*</span>Nome</span>
+         <input type="text" class="input" id="name" name="name" aria-required="true" placeholder="Digite seu nome" autofocus>
+      </label>
+      <label class="label-form" for="email">
+         <span class="field"><span class="required">*</span>Email</span>
+         <input type="email" class="input" id="email" name="email" aria-required="true" placeholder="Digite seu email">
+      </label>
+      <label class="label-form label-half" for="phone">
+         <span class="field"><span class="required">*</span>Telefone</span>
+         <input type="tel" class="input" id="phone" name="phone" aria-required="true" placeholder="Digite seu telefone">
+      </label>
+      <label class="label-form label-half last" for="cell-phone">
+         <span class="field"><span class="required">*</span>Celular</span>
+         <input type="tel" class="input" id="cell-phone" name="cell-phone" aria-required="true" placeholder="Digite seu celular">
+      </label>
+      <label class="label-form" for="state">
+         <span class="field"><span class="required">*</span>Estado</span>
+         <select class="select" id="state" name="state" aria-required="true">
+            <option value="">Escolha uma opção</option>
+            <option value="Opção 1">Opção 1</option>
+            <option value="Opção 2">Opção 2</option>
+            <option value="Opção 3">Opção 3</option>
+         </select>
+      </label>
+      <div class="label-form label-check">
+         <span class="field"><span class="required">*</span>Input radio</span>
+         <label class="label-form" for="radio1">
+            <input type="radio" id="radio1" name="input-radio">Opção 1
+         </label>
+         <label class="label-form" for="radio2">
+            <input type="radio" id="radio2" name="input-radio">Opção 2
+         </label>
+         <label class="label-form" for="radio3">
+            <input type="radio" id="radio3" name="input-radio">Opção 3
+         </label>
+      </div>
+      <div class="label-form label-check">
+         <span class="field"><span class="required">*</span>Input checkbox</span>
+         <label class="label-form" for="check1">
+            <input type="checkbox" id="check1" name="input-checkbox">Opção 1
+         </label>
+         <label class="label-form" for="check2">
+            <input type="checkbox" id="check2" name="input-checkbox">Opção 2
+         </label>
+         <label class="label-form" for="check3">
+            <input type="checkbox" id="check3" name="input-checkbox">Opção 3
+         </label>
+      </div>
+      <label class="label-form" for="message">
+         <span class="required field">Mensagem</span>
+         <textarea class="textarea" id="message" name="message" aria-required="true" placeholder="Digite sua mensagem"></textarea>
+      </label>
+      <input class="btn" value="Enviar" type="submit">
+   </fieldset>
+</form>
+</div>
+
+<h3 class="gde-subtitle">Formulário de Busca</h3>
+
+<div class="gde-demo">
+<form class="form form-search">
+   <fieldset>
+      <legend class="sr-only">Formulário de Busca</legend>
+      <label class="label-form" for="search">
+         <span class="sr-only">Pesquisar por:</span>
+         <input type="text" class="input" id-"search" name="search">
+         <i class="icon-search"></i>
+      </label>
+      <input type="submit" class="btn" value="Enviar">
+   </fieldset>
+</form>
+</div>

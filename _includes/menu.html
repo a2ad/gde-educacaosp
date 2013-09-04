@@ -1,50 +1,28 @@
-<nav class="styleguide-side" role="navigation">
-   <ul id="styleguide-menu" class="styleguide-menu">
-      <!-- Sobre -->
-      <li class="menu-sobre"><a href="{{ site.baseurl }}/sobre/"><i class="icon-coffee"></i> Sobre</a>
-         <ul class="styleguide-submenu">         
-            {% for page in site.pages %}
-               {% if page.body_class == 'sobre' %}
-                     {% if page.page_type == 'child' %}
-                        <li>
-                           <a href="{{ site.baseurl }}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
-                        </li>
-                     {% endif %}
-                  
-               {% endif %}
-          {% endfor %}
-          </ul>
-      </li>
-      <!-- Conteúdo -->
-      <li class="menu-conteudo"><a href="{{ site.baseurl }}/conteudo/"><i class="icon-book"></i> Conteúdo</a>
-         <ul class="styleguide-submenu">         
-            {% for page in site.pages %}
-               {% if page.body_class == 'conteudo' %}
-                     {% if page.page_type == 'child' %}
-                        <li>
-                           <a href="{{ site.baseurl }}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
-                        </li>
-                     {% endif %}
-                  
-               {% endif %}
-          {% endfor %}
-          </ul>
-      </li>
-      <!-- Interface -->
-      <li class="menu-interface"><a href="{{ site.baseurl }}/interface/"><i class="icon-coffee"></i> Interface</a>
-         <ul class="styleguide-submenu">         
-            {% for page in site.pages %}
-               {% if page.body_class == 'interface' %}
-                     {% if page.page_type == 'child' %}
-                        <li>
-                           <a href="{{ site.baseurl }}{{ page.url }}"><i class="icon-double-angle-right"></i>{{ page.title }}</a>
-                        </li>
-                     {% endif %}
-                  
-               {% endif %}
-          {% endfor %}
-          </ul>
-      </li>
-      
+<aside class="gde-sidebar" role-"complementary"="" aria-label="side navigation">   
+   <ul id="gde-menu" class="nav-aside">
+      <!-- Conteudo -->
+      {% if page.group == 'conteudo' %}
+         {% assign pages_list = site.pages %}
+         {% assign group = 'conteudo' %}
+         {% include pages_list %}
+      {% endif %}
+      <!-- Website -->
+      {% if page.group == 'website' %}
+         {% assign pages_list = site.pages %}
+         {% assign group = 'website' %}
+         {% include pages_list %}
+      {% endif %}
+      <!-- Identidade Visual -->
+      {% if page.group == 'identidadeVisual' %}
+         {% assign pages_list = site.pages %}
+         {% assign group = 'identidadeVisual' %}
+         {% include pages_list %}
+      {% endif %}
+      <!-- Redes Sociais -->
+      {% if page.group == 'redesSociais' %}
+         {% assign pages_list = site.pages %}
+         {% assign group = 'redesSociais' %}
+         {% include pages_list %}
+      {% endif %}
    </ul>
-</nav>
+</aside>

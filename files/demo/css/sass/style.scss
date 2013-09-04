@@ -1,0 +1,435 @@
+/* ==========================================================================
+   Geral
+   ========================================================================== */
+   @media only screen {
+
+      /* Header
+         ========================================================================== */
+         .gde-header {
+            background-color: #2f7789;
+            background-image: -ms-linear-gradient(top, #101924 0%, $secondary 100%);
+            background-image: -moz-linear-gradient(top, #101924 0%, $secondary 100%);
+            background-image: -o-linear-gradient(top, #101924 0%, $secondary 100%);
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #101924), color-stop(1, $secondary));
+            background-image: -webkit-linear-gradient(top, #101924 0%, $secondary 100%);
+            background-image: linear-gradient(to bottom, #101924 0%, $secondary 100%);
+            margin-bottom: 20px;
+         }
+
+         .gde-header .local-bar { background-color: rgba(0, 0, 0, .9); }
+
+         .gde-header .logo {
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 0;
+            font-weight: normal;
+            margin-top: 10px;
+         }
+
+         .gde-header .logo a { color: #fff; }
+
+         .gde-header .logo .gde-name { 
+            display: block;
+            font-size: 58px;
+         }
+
+         .gde-status,
+         .gde-status a {
+            color: #fff;
+            font-size: 12px;
+            font-family: 'AllerRegular';
+            text-transform: uppercase;
+         }
+
+         .gde-status a:hover { color: #fff; }
+
+         .gde-status {
+            margin: 0;
+            padding: 0;
+            width: 90%;
+            margin: 0 auto 15px;
+            list-style: none;
+            overflow: hidden;
+         }
+
+         .gde-status li { 
+            float: left;
+            width: 50%;
+            text-align: center;
+         }
+
+         .gde-status li a {
+            display: block;
+            padding: 5px 0;
+         }
+
+         .gde-status li.gde-version {
+            float: none;
+            clear: both;            
+            padding-top: 10px;
+            font-weight: bold;
+            width: 100%;
+
+         }
+
+         /* Menu principal
+            ========================================================================== */
+            .gde-header .navbar { border-color: #20588a; }
+            .interna .gde-header .navbar { border-color: $secondary; }
+
+      /* Homepage
+         ========================================================================== */
+         .gde-numbers,
+         .gde-features { padding-top: 30px; }
+
+         .gde-border { position: relative; }
+         .gde-border:after {
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 1px;
+            content: '';
+
+            background-image:
+               -ms-linear-gradient(left, #FFFFFF 0%, #D5D5D5 50%, #FFFFFF 100%);
+            background-image: 
+               -moz-linear-gradient(left, #FFFFFF 0%, #D5D5D5 50%, #FFFFFF 100%);
+            background-image:
+               -o-linear-gradient(left, #FFFFFF 0%, #D5D5D5 50%, #FFFFFF 100%);
+            background-image:
+               -webkit-gradient(linear, left top, right top, color-stop(0, #FFFFFF), color-stop(0.5, #D5D5D5), color-stop(1, #FFFFFF));
+            background-image:
+               -webkit-linear-gradient(left, #FFFFFF 0%, #D5D5D5 50%, #FFFFFF 100%);
+            background-image:
+               linear-gradient(to right, #FFFFFF 0%, #D5D5D5 50%, #FFFFFF 100%);
+         }
+
+         .no-cssgradients .gde-border:after { background-color: #ddd; }
+
+         /* Sobre
+            ========================================================================== */
+            .gde-about { padding-bottom: 20px; }
+
+            .gde-about .gde-title,
+            .gde-about > p { text-align: center; }
+
+            .gde-about > p { font-size: 16px; }
+
+            .gde-about .btn { 
+               background-color: $primary;
+               font-family: 'AllerBold';
+               font-weight: normal;
+               max-width: 200px;
+               margin: 0 auto;
+               display: block;
+            }
+
+            .gde-about .btn:hover { background-color: darken($primary, 15%); }
+
+            .gde-about > figure {
+               margin-top: 20px;
+               text-align: center;
+            }
+
+         /* Social
+            ========================================================================== */
+            .gde-social { 
+               margin-bottom: 30px;
+               height: 70px;
+            }
+
+            .gde-social-item {
+               float: left;
+               height: 40px;
+               width: 50%;
+               text-align: center;
+            }
+
+         /* Números
+            ========================================================================== */
+            .gde-box {
+               position: relative;
+               display: block;
+               padding: 20px 0;
+               margin: 10px 0;
+               background-color: #f5f5f5;
+            }
+
+            .gde-box > span { 
+               display: block;
+               margin: 1px 0;
+               text-align: center;
+            }
+
+            .gde-count {       
+               color: $primary;
+               font-size: 50px;
+               margin-bottom: 2px;
+            }
+
+            .gde-count,
+            .gde-project-category { font-weight: bold; }
+            .gde-project-category { font-size: 18px; }
+
+            .gde-project-name { 
+               font-size: 14px;
+               font-style: italic;
+            }
+
+         /* Features
+            ========================================================================== */
+            .gde-feature { padding-bottom: 15px; }
+            .gde-feature .gde-subtitle {
+               margin: 0;
+               color: #666;
+               text-transform: uppercase;
+               font-size: 18px;
+               letter-spacing: 0;
+               font-weight: normal;       
+            }
+
+            .gde-feature p {
+               font-family: 'AllerRegular';
+               color: #222;
+            }
+      
+      /* Internas
+         ========================================================================== */
+         .gde-page { padding-bottom: 20px; }
+         .gde-sidebar { margin-bottom: 20px; }
+         .gde-sidebar .nav-aside { border-color: $secondary; }
+         .gde-sidebar .nav-aside a { color: $secondary; }
+
+         .gde-sidebar .nav-aside > li > a { background-color: #ecf3f5; }
+
+         .gde-sidebar .nav-aside a:hover,
+         .gde-sidebar .nav-aside .current > a {
+            background-color: #fff;
+            color: $secondary;
+         }
+
+         .gde-sidebar .nav-aside .current > a:hover { cursor: default; }
+   }
+
+   @media only screen and (min-width: 768px) {
+
+      /* Header
+         ========================================================================== */   
+         .gde-header {
+            background-color: #101924;
+            background-image: url(../img/bg-header.jpg);
+            background-repeat: no-repeat;
+            background-position: top center;
+            min-height: 346px;
+         }
+
+         .gde-header .logo {
+            float: left;
+            width: 365px;
+            font-size: 16px;
+            margin: 20px 0 0;
+         }
+
+         .gde-header .logo .gde-name {
+            float: left;
+            margin-right: 10px;
+         }
+
+         .gde-header .logo .gde-name + span { padding-top: 5px; }
+
+         .gde-header .logo span {
+            display: block;
+            text-align: left;            
+         }
+
+         .gde-status {
+            width: 307px;
+            float: right;
+            margin-top: 55px;
+         }
+
+         .gde-status li,
+         .gde-status li.gde-version {
+            float: left;
+            width: auto;
+            margin-right: 5px;
+         }
+
+         .gde-status li:first-child a { border-right: solid 1px #fff; }
+
+         .gde-status li a { 
+            padding: 0 5px;
+            margin-top: 5px;
+         }
+
+         .gde-status li.gde-version {
+            background-color: $secondary;
+            font-weight: normal;
+            clear: none;
+            padding: 5px 10px;
+            margin-right: 0;
+         }
+
+         /* Menu principal
+            ========================================================================== */
+            .gde-header .navbar { margin-top: 10px; }
+            .gde-header .navbar li { width: 25%; text-align: center; }
+
+      /* Footer
+         ========================================================================== */
+         .gde-footer { position: relative; }
+
+      /* Homepage
+         ========================================================================== */
+         .gde-numbers,
+         .gde-features { padding-top: 45px; }
+
+         /* Alerta IE
+         ========================================================================== */
+         .gde-alert {
+            position: relative;
+            background-color: #FFF6BF;
+            border: 1px solid #FFD324;
+            color: #514721;
+            padding: 10px 20px;
+         }
+
+         .gde-alert p {
+            text-align: center;
+            color: #514721;
+            margin-bottom: 0;
+         }
+
+         .gde-alert .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #514721;
+            font-weight: bold;
+            cursor: pointer;
+         }
+
+         /* Social
+            ========================================================================== */
+            .gde-social {
+               height: 40px;
+               text-align: center;
+            }
+
+            .gde-social-item {
+               float: none;
+               display: inline-block;
+               width: auto;
+               height: 30px;
+               margin: 0 10px;
+            }
+            
+         /* Informações
+            ========================================================================== */
+            .gde-info {
+               float: left;
+               width: 50%;
+            }
+
+            .gde-info > p {
+               padding-right: 25px;
+            }
+
+         /* Números
+            ========================================================================== */  
+            .gde-box {
+               float: left;
+               width: 31.91489361702128%;
+               margin: 0 2.12765957446809% 0 0;
+            }
+
+         /* Features
+            ========================================================================== */
+            .gde-features .gde-subtitle { text-align: center; }
+
+            .gde-feature {
+               width: 33%;
+               float: left;
+               padding: 20px 0 15px;         
+            }
+
+            .gde-feature .gde-subtitle { margin-bottom: 10px; }
+            .gde-feature p { 
+               max-width: 86%;
+               margin: 0 auto;
+            }
+
+            .gde-feature01 p { max-width: 90%; }
+            .gde-feature03 p { max-width: 94%; }
+
+            .gde-feature > * { text-align: center; }
+
+            .gde-print {
+               width: 710px;
+               margin: 0 auto;
+               padding-top: 40px;
+               clear: both;
+               position: relative;
+               z-index: 0;
+            }
+
+            .gde-print > i {
+               position: absolute;
+               z-index: 1;
+               top: 0;
+            }
+
+            .ico-mark01 { left: 2%; }
+            .ico-mark02 { left: 48%; }
+            .ico-mark03 { right: 1%; }
+
+      /* Internas
+         ========================================================================== */
+         .gde-sidebar {            
+            width: 14.8936170212766%;
+            float: left;
+         }
+
+         .gde-fixed {
+            position: fixed;
+            top: 15px;  
+            width: 100%;
+            max-width: 140px;            
+         }
+
+         .gde-main {
+            width: 82.76595744680851%;
+            float: right;
+         }
+
+         .gde-page {
+            position: relative;
+            z-index: 0;
+            margin-top: -152px;
+            padding-top: 40px;
+            background-color: #fff;
+         }
+
+         .gde-page:before,
+         .gde-page:after {
+            position: absolute;               
+            z-index: 1;
+            content: '';
+            height: 350px;
+            width: 1px;
+            top: 0;
+            background-image: -ms-linear-gradient(top, #616162 0%, #FFFFFF 70%);
+            background-image: -moz-linear-gradient(top, #616162 0%, #FFFFFF 70%);
+            background-image: -o-linear-gradient(top, #616162 0%, #FFFFFF 70%);
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #616162), color-stop(1, #FFFFFF));
+            background-image: -webkit-linear-gradient(top, #616162 0%, #FFFFFF 70%);
+            background-image: linear-gradient(to bottom, #616162 0%, #FFFFFF 70%);
+         }
+
+            .gde-page:before { left: 0; }
+            .gde-page:after { right: 0; }
+
+            .no-cssgradients .gde-page:before,
+            .no-cssgradients .gde-page:after { background-color: #eee; }
+   }

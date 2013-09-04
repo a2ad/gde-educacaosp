@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Animações
+   ========================================================================== */
+   @media only screen and (min-width: 768px) {
+      .preload,
+      .preload * {
+          -webkit-animation-play-state: paused;
+             -moz-animation-play-state: paused;
+              -ms-animation-play-state: paused;
+               -o-animation-play-state: paused;
+                  animation-play-state: paused;
+      }
+
+      /* Números
+         ========================================================================== */
+         .cssanimations .gde-numbers.animate .gde-box01 .gde-count {
+            opacity: 0;
+            @include animation(fadeIn 0.75s ease both);         
+         }
+
+         .cssanimations .gde-numbers.animate .gde-box01 .gde-project-category,
+         .cssanimations .gde-numbers.animate .gde-box01 .gde-project-name {
+            opacity: 0;
+            @include animation(fadeInLeft 0.75s ease .25s both);         
+         }
+
+         .cssanimations .gde-numbers.animate .gde-box02 .gde-count {
+            opacity: 0;
+            @include animation(fadeIn 0.75s ease .5s both);         
+         }
+
+         .cssanimations .gde-numbers.animate .gde-box02 .gde-project-category,
+         .cssanimations .gde-numbers.animate .gde-box02 .gde-project-name {
+            opacity: 0;
+            @include animation(fadeInLeft 0.75s ease .75s both);         
+         }
+
+         .cssanimations .gde-numbers.animate .gde-box03 .gde-count {
+            opacity: 0;
+            @include animation(fadeIn 0.75s ease 1s both);         
+         }
+
+         .cssanimations .gde-numbers.animate .gde-box03 .gde-project-category,
+         .cssanimations .gde-numbers.animate .gde-box03 .gde-project-name {
+            opacity: 0;
+            @include animation(fadeInLeft 0.75s ease 1.25s both);         
+         }
+
+      /* Features
+         ========================================================================== */
+         .cssanimations .gde-features.animate .gde-print {
+            opacity: 0;
+            @include animation(fadeIn 1.5s ease both);         
+         }
+
+         .cssanimations .gde-features.animate .gde-feature01 {
+            opacity: 0;
+            @include animation(fadeInDown .75s ease .25s both);         
+         }
+
+         .cssanimations .gde-features.animate .ico-mark01 {
+            opacity: 0;
+            @include animation(fadeIn .75s ease .5s both);         
+         }
+
+         .cssanimations .gde-features.animate .gde-feature02 {
+            opacity: 0;
+            @include animation(fadeInDown .75s ease .75s both);         
+         }
+
+         .cssanimations .gde-features.animate .ico-mark02 {
+            opacity: 0;
+            @include animation(fadeIn .75s ease 1s both);         
+         }
+
+         .cssanimations .gde-features.animate .gde-feature03 {
+            opacity: 0;
+            @include animation(fadeInDown .75s ease 1.25s both);         
+         }            
+
+         .cssanimations .gde-features.animate .ico-mark03 {
+            opacity: 0;
+            @include animation(fadeIn .75s ease 1.5s both);         
+         }
+   }

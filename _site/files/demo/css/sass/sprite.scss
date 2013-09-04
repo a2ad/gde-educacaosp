@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Sprites
+   ========================================================================== */
+	[class^="ico-"], [class*=" ico-"] {
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      display: inline-block;
+      line-height: 20px;
+      margin-top: 1px;
+      vertical-align: text-top;
+   }
+
+   .ico-mark01 {
+   	background-position: -14px -10px;
+		width: 106px;
+		height: 213px;
+   }
+
+   .ico-mark02 {
+   	background-position: -127px -7px;
+		width: 62px;
+		height: 239px;
+   }
+
+   .ico-mark03 {
+   	background-position: -195px -2px;
+		width: 121px;
+		height: 347px;
+   }

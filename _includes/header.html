@@ -1,5 +1,64 @@
-<header class="styleguide-header" role="banner">
-   <h1>
-      <span class="pull-left"><a href="/"><i class="icon-tint"></i> Guia de Estilos</a></span>
-      <span class="pull-right">Educação SP</span></h1>   
+<header class="gde-header" role="banner">
+	<!-- Barra local -->
+	<div class="local-bar">
+		<div class="row">
+			<span class="title-bar no-margin">
+				<a href="http://www.educacao.sp.gov.br">Secretaria da Educação do Estado de São Paulo</a>
+			</span>
+			<div class="local-info">
+				<div class="social">
+					<a title="Facebook da Secretaria da Educação do Estado de SP" href="http://www.facebook.com/EducaSP">
+						<i class="icon-facebook"></i>
+						<span class="sr-only">Perfil no Facebook da Secretaria da Educação do Estado de São Paulo</span>
+					</a>
+					<a title="Twitter da Secretaria da Educação do Estado de SP" href="http://twitter.com/#!/educacaosp">
+						<i class="icon-twitter"></i>
+						<span class="sr-only">Perfil no Twitter da Secretaria da Educação do Estado de São Paulo</span>
+					</a>
+					<a title="Youtube da Secretaria da Educação do Estado de SP" href="http://www.youtube.com/educacaosp">
+						<i class="icon-youtube"></i>
+						<span class="sr-only">Conta no Youtube da Secretaria da Educação do Estado de São Paulo</span>
+					</a>
+					<a title="Flickr da Secretaria da Educação do Estado de SP" href="http://www.flickr.com/photos/educacaosp/">
+						<i class="icon-flickr"></i>
+						<span class="sr-only">Conta no Flickr da Secretaria da Educação do Estado de São Paulo</span>
+					</a>
+				</div>
+				<a href="http://www.educacao.sp.gov.br/central-de-atendimento/" class="hover contact">
+					<i class="icon-phone"></i>
+					<span>Central de Atendimento</span>
+					<span>Entre em contato com a SEE</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Logo e status -->
+	<div class="row large">
+		<h1 class="logo">
+			<a href="{{ site.baseurl }}/"><span class="gde-name">GDE</span> <span>Guia de Estilo</span> <span>da Secretaria da Educacão</span> <span>do Estado de São Paulo</span></a>
+		</h1>
+		<ul class="gde-status">
+			<li><a href="{{ site.baseurl }}/sobre">Sobre o Guia</a></li>
+			<li><a href="https://github.com/a2comunicacao/gde-educacaosp/releases">Changelog</a></li>
+			<li class="gde-version">Versão 2.0 | Alpha</li>
+		</ul>
+	</div>
+	<!-- Menu -->
+	<nav class="navbar row large" role="navigation" aria-label="main navigation">
+		<a id="call-menu" class="call-menu"><i class="icon-align-justify"></i> Menu</a>
+		<ul id="main-menu" class="nav-menu" role="menubar">
+			<li class="{% if page.group == 'conteudo' %}current{% endif %}" role="menuitem" aria-haspopup="true">
+				<a href="{{ site.baseurl }}/conteudo">Conteúdo</a>
+			</li>
+			<li class="{% if page.group == 'website' %}current{% endif %}" role="menuitem" aria-haspopup="true">
+				<a href="{{ site.baseurl }}/website">Website</a>
+			</li>
+			<li class="{% if page.group == 'identidadeVisual' %}current{% endif %}" role="menuitem">
+				<a href="{{ site.baseurl }}/identidade-visual">Identidade Visual</a>
+			</li>
+			<li class="{% if page.group == 'redesSociais' %}current{% endif %}" role="menuitem">
+				<a href="{{ site.baseurl }}/redes-sociais">Redes Sociais</a>
+			</li>
+		</ul>
+	</nav>
 </header>

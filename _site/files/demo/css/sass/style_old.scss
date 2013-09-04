@@ -1,0 +1,148 @@
+
+   
+   .container {
+      width: 96%;
+      margin: 10px auto;
+      padding: 0;
+   }
+
+   .ie7 .container { zoom: 1; }
+
+   .container:after,
+   .container:before,
+   .styleguide-demo:after,
+   .styleguide-demo:before {
+      content: "";
+      display: table;
+   }
+
+   .container:after,
+   .styleguide-demo:after { clear: both; }
+
+   /*.ie7 * { behavior: url('/files/demo/css/boxsizing.htc'); }*/
+
+   /* Ajustes para GDE
+      ========================================================================== */
+      .styleguide-demo.styleguide-button .btn {
+         margin-bottom: 10px;
+      }
+
+      .styleguide-demo.no-white,
+      .styleguide-demo.no-white a {
+         color: #999;
+      }
+
+   /* Tipografia
+      ========================================================================== */
+      
+
+   /* Layout
+      ========================================================================== */
+
+
+      /* Menu lateral
+         ========================================================================== */
+         .styleguide-side {
+            float: left;
+            width: 14%;
+            margin-right: 1%;
+            position: fixed;
+         }
+
+         .styleguide-menu {
+            border: 1px solid #d8d8d8;
+            list-style: none outside none;
+            margin: 0;
+            padding: 0;
+         }
+
+         .styleguide-menu li:first-child a {
+            border-top: medium none;
+         }
+
+         .styleguide-menu a {
+            background-color: #f6f6f6;
+            border-left: 2px solid #ddd;
+            border-bottom: 1px solid #eee;
+            border-top: 1px solid #fff;
+            color: #777;
+            display: block;
+            font-size: 12px;
+            padding: 8px 10px;
+            text-decoration: none;
+
+            -webkit-transition: all .25s ease;
+               -moz-transition: all .25s ease;
+                 -o-transition: all .25s ease;
+                -ms-transition: all .25s ease;
+                    transition: all .25s ease;
+
+         }
+
+         .styleguide-menu a:hover {
+            background-color: #e5e5e5;
+         }
+
+         .styleguide-menu .active > a,
+         .styleguide-menu .active > a:hover {
+            font-weight: bold;
+            border-left: solid 2px #bbb;
+            color: #333;
+         }      
+
+         /* Submenu
+            ========================================================================== */
+            .styleguide-submenu {
+               margin: 0;
+               padding: 0;
+            }
+
+            .styleguide-submenu a {
+               padding-left: 28px;
+               background-color: #fefefe;
+            }
+
+            .styleguide-submenu i { margin-right: 3px; }
+
+      /* Miolo
+         ========================================================================== */
+         .main {
+            float: right;
+            width: 83%;
+            display: block;
+         }
+
+         .styleguide-demo {
+            padding: 10px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAAXNSR0IArs4c6QAAAAZQTFRF+vr6////+o8bnQAAABBJREFUCB1jYPjPgBXhEAYAfr8P8bm+jEoAAAAASUVORK5CYII=);
+         }
+
+         .styleguide-demo.dependencies { padding: 0; }
+         .styleguide-demo.dependencies + pre {
+            margin-top: 0;
+         }
+      
+
+      /* Alerta IE
+         ========================================================================== */
+         .styleguide-alert {
+            position: relative;
+            background-color: #FFF6BF;
+            border: 1px solid #FFD324;
+            color: #514721;
+            padding: 10px 20px;
+         }
+
+         .styleguide-alert p {
+            text-align: center;
+            color: #514721;
+            margin-bottom: 0;
+         }
+
+         .styleguide-alert .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: #514721;
+            font-weight: bold;
+         }
