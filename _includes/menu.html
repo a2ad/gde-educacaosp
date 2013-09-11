@@ -1,28 +1,8 @@
 <aside class="gde-sidebar" role-"complementary"="" aria-label="side navigation">   
    <ul id="gde-menu" class="nav-aside">
       <!-- Conteudo -->
-      {% if page.group == 'conteudo' %}
-         {% assign pages_list = site.pages %}
-         {% assign group = 'conteudo' %}
-         {% include pages_list %}
-      {% endif %}
-      <!-- Website -->
-      {% if page.group == 'website' %}
-         {% assign pages_list = site.pages %}
-         {% assign group = 'website' %}
-         {% include pages_list %}
-      {% endif %}
-      <!-- Identidade Visual -->
-      {% if page.group == 'identidadeVisual' %}
-         {% assign pages_list = site.pages %}
-         {% assign group = 'identidadeVisual' %}
-         {% include pages_list %}
-      {% endif %}
-      <!-- Redes Sociais -->
-      {% if page.group == 'redesSociais' %}
-         {% assign pages_list = site.pages %}
-         {% assign group = 'redesSociais' %}
-         {% include pages_list %}
-      {% endif %}
+      {% assign pages_list = site.pages %}
+      {% assign group = page.group %}
+      {% include pages_list %}
    </ul>
 </aside>
