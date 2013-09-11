@@ -3,7 +3,7 @@
     {% if page.url == node.url %}
       <li class="current"><a href="{{node.url}}">{{node.title}}</a></li>
     {% else %}
-      <li><a href="{{node.url}}">{{node.title}}</a></li>
+      <li><a href="{{ site.baseurl }}/{{node.url}}">{{node.title}}</a></li>
     {% endif %}
   {% endif %}
 {% endfor %}
