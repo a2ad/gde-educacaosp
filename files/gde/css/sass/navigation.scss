@@ -21,8 +21,9 @@
                @include transition(all .25s ease);
             }
 
-            .local-bar a:hover { 
-               color: #eee;
+            .local-bar a:hover,
+            .local-bar a:focus { 
+               color: #ddd;
                text-decoration: none;
             }
             

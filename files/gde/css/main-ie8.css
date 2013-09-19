@@ -1064,7 +1064,8 @@ body:after {
     transition: all 0.25s ease;
   }
 
-  .list li > a:hover {
+  .list li > a:hover,
+  .list li > a:focus {
     color: #333333;
     text-decoration: none;
   }
@@ -1160,7 +1161,8 @@ body:after {
     display: block;
   }
 
-  .list a.label:hover {
+  .list a.label:hover,
+  .list a.label:focus {
     cursor: pointer;
     background-color: #333333;
     color: #fff;
@@ -1609,8 +1611,9 @@ body:after {
     transition: all 0.25s ease;
   }
 
-  .local-bar a:hover {
-    color: #eee;
+  .local-bar a:hover,
+  .local-bar a:focus {
+    color: #ddd;
     text-decoration: none;
   }
 

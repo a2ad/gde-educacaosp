@@ -34,7 +34,8 @@
             @include transition(all .25s ease);
          }
 
-         .list li > a:hover { 
+         .list li > a:hover,
+         .list li > a:focus { 
             color: $darkGray;
             text-decoration: none;
          }
@@ -114,7 +115,8 @@
 
          .list-category .category-name + a { display: block; }
 
-         .list a.label:hover {
+         .list a.label:hover,
+         .list a.label:focus {
             cursor: pointer;
             background-color: $darkGray;
             color: #fff;
