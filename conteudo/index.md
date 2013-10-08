@@ -26,7 +26,7 @@ Seguem algumas sugest&otilde;es de indica&ccedil;&otilde;es:
 * [Conheça o canal da Secretaria da Educação no Youtube](http://www.youtube.com/educacaosp)
 
 
-#### Not&iacute;cias
+#### Not&iacute;cias x Informes
 
 As not&iacute;cias do Portal da Educa&ccedil;&atilde;o s&atilde;o produzidas exclusivamente pela equipe de Comunica&ccedil;&atilde;o Social da Pasta. Trata-se de um material com enfoque jornal&iacute;cstico e n&atilde;o meramente informativo.
 
