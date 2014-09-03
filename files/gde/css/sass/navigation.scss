@@ -441,8 +441,8 @@
 
             .nav-submenu { display: block; }
 
-            .nav-menu li:hover ul,
-            .nav-menu li.menu-open ul { display: block; left: -1px; }
+            .nav-menu li:hover > .nav-submenu,
+            .nav-menu li.menu-open > .nav-submenu { display: block; left: -1px; }
 
    }
 

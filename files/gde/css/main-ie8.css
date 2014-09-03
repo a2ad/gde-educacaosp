@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 article,
 aside,
 details,
@@ -187,7 +187,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: "courier new", monospace;
+  _font-family: 'courier new', monospace;
   font-size: 1em;
 }
 
@@ -334,7 +334,7 @@ hr {
 hr {
   display: block;
   height: 1px;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
 }
 
@@ -564,7 +564,7 @@ table {
 /* ==========================================================================
    Mixins e variaveis
    ========================================================================== */
-/* Variáveis para tema cinza */
+/* Vari├íveis para tema cinza */
 /* Transition */
 /* Scale */
 /* Opacity w/ IE value */
@@ -710,7 +710,7 @@ a:hover {
   letter-spacing: -1px;
 }
 
-/* Título principal das página/notícia
+/* T├¡tulo principal das p├ígina/not├¡cia
    ========================================================================== */
 .title-page {
   font-family: Georgia;
@@ -720,18 +720,18 @@ a:hover {
   margin: 0 0 20px;
 }
 
-/* Subtítulo (linha fina) da página/notícia
+/* Subt├¡tulo (linha fina) da p├ígina/not├¡cia
    ========================================================================== */
 .subtitle-page {
   font-size: 18px;
   line-height: 1.2;
   font-style: italic;
   font-family: Arial,Helvetica,sans-serif;
-  color: #666666;
+  color: #666;
   margin: 0 0 20px;
 }
 
-/* Título de seções (geralmente relacionado a listas de itens)
+/* T├¡tulo de se├º├Áes (geralmente relacionado a listas de itens)
    ========================================================================== */
 .title-section {
   margin: 0 0 15px 0;
@@ -740,8 +740,8 @@ a:hover {
   line-height: 1;
   font-family: 'AllerBold';
   font-weight: normal;
-  color: #666666;
-  border-bottom: solid 1px #999999;
+  color: #666;
+  border-bottom: solid 1px #999;
 }
 
 .title-up {
@@ -767,7 +767,7 @@ a:hover {
 }
 
 .title-bg {
-  background-color: #666666;
+  background-color: #666;
   color: #fff;
   padding: 5px 10px;
   text-transform: uppercase;
@@ -780,13 +780,13 @@ a:hover {
    ========================================================================== */
 blockquote {
   padding: 20px 5px;
-  border-top: solid 1px #cccccc;
-  border-bottom: solid 1px #cccccc;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
 }
 
 blockquote p,
 blockquote {
-  color: #666666;
+  color: #666;
   font-family: Georgia;
   font-style: italic;
   font-size: 18px;
@@ -795,16 +795,16 @@ blockquote {
 }
 
 /* ==========================================================================
-   Cálculo grid
+   C├ílculo grid
    ========================================================================== */
-/* Funções de cálculo do grid */
+/* Fun├º├Áes de c├ílculo do grid */
 /* ==========================================================================
-   Cálculo grid
+   C├ílculo grid
    ========================================================================== */
-/* Função para cálculo de porcentagem */
+/* Fun├º├úo para c├ílculo de porcentagem */
 /*  Mixin de largura das colunas */
-/* Propriedades padrões de classes */
-/* Última coluna sem margem direita */
+/* Propriedades padr├Áes de classes */
+/* ├Ültima coluna sem margem direita */
 /* Descolamento de colunas */
 /* ==========================================================================
    Grid
@@ -853,11 +853,11 @@ body:after {
   }
 /* } */
 /*
- * CSS adaptado para dispositivos com resoluções maiores que 767px
+ * CSS adaptado para dispositivos com resolu├º├Áes maiores que 767px
  *    Tablets e desktops
  */
 /* @media only screen and (min-width: 768px) { */
-  /* Largura máxima do Grid */
+  /* Largura m├íxima do Grid */
   .row {
     max-width: 940px;
   }
@@ -1056,7 +1056,7 @@ body:after {
 
   .list li,
   .list li > a {
-    color: #666666;
+    color: #666;
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -1066,7 +1066,7 @@ body:after {
 
   .list li > a:hover,
   .list li > a:focus {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
 
@@ -1075,7 +1075,7 @@ body:after {
     list-style-position: inside;
   }
 
-  /* Lista com detalhe (título e texto)
+  /* Lista com detalhe (t├¡tulo e texto)
      ========================================================================== */
   .list-details span {
     font-style: italic;
@@ -1122,7 +1122,7 @@ body:after {
      ========================================================================== */
   .list .category-name {
     display: block;
-    color: #666666;
+    color: #666;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 3px;
@@ -1130,7 +1130,7 @@ body:after {
 
   .list .label {
     color: #fff;
-    background-color: #666666;
+    background-color: #666;
     display: inline-block;
     padding: 1px 8px;
     font-size: 12px;
@@ -1164,7 +1164,7 @@ body:after {
   .list a.label:hover,
   .list a.label:focus {
     cursor: pointer;
-    background-color: #333333;
+    background-color: #333;
     color: #fff;
     text-decoration: none;
   }
@@ -1178,7 +1178,7 @@ body:after {
   .post-date {
     float: left;
     margin: 0 10px 10px 0;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
     padding: 8px 14px;
   }
 
@@ -1188,7 +1188,7 @@ body:after {
     text-transform: uppercase;
     display: block;
     text-align: center;
-    color: #666666;
+    color: #666;
   }
 
   .post-date .day {
@@ -1219,7 +1219,7 @@ body:after {
     margin: 0 10px 10px 0;
   }
 
-  /* Últimas notícias
+  /* ├Ültimas not├¡cias
      ========================================================================== */
   .last-news time {
     position: relative;
@@ -1238,7 +1238,7 @@ body:after {
     content: "";
     width: 100%;
     top: 40%;
-    border-bottom: solid 1px #666666;
+    border-bottom: solid 1px #666;
   }
 
   .last-news.last-news-educacao .label {
@@ -1263,10 +1263,10 @@ body:after {
   }
 /* } */
 /* ==========================================================================
-   Botões
+   Bot├Áes
    ========================================================================== */
 /* @media only screen { */
-  /* Padrão
+  /* Padr├úo
      ========================================================================== */
   .btn {
     display: inline-block;
@@ -1280,7 +1280,7 @@ body:after {
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
-    background: #666666;
+    background: #666;
     border: none;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -1315,7 +1315,7 @@ body:after {
 
   .btn:hover,
   .btn:focus {
-    background-color: #333333;
+    background-color: #333;
     color: #fff;
     text-decoration: none;
   }
@@ -1350,20 +1350,20 @@ body:after {
     padding-bottom: 10px;
   }
 
-  /* Cor padrão
+  /* Cor padr├úo
      ========================================================================== */
   .btn-default {
-    background-color: whitesmoke;
-    border: solid 1px #cccccc;
-    color: #333333;
+    background-color: #f5f5f5;
+    border: solid 1px #ccc;
+    color: #333;
   }
 
   .btn-default:hover {
-    color: #333333;
+    color: #333;
     background-color: #eee;
   }
 
-  /* Cor educação
+  /* Cor educa├º├úo
      ========================================================================== */
   .btn-educacao {
     background-color: #fe7325;
@@ -1374,7 +1374,7 @@ body:after {
     background-color: #d64d01;
   }
 
-  /* Botão com linha (100% da largura)
+  /* Bot├úo com linha (100% da largura)
      ========================================================================== */
   .line {
     position: relative;
@@ -1392,33 +1392,33 @@ body:after {
     top: 35%;
     width: 100%;
     display: block;
-    border-top: solid 1px #cccccc;
+    border-top: solid 1px #ccc;
   }
 
   .btn-line {
     position: relative;
     margin-bottom: 15px;
     z-index: 1;
-    border: solid 1px #cccccc;
+    border: solid 1px #ccc;
   }
 
-  /* Botoão caixa alta
+  /* Boto├úo caixa alta
      ========================================================================== */
   .btn-up {
     text-transform: uppercase;
   }
 /* } */
 /* ==========================================================================
-   Formulários
+   Formul├írios
    ========================================================================== */
 /* @media only screen { */
-  /* Padrão
+  /* Padr├úo
      ========================================================================== */
   .form {
     width: 100%;
     font-size: 12px;
     padding: 15px 0;
-    color: #666666;
+    color: #666;
   }
 
   .label-form {
@@ -1433,14 +1433,14 @@ body:after {
   .field {
     display: block;
     padding-bottom: 5px;
-    color: #666666;
+    color: #666;
     font-size: 12px;
     font-weight: bold;
   }
 
-  /* Aviso de campos obrigatórios */
+  /* Aviso de campos obrigat├│rios */
   .required {
-    color: #333333;
+    color: #333;
     font-weight: bold;
     padding-right: 3px;
   }
@@ -1449,7 +1449,7 @@ body:after {
     margin-bottom: 15px;
     display: block;
     font-size: 11px;
-    color: #666666;
+    color: #666;
   }
 
   /* Busca
@@ -1470,7 +1470,7 @@ body:after {
     padding-left: 35px;
     font-style: italic;
     padding-top: 6px;
-    border: solid 1px #999999;
+    border: solid 1px #999;
   }
 
   .form-search .btn {
@@ -1488,8 +1488,8 @@ body:after {
   .textarea {
     width: 100%;
     padding: 8px 10px;
-    border: solid 1px #cccccc;
-    color: #666666;
+    border: solid 1px #ccc;
+    color: #666;
     -webkit-transition: border 0.25s ease;
     -moz-transition: border 0.25s ease;
     -o-transition: border 0.25s ease;
@@ -1534,7 +1534,7 @@ body:after {
 
   .label-check {
     font-size: 14px;
-    color: #666666;
+    color: #666;
   }
 
   .label-check .label {
@@ -1542,11 +1542,11 @@ body:after {
   }
 /* } */
 /*
- * CSS adaptado para dispositivos com resoluções maiores que 767px
+ * CSS adaptado para dispositivos com resolu├º├Áes maiores que 767px
  *    Tablets e desktops
  */
 /* @media only screen and (min-width: 768px) { */
-  /* Padrão
+  /* Padr├úo
      ========================================================================== */
   .label-half {
     width: 48.93617%;
@@ -1598,7 +1598,7 @@ body:after {
     width: 94%;
     padding: 10px 3%;
     display: block;
-    background-color: #666666;
+    background-color: #666;
     text-align: center;
   }
 
@@ -1617,7 +1617,7 @@ body:after {
     text-decoration: none;
   }
 
-  /* Título da barra - Secretaria da Educação */
+  /* T├¡tulo da barra - Secretaria da Educa├º├úo */
   .title-bar a {
     display: block;
     margin-bottom: 10px;
@@ -1693,7 +1693,7 @@ body:after {
   .tools a {
     display: inline-block;
     padding: 3px;
-    color: #666666;
+    color: #666;
     font-family: 'AllerBold';
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
@@ -1703,7 +1703,7 @@ body:after {
   }
 
   .tools a:hover {
-    color: #333333;
+    color: #333;
     text-decoration: none;
   }
 
@@ -1712,7 +1712,7 @@ body:after {
   .footer-bar {
     width: 98%;
     padding: 15px 1%;
-    background-color: #666666;
+    background-color: #666;
     font-weight: bold;
     font-size: 12px;
     font-family: Arial,Helvetica,sans-serif;
@@ -1741,10 +1741,10 @@ body:after {
 
   /* Menus
      ========================================================================== */
-  /* Navegação primária (menu principal)
+  /* Navega├º├úo prim├íria (menu principal)
      ========================================================================== */
   .navbar {
-    border-bottom: 4px solid #666666;
+    border-bottom: 4px solid #666;
     overflow: visible;
     width: 100%;
     background-color: #fefefe;
@@ -1753,7 +1753,7 @@ body:after {
   .nav-menu {
     margin: 0;
     padding: 0;
-    border: solid 1px #dddddd;
+    border: solid 1px #ddd;
     border-top: none;
     border-bottom: none;
   }
@@ -1763,7 +1763,7 @@ body:after {
   }
 
   .nav-menu > li {
-    border-bottom: dotted 1px #dddddd;
+    border-bottom: dotted 1px #ddd;
   }
 
   .nav-menu > li > a {
@@ -1773,7 +1773,7 @@ body:after {
   .nav-menu a {
     padding: 5px 10px;
     display: block;
-    color: #666666;
+    color: #666;
     font-size: 14px;
     font-family: 'AllerBold';
     -webkit-transition: all 0.25s ease;
@@ -1804,7 +1804,7 @@ body:after {
   }
 
   .nav-submenu > li {
-    border-bottom: solid 1px whitesmoke;
+    border-bottom: solid 1px #f5f5f5;
   }
 
   .nav-submenu > li > a:hover,
@@ -1816,20 +1816,20 @@ body:after {
     font-family: Arial,Helvetica,sans-serif;
     font-size: 12px;
     padding: 10px 15px;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
   }
 
-  /* Botão para abrir menu mobile */
+  /* Bot├úo para abrir menu mobile */
   .call-menu {
     display: block;
     width: 96%;
     padding: 6px 2%;
     background-color: #eee;
-    color: #666666;
+    color: #666;
     font-size: 14px;
   }
 
-  /* Navegação secundária / terciária (sidebar)
+  /* Navega├º├úo secund├íria / terci├íria (sidebar)
      ========================================================================== */
   .nav-aside,
   .nav-sub-aside {
@@ -1839,16 +1839,16 @@ body:after {
   }
 
   .nav-aside {
-    border-top: solid 3px #999999;
-    border-bottom: solid 3px #999999;
+    border-top: solid 3px #999;
+    border-bottom: solid 3px #999;
   }
 
   .nav-aside > li {
-    border-bottom: solid 1px #cccccc;
+    border-bottom: solid 1px #ccc;
   }
 
   .nav-sub-aside > li {
-    border-top: solid 1px #cccccc;
+    border-top: solid 1px #ccc;
   }
 
   .nav-aside a {
@@ -1865,7 +1865,7 @@ body:after {
 
   .nav-aside > li > a {
     font-weight: bold;
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
   }
 
   .nav-sub-aside a {
@@ -1876,7 +1876,7 @@ body:after {
 
   .nav-aside a,
   .nav-aside a:hover {
-    color: #666666;
+    color: #666;
   }
 
   .nav-aside a:hover,
@@ -1911,7 +1911,7 @@ body:after {
 
   .breadcrumbs .active {
     cursor: default;
-    color: #666666;
+    color: #666;
   }
 
   .breadcrumbs .active:hover {
@@ -1919,7 +1919,7 @@ body:after {
   }
 /* } */
 /*
- * CSS adaptado para dispositivos com resoluções maiores que 767px
+ * CSS adaptado para dispositivos com resolu├º├Áes maiores que 767px
  *    Tablets e desktops
  */
 /* @media only screen and (min-width: 768px) { */
@@ -1957,7 +1957,7 @@ body:after {
     width: 100px;
     padding: 2px 5px 2px 0;
     margin-right: 5px;
-    border-right: solid 1px white;
+    border-right: solid 1px #fff;
   }
 
   .social a {
@@ -2005,7 +2005,7 @@ body:after {
 
   /* Menus
      ========================================================================== */
-  /* Navegação primária (menu principal)
+  /* Navega├º├úo prim├íria (menu principal)
      ========================================================================== */
   .call-menu {
     display: none;
@@ -2017,17 +2017,17 @@ body:after {
 
   .navbar {
     background: #fefefe;
-    background: -moz-linear-gradient(top, white 0%, #efefef 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #efefef));
-    background: -webkit-linear-gradient(top, white 0%, #efefef 100%);
-    background: -o-linear-gradient(top, white 0%, #efefef 100%);
-    background: -ms-linear-gradient(top, white 0%, #efefef 100%);
-    background: linear-gradient(to bottom, white 0%, #efefef 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
   }
 
   .nav-menu {
     height: 49px;
-    border-top: solid 1px #dddddd;
+    border-top: solid 1px #ddd;
   }
 
   .nav-menu > li {
@@ -2040,12 +2040,12 @@ body:after {
     position: relative;
     padding: 15px;
     max-height: 19px;
-    background: -moz-linear-gradient(top, white 0%, #cccccc 50%, #fefefe 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(50%, #cccccc), color-stop(100%, #fefefe));
-    background: -webkit-linear-gradient(top, white 0%, #cccccc 50%, #fefefe 100%);
-    background: -o-linear-gradient(top, white 0%, #cccccc 50%, #fefefe 100%);
-    background: -ms-linear-gradient(top, white 0%, #cccccc 50%, #fefefe 100%);
-    background: linear-gradient(to bottom, white 0%, #cccccc 50%, #fefefe 100%);
+    background: -moz-linear-gradient(top, #ffffff 0%, #cccccc 50%, #fefefe 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #cccccc), color-stop(100%, #fefefe));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #cccccc 50%, #fefefe 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #cccccc 50%, #fefefe 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #cccccc 50%, #fefefe 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #cccccc 50%, #fefefe 100%);
     -webkit-background-size: 1px 100%;
     -moz-background-size: 1px 100%;
     -o-background-size: 1px 100%;
@@ -2081,7 +2081,7 @@ body:after {
     min-width: 150px;
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    border: solid 1px #dddddd;
+    border: solid 1px #ddd;
     border-top: none;
   }
 
@@ -2089,14 +2089,14 @@ body:after {
     display: block;
   }
 
-  .nav-menu li:hover ul,
-  .nav-menu li.menu-open ul {
+  .nav-menu li:hover > .nav-submenu,
+  .nav-menu li.menu-open > .nav-submenu {
     display: block;
     left: -1px;
   }
 /* } */
 /*
- * CSS com ajustes em breakpoints específicos
+ * CSS com ajustes em breakpoints espec├¡ficos
  */
 /* @media only screen and (min-width: 768px) and (max-width: 830px) { */
   /* Barra local
@@ -2121,7 +2121,7 @@ body:after {
   figcaption {
     margin-top: 5px;
     padding: 10px;
-    background-color: #666666;
+    background-color: #666;
     color: #fff;
     font-style: italic;
     font-size: 12px;
@@ -2129,6 +2129,8 @@ body:after {
   }
 /* } */
 /*
- * CSS adaptado para dispositivos com resoluções maiores que 767px
+ * CSS adaptado para dispositivos com resolu├º├Áes maiores que 767px
  *    Tablets e desktops
  */
+
+/*# sourceMappingURL=main-ie8.css.map */

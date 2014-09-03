@@ -3,6 +3,10 @@
    "version": "2.0.0",
    "title": "Guia de Estilos Educação SP",
    "homepage": "http://a2comunicacao.github.io/gde-educacaosp",
+   "repository": {
+      "type": "git",
+      "url": ""
+   },
    "devDependencies": {
       "grunt": "~0.4.1",
       "grunt-contrib-sass": "~0.4.0",
